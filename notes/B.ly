@@ -161,3 +161,90 @@ RequiemBassoBLyrics = \lyricmode {
   lu -- ce -- at, lu -- ce -- at %80
   e -- is. %81 finis
 }
+
+KyrieBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoKyrie
+    R1*15 %15
+    \mvTr d4.\fE^\tuttiE d8 b'4 b
+    fis2 g8([ a)] b4~
+    b8 b a4. fis8 g4~
+    g f e2\trill
+    d4 es d4.( c8 %20
+    b[ a]) g4 r c
+    d8([ f g d)] es([ d)] c4
+    f4.( b,8 es2)
+    d4. es16([ d)] c8([ es d c]
+    b8[ a]) g4 c4.( f8) %25
+    b,4. es8 a,4. d8
+    g,4. c8 f,2
+    b4 r r2
+    r4 b' es,8 es es([ d)]
+    c c d([ f)] h, h c[ es] %30
+    a,![ g16 a] b2 a4
+    r2 c'4.( f,8)
+    b2 b8 a16([ g)] c8([ b]
+    a[ g)] f4 r b,
+    c8([ es f c)] d([ c)] b4 %35
+    es4.( a,8 d2)
+    c4. d16([ c)] b8([ d c b]
+    a[ g)] f4 r2
+    R1*2 %40
+    r2 c'4. c8
+    as'4 as e!2
+    f8([ g)] as4. as8 g4~
+    g8 e! f2 es4
+    d2 c8 c c'4~ %45
+    c8[ f,] b2 a4~
+    a8 d, g4.( fis8) fis a
+    b4.( a16[ b]) c4 r
+    r g c,8 c c([ b!)]
+    a a b([ d)] g, g a([ c)] %50
+    fis,4 g d'2
+    d d
+    d1
+    g,\fermata \bar "|." %54 finis
+  }
+}
+
+KyrieBassoLyrics = \lyricmode {
+  Ky -- ri -- e e -- %16
+  lei -- son, Ky --
+  ri -- e e -- lei --
+  _ _
+  son, e -- lei -- %20
+  son, e --
+  lei -- son, e --
+  lei --
+  son, e -- lei --
+  son, e -- %25
+  lei -- _ _ _
+  _ _ _
+  son,
+  Chri -- ste e -- lei --
+  son, e -- lei -- son, e -- lei -- %30
+  _ _ son,
+  e --
+  lei -- son, e -- lei --
+  son, e --
+  lei -- son, e -- %35
+  lei --
+  son, e -- lei --
+  son,
+
+  Ky -- ri -- %41
+  e e -- lei --
+  son, Ky -- ri -- e __
+  e -- lei -- _
+  _ son, e -- lei -- %45
+  _ son, __
+  e -- lei -- son, e --
+  lei -- son,
+  Chri -- ste e -- lei --
+  son, e -- lei -- son, e -- lei -- %50
+  son, e -- lei --
+  son, e --
+  lei --
+  son. %54 finis
+}

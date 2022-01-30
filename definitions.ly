@@ -10,6 +10,8 @@ tempoIntroitus = \tempoMarkup "Adagio"
 tempoTeDecet = \tempoMarkup "Andante un poco"
 tempoRequiem = \tempoMarkup "Adagio"
 
+tempoKyrie = \tempoMarkup "Andante"
+
 
 \include "notes/trb1.ly"
 \include "notes/trb2.ly"

@@ -149,72 +149,133 @@ paperEightStaves = \paper {
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Requiem aeternam"
+  %   \addTocEntry
+  %   \paper { ragged-last = ##f }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 1"
+  %           \new Voice = "SopranoA" { \dynamicUp \RequiemSopranoA }
+  %         }
+  %         \new Lyrics \lyricsto SopranoA \RequiemSopranoALyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 2"
+  %           \new Voice = "SopranoB" { \dynamicUp \RequiemSopranoB }
+  %         }
+  %         \new Lyrics \lyricsto SopranoB \RequiemSopranoBLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A 1"
+  %           \new Voice = "AltoA" { \dynamicUp \RequiemAltoA }
+  %         }
+  %         \new Lyrics \lyricsto AltoA \RequiemAltoALyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A 2"
+  %           \new Voice = "AltoB" { \dynamicUp \RequiemAltoB }
+  %         }
+  %         \new Lyrics \lyricsto AltoB \RequiemAltoBLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T 1"
+  %           \new Voice = "TenoreA" { \dynamicUp \RequiemTenoreA }
+  %         }
+  %         \new Lyrics \lyricsto TenoreA \RequiemTenoreALyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T 2"
+  %           \new Voice = "TenoreB" { \dynamicUp \RequiemTenoreB }
+  %         }
+  %         \new Lyrics \lyricsto TenoreB \RequiemTenoreBLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B 1"
+  %           \new Voice = "BassoA" { \dynamicUp \RequiemBassoA }
+  %         }
+  %         \new Lyrics \lyricsto BassoA \RequiemBassoALyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B 2"
+  %           \new Voice = "BassoB" { \dynamicUp \RequiemBassoB }
+  %         }
+  %         \new Lyrics \lyricsto BassoB \RequiemBassoBLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \RequiemOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \RequiemBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 45 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Requiem aeternam"
+    \section "2" "Kyrie"
     \addTocEntry
-    \paper { ragged-last = ##f }
+    \paperEightStaves
     \score {
       <<
-        \new ChoirStaff <<
+        \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+          \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \KyrieViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \KyrieViolinoII
+            }
+          >>
           \new Staff {
-            \set Staff.instrumentName = "S 1"
-            \new Voice = "SopranoA" { \dynamicUp \RequiemSopranoA }
+            \set Staff.instrumentName = "vla"
+            \KyrieViola
           }
-          \new Lyrics \lyricsto SopranoA \RequiemSopranoALyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \KyrieSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = "S 2"
-            \new Voice = "SopranoB" { \dynamicUp \RequiemSopranoB }
+            \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
+            \new Voice = "Alto" { \dynamicUp \KyrieAlto }
           }
-          \new Lyrics \lyricsto SopranoB \RequiemSopranoBLyrics
+          \new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = "A 1"
-            \new Voice = "AltoA" { \dynamicUp \RequiemAltoA }
+            \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
+            \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
           }
-          \new Lyrics \lyricsto AltoA \RequiemAltoALyrics
+          \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
 
           \new Staff {
-            \set Staff.instrumentName = "A 2"
-            \new Voice = "AltoB" { \dynamicUp \RequiemAltoB }
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \KyrieBasso }
           }
-          \new Lyrics \lyricsto AltoB \RequiemAltoBLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T 1"
-            \new Voice = "TenoreA" { \dynamicUp \RequiemTenoreA }
-          }
-          \new Lyrics \lyricsto TenoreA \RequiemTenoreALyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T 2"
-            \new Voice = "TenoreB" { \dynamicUp \RequiemTenoreB }
-          }
-          \new Lyrics \lyricsto TenoreB \RequiemTenoreBLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B 1"
-            \new Voice = "BassoA" { \dynamicUp \RequiemBassoA }
-          }
-          \new Lyrics \lyricsto BassoA \RequiemBassoALyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B 2"
-            \new Voice = "BassoB" { \dynamicUp \RequiemBassoB }
-          }
-          \new Lyrics \lyricsto BassoB \RequiemBassoBLyrics
+          \new Lyrics \lyricsto Basso \KyrieBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \RequiemOrgano
+            \KyrieOrgano
           }
         >>
-        \new FiguredBass { \RequiemBassFigures }
+        \new FiguredBass { \KyrieBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 45 }
+      \midi { \tempo 4 = 100 }
     }
   }
 }

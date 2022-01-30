@@ -14,4 +14,11 @@ sources:
     url: https://data.onb.ac.at/rec/AC14289333
     license: public domain
     principal: true
+  B2:
+    siglum: D-B
+    shelfmark: Mus.ms. 18391
+    date: 1815
+    url: http://resolver.staatsbibliothek-berlin.de/SBB00031FF800000000
+    imslp: 452500190
+    license: public domain
 imslp:
