@@ -44,3 +44,49 @@ IntroitusViolinoI = {
     d d d d d d d d c2\fermata \bar "||" %38 finis
   }
 }
+
+TeDecetViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    d'4\fE b a8 g
+    es'2 es4 %40
+    es d c
+    b8 d es( d) b'( d,)
+    r c d( c) a'( c,)
+    r b c( b) es( g,)
+    g4\trill fis a %45
+    b8. a16 b4 b
+    es2 es4
+    es d8 c d4~
+    d8 es d4 c\trill
+    b8 f' g( f) d'( f,) %50
+    r es f( es) c'( es,)
+    r d es( d) g( b,)
+    b16( a) a( c) c( b) b( d) d( c) c( es)
+    es( d) d( g) g( f) f( es) es( d) d( c)
+    d d c b b4 a\trill %55
+    b8 f' g( f) d'( f,)
+    r es f( es) c'( es,)
+    r d es( d) b'( d,)
+    r es es( es,) d( d')
+    r c d( c) a'( c,) %60
+    r c d( c) a'( c,)
+    r b c( b) g'( b,)
+    r c c( b) a( g)
+    r g fis( d) d( c')
+    r b b( g) g( d') %65
+    r c c( a) a( es')
+    r es d( d,) c( c')
+    r b b( b,) b( b')
+    r b b( b,) a( fis')
+    g d' es( d) b'( d,) %70
+    r c d( c) a'( c,)
+    r b c( b) es( g,)
+    g16( fis) fis( a) a( g) g( b) b( a) a( c)
+    c( b) b( es) es( d) d( c) c( b) b( a)
+    b b a g g4 fis\trill %75
+    g r r\fermata \bar "||" %76 finis
+  }
+}

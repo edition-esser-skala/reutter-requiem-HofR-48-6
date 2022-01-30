@@ -52,3 +52,70 @@ IntroitusAltoLyrics = \lyricmode {
   _ is, lu -- ce -- at
   e -- is. %33 finis
 }
+
+TeDecetAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \autoBeamOff \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    \mvTr g'4\fE^\tuttiE g g
+    g2 g4 %40
+    fis fis fis
+    g g r
+    R2.*2
+    r4 fis2 %45
+    g4 g g
+    g2 g4
+    f f f
+    es f4. f8
+    d4 r r %50
+    R2.*5 %55
+    r4 f2
+    f4 f f
+    f f f
+    g f f8 f
+    f4 f f %60
+    d2 d4
+    d d d
+    es es es8 es
+    d2 fis4
+    fis g d %65
+    d fis fis~
+    fis2 fis4
+    d2 es4~
+    es d4. d8
+    d4 r r %70
+    R2.*5 %75
+    R2.\fermata \bar "||" %76 finis
+  }
+}
+
+TeDecetAltoLyrics = \lyricmode {
+  Te de -- cet %39
+  hy -- mnus, %40
+  De -- us, in
+  Si -- on,
+
+  et %45
+  ti -- bi red --
+  de -- tur
+  vo -- tum in
+  Ie -- ru -- sa --
+  lem: %50
+
+  Ex -- %56
+  au -- di, ex --
+  au -- di o --
+  ra -- ti -- o -- nem
+  me -- am, ad %60
+  te, ad
+  te o -- mnis
+  ca -- ro ve -- ni --
+  et, ad
+  te o -- mnis %65
+  ca -- ro, o --
+  mnis
+  ca -- ro __
+  ve -- ni --
+  et. %70 finis
+}

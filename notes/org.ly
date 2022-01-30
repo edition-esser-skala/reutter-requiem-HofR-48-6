@@ -85,3 +85,90 @@ IntroitusBassFigures = \figuremode {
   \bo <[6\\ 5-]>2 <_!>4 <7- _!>
   <5 4> <\t _!> \bc <[_- \l]>2 %38 finis
 }
+
+TeDecetOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 3/4 \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    \mvTr g4.\fE-\tuttiE g8 a b
+    c8. b16 c4 c %40
+    d2 d4
+    g2 g,4-\solo
+    d'2 d4
+    g2 c,4
+    d4. e8 fis-\tutti d %45
+    g4. f8 es d
+    c c, c' b a g
+    a4 a' b
+    g f f,
+    b2 b4-\solo %50
+    f'2 f,4
+    b2 es4
+    f2 r4
+    f, r f
+    b8 es f es f f, %55
+    b2 b4-\tutti
+    f'2 f,4
+    b2 b'4
+    b a b
+    f2 f4 %60
+    fis2 fis4
+    g2 g4
+    c,2 c4
+    d2.
+    d-\tasto %65
+    d
+    d2 d4
+    g8 g, g' f es d
+    c4 d d,
+    g2 g4-\solo %70
+    d'2 d4
+    g2 c,4
+    d2 r4
+    d r d
+    g,8 c d4 d, %75
+    g r r\fermata \bar "||" %76 finis
+  }
+}
+
+TeDecetBassFigures = \figuremode {
+  r2. %39
+  <_-> %40
+  <9- _+>4 \bassFigureExtendersOn <8 _+> <[7] _+> \bassFigureExtendersOff
+  r2.
+  <_+>
+  r2 <_->4
+  <6 4> <5 _+> <[6]> %45
+  r2 <[5]>4
+  <_->2.
+  \bo <[6 5-]>
+  <6->4 <6 4> <5 3>
+  r2. %50
+  <7->
+  r2.
+  r
+  <7>
+  r4 <6 4> \bc <[5 3]> %55
+  r2.
+  <6 4>4 <5 3> \bo <[7- 5]>
+  <9 4-> \bc <[8 3]>2
+  <4- 2>4 <\t \t>2
+  <6 4>4 <5 3>2 %60
+  <[6 5]>2.
+  r
+  <_->2 \bo <[8 6 _-]>8 \bc <[7 5 \t]>
+  <6 4>4 <5 _+>2
+  r2. %65
+  r
+  r
+  r4 \bo <[5]> \bc q
+  <7 _-> <6 4> <5 _+>
+  r2. %70
+  <_+>
+  r2 <_->4
+  <_+>2.
+  <\t>2 q4
+  r8 <[_-]> \bo <[6] 4>4 \bc <[5] _+> %75
+  r2. %76 finis
+}

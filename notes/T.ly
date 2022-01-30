@@ -50,3 +50,70 @@ IntroitusTenoreLyrics = \lyricmode {
   _ is, lu -- ce -- at
   e -- is. %33 finis
 }
+
+TeDecetTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 3/4 \autoBeamOff \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    \mvTr b4\fE^\tuttiE d d
+    g,2 c4 %40
+    a a d
+    d8.([ c16)] b4 r
+    R2.*2
+    r4 d2 %45
+    d4 d g,
+    c2 c4
+    c c b~
+    b8 b b4( a8.) a16
+    b4 r r %50
+    R2.*5 %55
+    r4 b2
+    b8([ a)] a4 c
+    c8([ b)] b4 d
+    c4. c8 b b
+    b([ a)] a4 a %60
+    a2 a4
+    g g g
+    g g c8 b
+    b4( a) a
+    a8([ g)] g4 b %65
+    b8([ a)] a4 c~
+    c b a
+    b2 g4~
+    g g( fis8.) fis16
+    g4 r r %70
+    R2.*5 %75
+    R2.\fermata \bar "||" %76 finis
+  }
+}
+
+TeDecetTenoreLyrics = \lyricmode {
+  Te de -- cet %39
+  hy -- mnus, %40
+  De -- us, in
+  Si -- on,
+
+  et %45
+  ti -- bi red --
+  de -- tur
+  vo -- tum in __
+  Ie -- ru -- sa --
+  lem: %50
+
+  Ex -- %56
+  au -- di, ex --
+  au -- di o --
+  ra -- ti -- o -- nem
+  me -- am, ad %60
+  te, ad
+  te o -- mnis
+  ca -- ro ve -- ni --
+  et, __ ad
+  te __ o -- mnis %65
+  ca -- ro, o --
+  _ mnis
+  ca -- ro __
+  ve -- ni --
+  et. %70 finis
+}

@@ -44,3 +44,40 @@ IntroitusViola = {
     g g g g g g g g g2\fermata \bar "||" %38
   }
 }
+
+TeDecetViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 3/4 \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    b4\fE d d
+    g,2 c4 %40
+    a a d
+    d8. c16 b4 r
+    R2.*2
+    r4 d2 %45
+    d4 d g,
+    c2 c4
+    c c b~
+    b8 b b4 a8. a16
+    b4 r r %50
+    R2.*5 %55
+    r4 b2
+    b8 a a4 c
+    c8 b b4 d
+    c4. c8 b b
+    b a a4 a %60
+    a2 a4
+    g g g
+    g g c8 b
+    b4 a a
+    a8 g g4 b %65
+    b8 a a4 c~
+    c b a
+    b2 g4~
+    g g fis8. fis16
+    g4 r r %70
+    R2.*5 %75
+    R2.\fermata \bar "||" %76 finis
+  }
+}

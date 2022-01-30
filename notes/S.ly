@@ -51,13 +51,77 @@ IntroitusSopranoLyrics = \lyricmode {
   e -- is. %33 finis
 }
 
-% Te de -- cet hy -- mnus, De -- us, in Si -- on,
-% et ti -- bi red -- de -- tur vo -- tum in Ie -- ru -- sa -- lem:
-% Ex -- au -- di o -- ra -- ti -- o -- nem me -- am,
-% ad te o -- mnis ca -- ro ve -- ni -- et.
+
 % Re -- qui -- em ae -- ter -- nam do -- na e -- is, Do -- mi -- ne:
 % Et lux per -- pe -- tu -- a lu -- ce -- at e -- is.
 
 % Ky -- ri -- e e -- lei -- son.
 % Chri -- ste e -- lei -- son.
 % Ky -- ri -- e e -- lei -- son.
+
+TeDecetSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \autoBeamOff \tempoTeDecet
+      \set Score.currentBarNumber = #39
+    \mvTr d'4\fE^\tuttiE b a8([ g)]
+    es'2 es4 %40
+    es d c
+    b8.([ a16)] g4 r
+    R2.*2
+    r4 a2 %45
+    b8.([ a16)] b4 b
+    es2 es4
+    es d8([ c)] d4~
+    d8 es d4( c8.) c16
+    b4 r r %50
+    R2.*5 %55
+    r4 d2
+    d8([ c)] c4 es
+    es8([ d)] d4 d
+    es4. es8 d d
+    d([ c)] c4 c %60
+    c2 c4
+    b b b
+    c c8([ b)] a g
+    g4( fis) c'
+    c8([ b)] b4 d %65
+    d8([ c)] c4 es~
+    es d c
+    b2 b4~
+    b b( a8.) a16
+    g4 r r %70
+    R2.*5 %75
+    R2.\fermata \bar "||" %76 finis
+  }
+}
+
+TeDecetSopranoLyrics = \lyricmode {
+  Te de -- cet %39
+  hy -- mnus, %40
+  De -- us, in
+  Si -- on,
+
+  et %45
+  ti -- bi red --
+  de -- tur
+  vo -- tum in __
+  Ie -- ru -- sa --
+  lem: %50
+
+  Ex -- %56
+  au -- di, ex --
+  au -- di o --
+  ra -- ti -- o -- nem
+  me -- am, ad %60
+  te, ad
+  te o -- mnis
+  ca -- ro ve -- ni --
+  et, __ ad
+  te __ o -- mnis %65
+  ca -- ro, o --
+  _ mnis
+  ca -- ro __
+  ve -- ni --
+  et. %70 finis
+}

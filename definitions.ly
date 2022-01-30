@@ -7,6 +7,7 @@
 
 
 tempoIntroitus = \tempoMarkup "Adagio"
+tempoTeDecet = \tempoMarkup "Andante un poco"
 
 
 % \include "notes/trb1.ly"
