@@ -292,3 +292,66 @@ DiesIraeBassoLyrics = \lyricmode {
   cun -- cta stri -- cte dis -- cus -- %15
   su -- rus. %16 finis
 }
+
+TubaMirumBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \autoBeamOff \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    \mvTr c4.\fE^\tuttiE c8 f g
+    c,4. c8 f g %20
+    c,4 c r
+    R2.*2
+    r4 c'4. as8
+    b4. b,8 b b %25
+    es4 es r
+    R2.
+    r4 es e
+    f4. es8 d d
+    es c b2 %30
+    es4 r r
+    R2.*2
+    r4 es es
+    des4. des8 c c %35
+    f4 f, r
+    R2.
+    r4 f'4. d8
+    es4. es8 c c
+    d4 d h8 h %40
+    c4. c8 h c
+    g4 g g8 g
+    c4. c8 h4
+    c g2
+    c4 r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}
+
+TubaMirumBassoLyrics = \lyricmode {
+  Tu -- ba, tu -- ba %19
+  mi -- rum spar -- gens %20
+  so -- num
+
+  per se -- %24
+  pul -- cra re -- gi -- %25
+  o -- num
+
+  co -- get,
+  co -- get o -- mnes
+  an -- te thro -- %30
+  num.
+
+  Mors stu -- %34
+  pe -- bit et na -- %35
+  tu -- ra,
+
+  cum re --
+  sur -- get cre -- a --
+  tu -- ra, iu -- di -- %40
+  can -- ti re -- spon --
+  su -- ra, iu -- di --
+  can -- ti re --
+  spon -- su --
+  ra. %45 finid
+}

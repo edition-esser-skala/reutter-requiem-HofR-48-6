@@ -13,6 +13,7 @@ tempoRequiem = \tempoMarkup "Adagio"
 tempoKyrie = \tempoMarkup "Andante"
 
 tempoDiesIrae = \tempoMarkup "Adagio"
+tempoTubaMirum = \tempoMarkup "Andante"
 
 
 \include "notes/trb1.ly"

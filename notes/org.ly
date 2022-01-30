@@ -357,3 +357,80 @@ DiesIraeBassFigures = \figuremode {
   r1
   r %18 finis
 }
+
+TubaMirumOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    \mvTr c8\fE-\tutti c'16 h c8 c, f g
+    c, c'16 h c8 c, f g %20
+    c, c'16-\senzaOrg h c8 c, h h'
+    c c16 h c8 c, h h'
+    c c16 h c8 c, g' g,
+    c c'16 h c8-\colOrg c, c' as
+    b b16 as b8 b, r b %25
+    es es16-\senzaOrg d es8 es d d
+    es es16 d es8 es d b
+    es es16 d es8-\colOrg es e c
+    f f16 e f8 es d b
+    es c b as b b %30
+    es es16-\senzaOrg d es8 es c c
+    d d16 c d8 d b d
+    es as, b as b b
+    es es16 d es8-\colOrg es, es' es
+    des des16 c des8 des c c %35
+    f, f'16-\senzaOrg e f8 f e c
+    f f16 e f8 f, c' c,
+    f f'16 e f8-\colOrg f, f' d
+    es es16 d es8 es, c' c
+    d d16 c d8 d, h' g %40
+    c c16 h c8 c, h' c
+    g g'16 f g8 g, r g
+    c c16 h c8 c, h' g
+    c f, g f g g
+    c c'16-\senzaOrg h c8 c, r c %45
+    g' g16 f g8 g, r g
+    c c'16 h c8 c, r c'
+    d d16 c h8 g r g
+    c as g f g g,
+    es' f g4 g, %50
+    c r r\fermata \bar "||" %51 finis
+  }
+}
+
+TubaMirumBassFigures = \figuremode {
+  r2 <[6] _->8 <_!> %19
+  r2 <[6] _->8 <_!> %20
+  r2.
+  r
+  r
+  r2 r8 <6>
+  r2. %25
+  r
+  r
+  r2 \bo <[6 5]>8 <\t \t>
+  <_->2 <6>8 \bc <[7- \l]>
+  r <6-> <6 4>4 <5 3> %30
+  r2.
+  r
+  r
+  r
+  <6 4 2!>2 <_!>4 %35
+  <_->2.
+  r
+  r4 <_->4. <6>8
+  r2 <6->8 <5>
+  <5->2 <6>8 <[7 _!]> %40
+  r2 <6 5>4
+  <6 4> <5 _!>2
+  r2 \bo <[6 5]>8 \bc <[\t \t]>
+  r4 <6 4> <5 _!>
+  r2. %45
+  r
+  r
+  r
+  r
+  r %50
+  r %51 finis
+}

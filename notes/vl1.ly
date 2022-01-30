@@ -167,3 +167,38 @@ DiesIraeViolinoI = {
     f c c c des des e e f2\fermata \bar "||" %18 finis
   }
 }
+
+TubaMirumViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    c'4.\fE c8 d c16 h
+    c4. c8 d c16 h %20
+    c4 g r
+    R2.*2
+    r4 es'4. f8
+    d4. d16 es f8 es16 d %25
+    es4 b r
+    R2.
+    r4 b4. b8
+    as4. as8 b as
+    g8. as16 g4 f %30
+    es r r
+    R2.*2
+    r4 g g
+    g4. g8 g g %35
+    as8. g16 as4 r
+    R2.
+    r4 as4. b8
+    g4. g8 as g
+    f8. es16 f4 g8 f %40
+    es4. es8 f es
+    es4 d f8 es16 d
+    es4. es8 f4
+    es es d
+    c r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}

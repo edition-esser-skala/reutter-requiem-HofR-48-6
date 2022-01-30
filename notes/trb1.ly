@@ -148,3 +148,37 @@ DiesIraeTromboneI = {
     R\fermata \bar "||" %18 finis
   }
 }
+
+TubaMirumTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 3/4 \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    R2.*2 %20
+    \mvTr g'4~\fE-\solo g16 g( f g) as( g) as as
+    as8 g~ g16 g( f g) as( g) as as
+    as8 g~ g16 g f es f f es d
+    es8. d16 c4 r
+    R2. %25
+    g'4~ g16 g( f g) as( g) as as
+    as8 g~ g16 g f es f( es) f f
+    f4 es r
+    R2.*2 %30
+    g4~ g16 \once \slurDashed g( f g) as( g) g( f)
+    f4~ f16 \once \slurDashed f( es f) g( f) f( es)
+    es8. f16 es4 d\trill
+    es r r
+    R2. %35
+    as4~ as16 \once \slurDashed as( g as) b( as) b b
+    as4~ as16 as g f g8 f16 e
+    f4 c r
+    R2.*6 %44
+    es4~ es16 \once \slurDashed es( d es) f( es) es( d) %45
+    d4~ d16 \once \slurDashed f( es f) g( f) f( es)
+    es4~ es16 \once \slurDashed g( f g) as( g) g( f)
+    f4~ f16 \once \slurDashed f( es f) g( f) f( es)
+    es8. f16 es4 d\trill
+    g16 g( f es) es4 d\trill %50
+    c r r\fermata \bar "||" %51 finis
+  }
+}

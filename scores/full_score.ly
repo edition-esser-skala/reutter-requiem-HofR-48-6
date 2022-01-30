@@ -15,7 +15,7 @@
   systems-per-page = #2
 }
 
-paperTwoChoruses = \paper {
+paperDefault = \paper {
   top-system-spacing.basic-distance = #20
   top-system-spacing.minimum-distance = #20
   top-markup-spacing.basic-distance = #5
@@ -168,7 +168,7 @@ paperTwoChoruses = \paper {
   % \bookpart {
   %   \subsection "Requiem aeternam"
   %   \addTocEntry
-  %   \paperTwoChoruses
+  %   \paperDefault
   %   \score {
   %     <<
   %       \new ChoirStaff \with { \setGroupDistance #13 #15 }  <<
@@ -293,64 +293,138 @@ paperTwoChoruses = \paper {
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \section "3" "Sequentia"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \DiesIraeViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \DiesIraeViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \DiesIraeViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \DiesIraeSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \DiesIraeSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
+  %           \new Voice = "Alto" { \dynamicUp \DiesIraeAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \DiesIraeAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
+  %           \new Voice = "Tenore" { \dynamicUp \DiesIraeTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \DiesIraeTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \DiesIraeBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \DiesIraeBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DiesIraeOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DiesIraeBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
-    \section "3" "Sequentia"
+    \subsection "Tuba mirum"
     \addTocEntry
+    \paperDefault
     \score {
       <<
         \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
+          \new GrandStaff \with { \normalGroupDistance } <<
+            \set GrandStaff.instrumentName = "trb"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \DiesIraeViolinoI
+              \TubaMirumTromboneI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \DiesIraeViolinoII
+              \TubaMirumTromboneII
+            }
+          >>
+        >>
+        \new StaffGroup \with { \normalGroupDistance } <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \TubaMirumViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \TubaMirumViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \DiesIraeViola
+            \TubaMirumViola
           }
         >>
-        \new ChoirStaff <<
+        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \DiesIraeSoprano }
+            \new Voice = "Soprano" { \dynamicUp \TubaMirumSoprano }
           }
-          \new Lyrics \lyricsto Soprano \DiesIraeSopranoLyrics
+          \new Lyrics \lyricsto Soprano \TubaMirumSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
-            \new Voice = "Alto" { \dynamicUp \DiesIraeAlto }
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \TubaMirumAlto }
           }
-          \new Lyrics \lyricsto Alto \DiesIraeAltoLyrics
+          \new Lyrics \lyricsto Alto \TubaMirumAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
-            \new Voice = "Tenore" { \dynamicUp \DiesIraeTenore }
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \TubaMirumTenore }
           }
-          \new Lyrics \lyricsto Tenore \DiesIraeTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TubaMirumTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \DiesIraeBasso }
+            \new Voice = "Basso" { \dynamicUp \TubaMirumBasso }
           }
-          \new Lyrics \lyricsto Basso \DiesIraeBassoLyrics
+          \new Lyrics \lyricsto Basso \TubaMirumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DiesIraeOrgano
+            \TubaMirumOrgano
           }
         >>
-        \new FiguredBass { \DiesIraeBassFigures }
+        \new FiguredBass { \TubaMirumBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 90 }
     }
   }
 }

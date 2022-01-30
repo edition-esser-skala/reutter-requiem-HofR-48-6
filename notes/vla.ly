@@ -166,3 +166,38 @@ DiesIraeViola = {
     as f f f f f g g f2\fermata \bar "||" %18 finis
   }
 }
+
+TubaMirumViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 3/4 \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    g4.\fE g8 as g
+    g4. g8 as g %20
+    g4 g r
+    R2.*2
+    r4 c4. c8
+    b4. b8 b b %25
+    b4 b r
+    R2.
+    r4 es c
+    c4. c8 b b
+    b as b2 %30
+    b4 r r
+    R2.*2
+    r4 b b
+    b4. b8 c c %35
+    c4 c r
+    R2.
+    r4 c4. b8
+    b4. b8 as as
+    as4 as g8 g %40
+    g4. g8 g g
+    g4 g g8 g
+    g4. g8 g4
+    g g2
+    g4 r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}

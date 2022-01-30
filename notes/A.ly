@@ -313,3 +313,66 @@ DiesIraeAltoLyrics = \lyricmode {
   cun -- cta stri -- cte dis -- cus -- %15
   su -- rus. %16 finis
 }
+
+TubaMirumAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \autoBeamOff \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    \mvTr es4.\fE^\tuttiE es8 f es16([ d)]
+    es4. es8 f es16([ d)] %20
+    es4 es r
+    R2.*2
+    r4 g4. as8
+    f4. f16([ g)] as8 g16([ f)] %25
+    g4 g r
+    R2.
+    r4 g4. g8
+    f4. f8 f f
+    es8. es16 es4( d) %30
+    es r r
+    R2.*2
+    r4 es es
+    e4. e8 e e %35
+    f4 f r
+    R2.
+    r4 f4. f8
+    es4. es8 es es
+    d4 d d8 d %40
+    c4. c8 d c
+    c4 h d8 c16([ h)]
+    c4. c8 d4
+    c c( h)
+    c r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}
+
+TubaMirumAltoLyrics = \lyricmode {
+  Tu -- ba, tu -- ba %19
+  mi -- rum spar -- gens %20
+  so -- num
+
+  per se -- %24
+  pul -- cra re -- gi -- %25
+  o -- num
+
+  co -- get,
+  co -- get o -- mnes
+  an -- te thro -- %30
+  num.
+
+  Mors stu -- %34
+  pe -- bit et na -- %35
+  tu -- ra,
+
+  cum re --
+  sur -- get cre -- a --
+  tu -- ra, iu -- di -- %40
+  can -- ti re -- spon --
+  su -- ra, iu -- di --
+  can -- ti re --
+  spon -- su --
+  ra. %45 finid
+}

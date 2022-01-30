@@ -302,14 +302,69 @@ DiesIraeSopranoLyrics = \lyricmode {
   su -- rus. %16 finis
 }
 
-% Tu -- ba mi -- rum spar -- gens so -- num
-% per se -- pul -- cra re -- gi -- o -- num
-% co -- get o -- mnes an -- te thro -- num.
-%
-% Mors stu -- pe -- bit et na -- tu -- ra,
-% cum re -- sur -- get cre -- a -- tu -- ra,
-% iu -- di -- can -- ti re -- spon -- su -- ra.
-%
+TubaMirumSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \autoBeamOff \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    \mvTr c'4.\fE^\tuttiE c8 d c16([ h)]
+    c4. c8 d c16([ h)] %20
+    c4 g r
+    R2.*2
+    r4 es'4. f8
+    d4. d16([ es)] f8 es16([ d)] %25
+    es4 b r
+    R2.
+    r4 b4. b8
+    as4. as8 b as
+    g8. as16 g4( f) %30
+    es r r
+    R2.*2
+    r4 g g
+    g4. g8 g g %35
+    as8.([ g16)] as4 r
+    R2.
+    r4 as4. b8
+    g4. g8 as g
+    f8.([ es16)] f4 g8 f %40
+    es4. es8 f es
+    es4 d f8 es16([ d)]
+    es4. es8 f4
+    es es( d)
+    c r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}
+
+TubaMirumSopranoLyrics = \lyricmode {
+  Tu -- ba, tu -- ba %19
+  mi -- rum spar -- gens %20
+  so -- num
+
+  per se -- %24
+  pul -- cra re -- gi -- %25
+  o -- num
+
+  co -- get,
+  co -- get o -- mnes
+  an -- te thro -- %30
+  num.
+
+  Mors stu -- %34
+  pe -- bit et na -- %35
+  tu -- ra,
+
+  cum re --
+  sur -- get cre -- a --
+  tu -- ra, iu -- di -- %40
+  can -- ti re -- spon --
+  su -- ra, iu -- di --
+  can -- ti re --
+  spon -- su --
+  ra. %45 finid
+}
+
 % Li -- ber scri -- ptus pro -- fe -- re -- tur,
 % in quo to -- tum con -- ti -- ne -- tur,
 % un -- de mun -- dus iu -- di -- ce -- tur.

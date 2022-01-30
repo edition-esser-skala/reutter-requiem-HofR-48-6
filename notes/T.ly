@@ -319,3 +319,66 @@ DiesIraeTenoreLyrics = \lyricmode {
   cun -- cta stri -- cte dis -- cus -- %15
   su -- rus. %16 finis
 }
+
+TubaMirumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 3/4 \autoBeamOff \tempoTubaMirum
+      \set Score.currentBarNumber = #19
+    \mvTr g4.\fE^\tuttiE g8 as g
+    g4. g8 as g %20
+    g4 g r
+    R2.*2
+    r4 c4. c8
+    b4. b8 b b %25
+    b4 b r
+    R2.
+    r4 es c
+    c4. c8 b b
+    b as b2 %30
+    b4 r r
+    R2.*2
+    r4 b b
+    b4. b8 c c %35
+    c4 c r
+    R2.
+    r4 c4. b8
+    b4. b8 as as
+    as4 as g8 g %40
+    g4. g8 g g
+    g4 g g8 g
+    g4. g8 g4
+    g g2
+    g4 r r %45
+    R2.*5 %50
+    R2.\fermata \bar "||" %51 finis
+  }
+}
+
+TubaMirumTenoreLyrics = \lyricmode {
+  Tu -- ba, tu -- ba %19
+  mi -- rum spar -- gens %20
+  so -- num
+
+  per se -- %24
+  pul -- cra re -- gi -- %25
+  o -- num
+
+  co -- get,
+  co -- get o -- mnes
+  an -- te thro -- %30
+  num.
+
+  Mors stu -- %34
+  pe -- bit et na -- %35
+  tu -- ra,
+
+  cum re --
+  sur -- get cre -- a --
+  tu -- ra, iu -- di -- %40
+  can -- ti re -- spon --
+  su -- ra, iu -- di --
+  can -- ti re --
+  spon -- su --
+  ra. %45 finid
+}
