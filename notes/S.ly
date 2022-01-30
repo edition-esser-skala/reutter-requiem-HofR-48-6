@@ -51,14 +51,6 @@ IntroitusSopranoLyrics = \lyricmode {
   e -- is. %33 finis
 }
 
-
-% Re -- qui -- em ae -- ter -- nam do -- na e -- is, Do -- mi -- ne:
-% Et lux per -- pe -- tu -- a lu -- ce -- at e -- is.
-
-% Ky -- ri -- e e -- lei -- son.
-% Chri -- ste e -- lei -- son.
-% Ky -- ri -- e e -- lei -- son.
-
 TeDecetSoprano = {
   \relative c' {
     \clef treble
@@ -125,3 +117,49 @@ TeDecetSopranoLyrics = \lyricmode {
   ve -- ni --
   et. %70 finis
 }
+
+RequiemSopranoA = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr d'8.\fE^\tuttiE d16 d8 d d4 d
+    d8 d d d d8. d16 d4
+    r8 d d d c8. c16 c4
+    es es8 es d4 d8 d %80
+    d2 h\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemSopranoALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}
+
+RequiemSopranoB = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr b'8.\fE^\tuttiE b16 b8 b a4 a
+    a8 a a a b8. b16 b4
+    r8 g g g' es8. es16 es4
+    c c8 c c4 b8 b %80
+    a2 d\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemSopranoBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}
+
+% Ky -- ri -- e e -- lei -- son.
+% Chri -- ste e -- lei -- son.
+% Ky -- ri -- e e -- lei -- son.

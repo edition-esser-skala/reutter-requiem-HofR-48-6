@@ -119,3 +119,45 @@ TeDecetBassoLyrics = \lyricmode {
   ro ve -- ni --
   et. %70 finis
 }
+
+RequiemBassoA = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr d8.\fE^\tuttiE d16 d8 d fis4 fis
+    fis8 fis fis fis d8. d16 d4
+    r8 d d d g8. g16 g4
+    g g8 c c4 d,8 d %80
+    a'2 g\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemBassoALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}
+
+RequiemBassoB = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr g8.\fE^\tuttiE g16 g8 g d'4 d
+    c8 c c c b8. b16 b4
+    r8 h h h c8. c16 c4
+    c c8 c d4 d8 d %80
+    d2 g,\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemBassoBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}

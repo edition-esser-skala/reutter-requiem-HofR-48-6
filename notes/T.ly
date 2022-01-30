@@ -117,3 +117,45 @@ TeDecetTenoreLyrics = \lyricmode {
   ve -- ni --
   et. %70 finis
 }
+
+RequiemTenoreA = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr b8.\fE^\tuttiE b16 b8 b d4 a
+    c8 c c c d8. d,16 d4
+    r8 h' h h g8. g16 g4
+    g a8 a a4 b8 c %80
+    d2 d\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemTenoreALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}
+
+RequiemTenoreB = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr g8.\fE^\tuttiE g16 g8 g a4 a
+    a8 a a a g8. g16 g4
+    r8 g g g c8. c16 c4
+    c es8 es a,4 d8 g, %80
+    a2 h\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemTenoreBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}

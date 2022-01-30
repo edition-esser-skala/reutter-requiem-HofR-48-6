@@ -119,3 +119,45 @@ TeDecetAltoLyrics = \lyricmode {
   ve -- ni --
   et. %70 finis
 }
+
+RequiemAltoA = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr g'8.\fE^\tuttiE g16 g8 g fis4 fis
+    fis8 fis fis fis g8. g16 g4
+    r8 g g g g8. g16 g4
+    g g8 g fis4 g8 g %80
+    g4( fis) g2\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemAltoALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}
+
+RequiemAltoB = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr d8.\fE^\tuttiE d16 d8 d d4 d
+    d8 d d d d8. d16 d4
+    r8 d d d es8. es16 es4
+    es c'8 c a4 g8 g %80
+    d2 d\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemAltoBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %77
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at %80
+  e -- is. %81 finis
+}

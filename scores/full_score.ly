@@ -149,4 +149,72 @@ paperEightStaves = \paper {
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  \bookpart {
+    \subsection "Requiem aeternam"
+    \addTocEntry
+    \paper { ragged-last = ##f }
+    \score {
+      <<
+        \new ChoirStaff <<
+          \new Staff {
+            \set Staff.instrumentName = "S 1"
+            \new Voice = "SopranoA" { \dynamicUp \RequiemSopranoA }
+          }
+          \new Lyrics \lyricsto SopranoA \RequiemSopranoALyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "S 2"
+            \new Voice = "SopranoB" { \dynamicUp \RequiemSopranoB }
+          }
+          \new Lyrics \lyricsto SopranoB \RequiemSopranoBLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A 1"
+            \new Voice = "AltoA" { \dynamicUp \RequiemAltoA }
+          }
+          \new Lyrics \lyricsto AltoA \RequiemAltoALyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A 2"
+            \new Voice = "AltoB" { \dynamicUp \RequiemAltoB }
+          }
+          \new Lyrics \lyricsto AltoB \RequiemAltoBLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T 1"
+            \new Voice = "TenoreA" { \dynamicUp \RequiemTenoreA }
+          }
+          \new Lyrics \lyricsto TenoreA \RequiemTenoreALyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T 2"
+            \new Voice = "TenoreB" { \dynamicUp \RequiemTenoreB }
+          }
+          \new Lyrics \lyricsto TenoreB \RequiemTenoreBLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B 1"
+            \new Voice = "BassoA" { \dynamicUp \RequiemBassoA }
+          }
+          \new Lyrics \lyricsto BassoA \RequiemBassoALyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B 2"
+            \new Voice = "BassoB" { \dynamicUp \RequiemBassoB }
+          }
+          \new Lyrics \lyricsto BassoB \RequiemBassoBLyrics
+        >>
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
+            % \transpose c c,
+            \RequiemOrgano
+          }
+        >>
+        \new FiguredBass { \RequiemBassFigures }
+      >>
+      \layout { }
+      \midi { \tempo 4 = 45 }
+    }
+  }
 }

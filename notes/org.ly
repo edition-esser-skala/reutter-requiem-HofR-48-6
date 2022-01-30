@@ -172,3 +172,24 @@ TeDecetBassFigures = \figuremode {
   r8 <[_-]> \bo <[6] 4>4 \bc <[5] _+> %75
   r2. %76 finis
 }
+
+RequiemOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoRequiem
+      \set Score.currentBarNumber = #77
+    \mvTr g2\fE-\tuttiE d'
+    c8 c c c b2
+    r8 h h h c2
+    c8 c c c d d d d %80
+    d d d d g,2\fermata \bar "|." %81 finis
+  }
+}
+
+RequiemBassFigures = \figuremode {
+  r2 <_+> %77
+  \bo <[\t]> <6>
+  r8 \bc <[\t]>4. <_->2
+  <[5] _->4  <6 \t> <7 _+> <6 4> %8
+  <5 4> <\t _+> <_!>2 %81 finis
+}
