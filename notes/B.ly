@@ -248,3 +248,47 @@ KyrieBassoLyrics = \lyricmode {
   lei --
   son. %54 finis
 }
+
+DiesIraeBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    \mvTr c4\fE^\tuttiE es g g,
+    es' c h g
+    es' es c fis,
+    g g f'! f
+    e8 e e e f4 f %5
+    d h c8 c as as
+    g2 c4 r
+    R1
+    r2 es4 es
+    es es d d %10
+    es es g, g
+    as as a a
+    b b ges' f
+    e8 e e e f4 f
+    des c h8 h h h %15
+    c2 f,4 r
+    R1
+    R\fermata \bar "||" %18 finis
+  }
+}
+
+DiesIraeBassoLyrics = \lyricmode {
+  Di -- es ir -- ae,
+  di -- es il -- la,
+  di -- es, di -- es
+  il -- la sol -- vet
+  sae -- clum in fa -- vil -- la: %5
+  Te -- ste Da -- vid cum Si --
+  byl -- la.
+
+  Quan -- tus
+  tre -- mor est fu -- %10
+  tu -- rus, quan -- do
+  iu -- dex est ven --
+  tu -- rus, cun -- cta
+  stri -- cte dis -- cus -- su -- rus,
+  cun -- cta stri -- cte dis -- cus -- %15
+  su -- rus. %16 finis
+}

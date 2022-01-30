@@ -123,3 +123,28 @@ KyrieTromboneI = {
     d\fermata \bar "|." %54 finis
   }
 }
+
+DiesIraeTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    R1
+    c4\fE es g g,
+    g' g es c
+    c h g' g
+    g8 g g g f4 f %5
+    f g g8 g fis fis
+    g2 g4 r
+    R1
+    r2 es4 es
+    es es f f %10
+    f es es es
+    es es f f
+    f f des f
+    g8 g g g g4 f
+    f f f8 f f f %15
+    f4 e f r
+    R1
+    R\fermata \bar "||" %18 finis
+  }
+}

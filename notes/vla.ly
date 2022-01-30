@@ -141,3 +141,28 @@ KyrieViola = {
     h\fermata \bar "|." %54 finis
   }
 }
+
+DiesIraeViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoDiesIrae
+    r16 c\fE c c r c c c r g g g r h h h
+    r c c c r c c c r g g g r d' d d
+    r c c c r c c c r g' g g r a a a
+    r g g g r g g g r g g g r g g g
+    r g g g r g g g r f f f r f f f %5
+    r f f f r g g g r g g g r fis fis fis
+    r g g g r g g g g g,\p g g r es' es es
+    r h h h r a a a r g g g r g g g
+    g g as-\critnote as r as as f r es'\f es es r es es es
+    r es es es r es es es r b b b r b b b %10
+    r b b b r b b b r es es es r es es es
+    r es es es r es es es r f f f r f f f
+    r f f f r f f f r ges ges ges r des des des
+    r g g g r g g c, r c c c r c c c
+    r h h h r c c c r d d d r d d d %15
+    r c c c r c c c c f\p f f r as as as
+    r e e e r d d d r c c c r b b b
+    as f f f f f g g f2\fermata \bar "||" %18 finis
+  }
+}

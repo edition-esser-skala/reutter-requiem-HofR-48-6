@@ -275,3 +275,47 @@ KyrieTenoreLyrics = \lyricmode {
   lei --
   son. %54 finis
 }
+
+DiesIraeTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    r2 \mvTr g4\fE^\tuttiE h
+    c c, d' d
+    c c g a
+    g g h h
+    b8 b g c c4 c %5
+    h d c8 c c c
+    c4( h) c r
+    R1
+    r2 g4 g
+    as as as b %10
+    b b b b
+    b as c c
+    c b b b
+    b8 b g! c c4 c
+    h c d8 d d d %15
+    c2 c4 r
+    R1
+    R\fermata \bar "||" %18 finis
+  }
+}
+
+DiesIraeTenoreLyrics = \lyricmode {
+  Di -- es
+  ir -- ae, di -- es
+  il -- la, di -- es
+  il -- la sol -- vet
+  sae -- clum in fa -- vil -- la: %5
+  Te -- ste Da -- vid cum Si --
+  byl -- la.
+
+  Quan -- tus
+  tre -- mor est fu -- %10
+  tu -- rus, quan -- do
+  iu -- dex est ven --
+  tu -- rus, cun -- cta
+  stri -- cte dis -- cus -- su -- rus,
+  cun -- cta stri -- cte dis -- cus -- %15
+  su -- rus. %16 finis
+}

@@ -3,7 +3,7 @@
 \include "../definitions.ly"
 \include "score_settings/full-score.ly"
 
-paperEightStaves = \paper {
+\paper {
   top-system-spacing.basic-distance = #10
   top-system-spacing.minimum-distance = #10
   top-markup-spacing.basic-distance = #0
@@ -15,26 +15,43 @@ paperEightStaves = \paper {
   systems-per-page = #2
 }
 
+paperTwoChoruses = \paper {
+  top-system-spacing.basic-distance = #20
+  top-system-spacing.minimum-distance = #20
+  top-markup-spacing.basic-distance = #5
+  top-markup-spacing.minimum-distance = #5
+  markup-system-spacing.basic-distance = #15
+  markup-system-spacing.minimum-distance = #15
+  system-system-spacing.basic-distance = #20
+  system-system-spacing.minimum-distance = #20
+  systems-per-page = #1
+  ragged-last = ##f
+}
+
+\layout {
+  \context {
+    \StaffGroup
+    \setGroupDistance #11 #11
+  }
+  \context {
+    \GrandStaff
+    \setGroupDistance #11 #11
+  }
+  \context {
+    \ChoirStaff
+    \setGroupDistance #12 #13
+  }
+}
+
 \book {
   % \bookpart {
   %   \section "1" "Introitus"
   %   \addTocEntry
-  %   \paper {
-  %     top-system-spacing.basic-distance = #10
-  %     top-system-spacing.minimum-distance = #10
-  %     top-markup-spacing.basic-distance = #0
-  %     top-markup-spacing.minimum-distance = #0
-  %     markup-system-spacing.basic-distance = #10
-  %     markup-system-spacing.minimum-distance = #10
-  %     system-system-spacing.basic-distance = #17
-  %     system-system-spacing.minimum-distance = #17
-  %     systems-per-page = #2
-  %     indent = 3\cm
-  %   }
+  %   \paper { indent = 3\cm }
   %   \score {
   %     <<
-  %       \new StaffGroup \with { \setGroupDistance #11 #11 } <<
-  %         \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
   %           \set GrandStaff.instrumentName = "Violino"
   %           \new Staff {
   %             \set Staff.instrumentName = "I"
@@ -50,7 +67,7 @@ paperEightStaves = \paper {
   %           \IntroitusViola
   %         }
   %       >>
-  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %       \new ChoirStaff <<
   %         \new Staff {
   %           \incipitSoprano
   %           \new Voice = "Soprano" { \dynamicUp \IntroitusSoprano }
@@ -91,11 +108,10 @@ paperEightStaves = \paper {
   % \bookpart {
   %   \subsection "Te decet hymnus"
   %   \addTocEntry
-  %   \paperEightStaves
   %   \score {
   %     <<
-  %       \new StaffGroup \with { \setGroupDistance #11 #11 } <<
-  %         \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
   %           \set GrandStaff.instrumentName = "vl"
   %           \new Staff {
   %             \set Staff.instrumentName = "1"
@@ -111,7 +127,7 @@ paperEightStaves = \paper {
   %           \TeDecetViola
   %         }
   %       >>
-  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %       \new ChoirStaff <<
   %         \new Staff {
   %           \set Staff.instrumentName = "S"
   %           \new Voice = "Soprano" { \dynamicUp \TeDecetSoprano }
@@ -152,10 +168,10 @@ paperEightStaves = \paper {
   % \bookpart {
   %   \subsection "Requiem aeternam"
   %   \addTocEntry
-  %   \paper { ragged-last = ##f }
+  %   \paperTwoChoruses
   %   \score {
   %     <<
-  %       \new ChoirStaff <<
+  %       \new ChoirStaff \with { \setGroupDistance #13 #15 }  <<
   %         \new Staff {
   %           \set Staff.instrumentName = "S 1"
   %           \new Voice = "SopranoA" { \dynamicUp \RequiemSopranoA }
@@ -217,65 +233,124 @@ paperEightStaves = \paper {
   %     \midi { \tempo 4 = 45 }
   %   }
   % }
+  % \bookpart {
+  %   \section "2" "Kyrie"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \KyrieViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \KyrieViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \KyrieViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \KyrieSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
+  %           \new Voice = "Alto" { \dynamicUp \KyrieAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \KyrieAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
+  %           \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \KyrieBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \KyrieBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \KyrieOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \KyrieBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \section "2" "Kyrie"
+    \section "3" "Sequentia"
     \addTocEntry
-    \paperEightStaves
     \score {
       <<
-        \new StaffGroup \with { \setGroupDistance #11 #11 } <<
-          \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+        \new StaffGroup <<
+          \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \KyrieViolinoI
+              \DiesIraeViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \KyrieViolinoII
+              \DiesIraeViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \KyrieViola
+            \DiesIraeViola
           }
         >>
-        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+        \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \KyrieSoprano }
+            \new Voice = "Soprano" { \dynamicUp \DiesIraeSoprano }
           }
-          \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
+          \new Lyrics \lyricsto Soprano \DiesIraeSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
-            \new Voice = "Alto" { \dynamicUp \KyrieAlto }
+            \new Voice = "Alto" { \dynamicUp \DiesIraeAlto }
           }
-          \new Lyrics \lyricsto Alto \KyrieAltoLyrics
+          \new Lyrics \lyricsto Alto \DiesIraeAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
-            \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
+            \new Voice = "Tenore" { \dynamicUp \DiesIraeTenore }
           }
-          \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
+          \new Lyrics \lyricsto Tenore \DiesIraeTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \KyrieBasso }
+            \new Voice = "Basso" { \dynamicUp \DiesIraeBasso }
           }
-          \new Lyrics \lyricsto Basso \KyrieBassoLyrics
+          \new Lyrics \lyricsto Basso \DiesIraeBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \KyrieOrgano
+            \DiesIraeOrgano
           }
         >>
-        \new FiguredBass { \KyrieBassFigures }
+        \new FiguredBass { \DiesIraeBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

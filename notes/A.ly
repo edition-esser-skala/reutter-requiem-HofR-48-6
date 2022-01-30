@@ -270,3 +270,46 @@ KyrieAltoLyrics = \lyricmode {
 
   son. %54 finis
 }
+
+DiesIraeAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    R1
+    \mvTr c4\fE^\tuttiE es g g,
+    g' g es c
+    c h g' g
+    g8 g g g f4 f %5
+    f g g8 g fis fis
+    g2 g4 r
+    R1
+    r2 es4 es
+    es es f f %10
+    f es es es
+    es es f f
+    f f des f
+    g8 g g g g4 f
+    f f f8 f f f %15
+    f4( e) f r
+    R1
+    R\fermata \bar "||" %18 finis
+  }
+}
+
+DiesIraeAltoLyrics = \lyricmode {
+  Di -- es ir -- ae, %2
+  di -- es, di -- es
+  il -- la sol -- vet
+  sae -- clum in fa -- vil -- la: %5
+  Te -- ste Da -- vid cum Si --
+  byl -- la.
+
+  Quan -- tus
+  tre -- mor est fu -- %10
+  tu -- rus, quan -- do
+  iu -- dex est ven --
+  tu -- rus, cun -- cta
+  stri -- cte dis -- cus -- su -- rus,
+  cun -- cta stri -- cte dis -- cus -- %15
+  su -- rus. %16 finis
+}

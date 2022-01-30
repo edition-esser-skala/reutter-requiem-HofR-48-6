@@ -142,3 +142,28 @@ KyrieViolinoI = {
     g1\fermata \bar "|." %54 finis
   }
 }
+
+DiesIraeViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoDiesIrae
+    r16 g'\fE g g r g g g r g g g r g g g
+    r g g g r g g g r g g g r h h h
+    r c c c r c c c r es es es r es es es
+    r es es es r d d d r d d d r d d d
+    r des des des r c c c r c c c r c c c %5
+    r f f f r f f f r es es es r es es es
+    r es es es r d d d c es\p es es r fis, fis fis
+    r g g g r es es es r es es es r d d d
+    c es es es r f f f r b\f b b r b b b
+    r c c c r c c c r f f f r as, as as %10
+    r as as as r g g g r des' des des r des des des
+    r des des des r c c c r es es es r es es es
+    r es es es r des des des r des des des r des des des
+    r des des des  r c c b r b b b r as as as
+    r as as as r as as as r as as as r as as as %15
+    r as as as r g g g f as'\p as as r h, h h
+    r c  c c r as as as r as as as r g g g
+    f c c c des des e e f2\fermata \bar "||" %18 finis
+  }
+}

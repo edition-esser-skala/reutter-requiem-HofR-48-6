@@ -311,3 +311,49 @@ KyrieBassFigures = \figuremode {
   <5 \t> \bc <[\t _+]>
   <_!>1 %54 finis
 }
+
+DiesIraeOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoDiesIrae
+    \mvTr c8\fE-\tuttiE c c c h h g g
+    es' es c c h h g g
+    es' es es es c c fis, fis
+    g g g g f'! f f f
+    e e e e f f f f %5
+    d d h h c c as as
+    g g g g c \mvTr c\p-\senzaOrg as as
+    g g fis fis g g g g
+    c c d d r16 \mvTr es\f-\colOrg es es r es es es
+    r es es es r es es es r d d d r d d d %10
+    r es es es r es es es r g, g g r g g g
+    r as as as r as as as r a a a r a a a
+    r b b b r b b b r ges' ges ges r f f f
+    r e e e r e e e r f f f r f f f
+    r des des des r c c c r h h h r h h h %15
+    r c c c r c c c f,8 \mvTr f\p-\senzaOrg des' des
+    c c h h c c c, c
+    f4 r f2\fermata \bar "||" %18 finis
+  }
+}
+
+DiesIraeBassFigures = \figuremode {
+  r2 \bo <[6]>4 <_!>
+  <6>2 q4 <_!>
+  \bc <[6]>2. <7>4
+  <6 4> <5 _!> <4!>2
+  <7->4 <6> <_->2 %5
+  <6!>4 <[6 5]>2 <6\\>4
+  <6 4> <5 _!>2.
+  r1
+  r8 <6-> <6 5->4 r2
+  <6 4-> <6 5-> %10
+  <9 4->4 <8 3> <6 5->2
+  <9 4->4 <8 3> <6 5>2
+  <9 4>4 <8 _-> <[5-]> <6- 4>
+  \bo <[7- _!]> \bc <[6 5]> <9 4> <8 _->
+  <6!> <6- 4> <7->2 %15
+  <6- 4>4 <5 _!> <[_-]>2
+  r1
+  r %18 finis
+}

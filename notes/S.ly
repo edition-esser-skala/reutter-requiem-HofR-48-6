@@ -258,3 +258,113 @@ KyrieSopranoLyrics = \lyricmode {
   _ _
   son. %54 finis
 }
+
+DiesIraeSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    R1
+    r2 \mvTr g'4\fE^\tuttiE h
+    c c, es' es
+    es d d d
+    des8 des c b as4 as %5
+    f' f es8 es es es
+    es4( d) c r
+    R1
+    r2 b4 b
+    c c f as, %10
+    as g des' des
+    des c es es
+    es des des des
+    des8 des c b b4 as
+    as as as8 as as as %15
+    as4( g) f r
+    R1
+    R\fermata \bar "||" %18 finis
+  }
+}
+
+DiesIraeSopranoLyrics = \lyricmode {
+  Di -- es %2
+  ir -- ae, di -- es
+  il -- la sol -- vet
+  sae -- clum in fa -- vil -- la: %5
+  Te -- ste Da -- vid cum Si --
+  byl -- la.
+
+  Quan -- tus
+  tre -- mor est fu -- %10
+  tu -- rus, quan -- do
+  iu -- dex est ven --
+  tu -- rus, cun -- cta
+  stri -- cte dis -- cus -- su -- rus,
+  cun -- cta stri -- cte dis -- cus -- %15
+  su -- rus. %16 finis
+}
+
+% Tu -- ba mi -- rum spar -- gens so -- num
+% per se -- pul -- cra re -- gi -- o -- num
+% co -- get o -- mnes an -- te thro -- num.
+%
+% Mors stu -- pe -- bit et na -- tu -- ra,
+% cum re -- sur -- get cre -- a -- tu -- ra,
+% iu -- di -- can -- ti re -- spon -- su -- ra.
+%
+% Li -- ber scri -- ptus pro -- fe -- re -- tur,
+% in quo to -- tum con -- ti -- ne -- tur,
+% un -- de mun -- dus iu -- di -- ce -- tur.
+%
+% Iu -- dex er -- go cum se -- de -- bit,
+% quid -- quid la -- tet ap -- pa -- re -- bit:
+% Nil in -- ul -- tum re -- ma -- ne -- bit.
+%
+% Quid sum mi -- ser tunc di -- ctu -- rus?
+% Quem pa -- tro -- num ro -- ga -- tu -- rus,
+% cum vix iu -- stus sit se -- cu -- rus?
+%
+% Rex tre -- men -- dae ma -- ie -- sta -- tis,
+% qui sal -- van -- dos sal -- vas gra -- tis:
+% Sal -- va me, fons pi -- e -- ta -- tis.
+%
+% Re -- cor -- da -- re Ie -- su pi -- e,
+% quod sum cau -- sa tu -- ae vi -- ae:
+% Ne me per -- das il -- la di -- e.
+%
+% Quae -- rens me, se -- di -- sti las -- sus:
+% Re -- de -- mi -- sti cru -- cem pas -- sus:
+% Tan -- tus la -- bor non sit cas -- sus.
+%
+% Iu -- ste iu -- dex ul -- ti -- o -- nis,
+% do -- num fac re -- mis -- si -- o -- nis,
+% an -- te di -- em ra -- ti -- o -- nis.
+%
+% In -- ge -- mi -- sco, tam -- quam re -- us:
+% Cul -- pa ru -- bet vul -- tus me -- us:
+% Sup -- pli -- can -- ti par -- ce De -- us.
+%
+% Qui Ma -- ri -- am ab -- sol -- vi -- sti,
+% et la -- tro -- nem ex -- au -- di -- sti,
+% mi -- hi quo -- que spem de -- di -- sti.
+%
+% Pre -- ces me -- ae non sunt di -- gnae:
+% Sed tu bo -- nus fac be -- ni -- gne,
+% ne per -- en -- ni cre -- mer i -- gne.
+%
+% In -- ter o -- ves lo -- cum prae -- sta,
+% et ab hae -- dis me se -- que -- stra,
+% sta -- tu -- ens in par -- te dex -- tra.
+%
+% Con -- fu -- ta -- tis ma -- le -- di -- ctis,
+% flam -- mis a -- cri -- bus ad -- di -- ctis,
+% vo -- ca me cum be -- ne -- di -- ctis.
+%
+% O -- ro sup -- plex et ac -- cli -- nis,
+% cor con -- tri -- tum qua -- si ci -- nis:
+% Ge -- re cu -- ram me -- i fi -- nis.
+%
+% La -- cri -- mo -- sa di -- es il -- la,
+% qua re -- sur -- get ex fa -- vil -- la
+% iu -- di -- can -- dus ho -- mo re -- us:
+% Hu -- ic er -- go par -- ce De -- us.
+% Pi -- e Ie -- su Do -- mi -- ne,
+% do -- na e -- is re -- qui -- em. A -- men.
