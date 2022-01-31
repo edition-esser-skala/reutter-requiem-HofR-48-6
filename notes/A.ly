@@ -486,3 +486,290 @@ RecordareAltoLyrics = \lyricmode {
   cas -- sus, non sit %95
   cas -- sus. %96 finis
 }
+
+IusteAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoIuste
+      \set Score.currentBarNumber = #99
+    r4 \mvTr g'4.\fE^\tuttiE g8
+    es4 d d8 d %100
+    d4 d r
+    R2.
+    r4 d d
+    g4. g8 f f
+    f4 f r %105
+    R2.
+    r4 f4. f8
+    f4. f8 f4
+    f g( f)
+    f2 r4 %110
+    R2.*3
+    r4 f f
+    f4. f8 d g %115
+    g8.([ f16)] es4 r
+    R2.
+    r4 g4. f8
+    f4. f8 d d
+    es4 es es8 es %120
+    es4. es8 f f
+    g2 f4
+    es8. es16 es4( d)
+    es2 r4
+    R2.*3 %127
+    r4 es c
+    c8 c f4. f8
+    des des es4. es8 %130
+    es es es4. es8
+    es4 es r
+    R2.
+    r4 g g
+    f f2 %135
+    es4 es2
+    des4 des2
+    c4 c2
+    c4 c c
+    c c2 %140
+    c2 r4
+    R2.*5 %146
+    r4 as' as
+    b4. b8 as g
+    \appoggiatura g f4 f r
+    r as as %150
+    as4. f8 f f
+    \appoggiatura f es4 es r
+    r es4. es8
+    es4. es8 es es
+    es4 es r %155
+    r es es
+    f4. f8 g as
+    g4 g r
+    r g4. g8
+    as4. as8 as es %160
+    es8([ d)] d4 r
+    r g4. g8
+    g4. g8 f f
+    f4 f es8 es
+    es4. es8 f f %165
+    d4 d8 d es4~
+    es8 es es4( d)
+    c2 r4
+    R2.*2 %170
+    R2.\fermata \bar "||" %171 finis
+  }
+}
+
+IusteAltoLyrics = \lyricmode {
+  Iu -- ste %99
+  iu -- dex ul -- ti -- %100
+  o -- nis,
+
+  do -- num
+  fac re -- mis -- si --
+  o -- nis, %105
+
+  an -- te
+  di -- em ra -- ti --
+  o --
+  nis. %110
+
+  In -- ge -- %114
+  mi -- sco, tam -- quam %115
+  re -- us:
+
+  Cul -- pa
+  ru -- bet vul -- tus
+  me -- us: Sup -- pli -- %120
+  can -- ti par -- ce
+  De -- us,
+  par -- ce De --
+  us.
+
+  Qui Ma -- %128
+  ri -- am ab -- sol --
+  vi -- sti, et la -- %130
+  tro -- nem ex -- au --
+  di -- sti,
+
+  mi -- hi
+  quo -- que %135
+  spem de --
+  di -- sti,
+  mi -- hi
+  quo -- que spem
+  de -- di -- %140
+  sti.
+
+  Pre -- ces %147
+  me -- ae non sunt
+  di -- gnae:
+  Sed tu %150
+  bo -- nus fac be --
+  ni -- gne,
+  sed tu
+  bo -- nus fac be --
+  ni -- gne, %155
+  ne per --
+  en -- ni cre -- mer
+  i -- gne.
+  In -- ter
+  o -- ves lo -- cum %160
+  prae -- sta,
+  et ab
+  hae -- dis me se --
+  que -- stra, sta -- tu --
+  ens in par -- te dex -- %165
+  tra, in par --
+  te dex --
+  tra. %168 finis
+}
+
+ConfutatisAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    \mvTr es4\fE^\tuttiE es f2
+    es4 r e4. e8
+    es4 es r es8 es
+    d8. d16 d8 d cis4 cis %175
+    g'4. g8 f4 f
+    es!4. es8 des4 des
+    c4. c8 c4 c
+    h h c2
+    c4 r r2 %180
+    c4. c8 des4 des
+    des4. des8 c4 c
+    as'4. as8 a4 a
+    a4. a8 f4 f
+    f4. f8 f4 f %185
+    f4. f8 es4 es
+    es4. es8 es es es es
+    es4 es e4. e8
+    d4 d d4. d8
+    cis cis cis cis d2 %190
+    d4 r r2\fermata \bar "||" %191 finis
+  }
+}
+
+ConfutatisAltoLyrics = \lyricmode {
+  Con -- fu -- ta -- %172
+  tis ma -- le --
+  di -- ctis, flam -- mis
+  a -- cri -- bus ad -- di -- ctis, %175
+  vo -- ca me cum
+  be -- ne -- di -- ctis,
+  vo -- ca me cum
+  be -- ne -- di --
+  ctis. %180
+  O -- ro sup -- plex
+  et ac -- cli -- nis,
+  cor con -- tri -- tum
+  qua -- si ci -- nis,
+  cor con -- tri -- tum %185
+  qua -- si ci -- nis:
+  Ge -- re cu -- ram me -- i
+  fi -- nis, ge -- re
+  cu -- ram, ge -- re
+  cu -- ram me -- i fi -- %190
+  nis. %191 finis
+}
+
+LacrymosaAltoA = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr g'4.\fE^\tuttiE g8 g4 g
+    h4. h8 g g g g
+    f4 f a4. a8
+    f f f f es4 es %195
+    as4. as8 g g g g
+    f4 f a a
+    g2 g\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaAltoALyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+LacrymosaAltoB = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr es4.\fE^\tuttiE c8 c4 d
+    g4. g8 g es es c
+    c4 c f4. f8
+    f des des f g4 g %195
+    es4. es8 e e e e
+    c4 c c es
+    g2 g,\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaAltoBLyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+HuicAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHuic
+      \set Score.currentBarNumber = #199
+    \mvTr es4.\fE^\tuttiE es8 f4. f8
+    f4. as8 g4 g %200
+    g4. g8 f4. f8
+    f4. f8 f4( es)
+    g4. as8 as4. g8
+    g4. f8 f4 es
+    es( d8.) d16 c4 r %205
+    r2 \tempoAmen r4 r8 es(
+    d2) es4 r
+    r2 r4 r8 g(
+    f2) g4 r
+    r2 r4 r8 g %210
+    g4 g as as8.([ g16)]
+    f4 f g g8.([ f16)]
+    es4 es f f8.([ es16)]
+    d4 d( es8) es d4
+    c r r2 %215
+    r g'8 g as([ g)]
+    g4 g g r\fermata \bar "|." %217 finis
+  }
+}
+
+HuicAltoLyrics = \lyricmode {
+  Hu -- ic er -- go %199
+  par -- ce De -- us. %200
+  Pi -- e Ie -- su
+  Do -- mi -- ne, __
+  do -- na e -- is,
+  do -- na e -- is
+  re -- qui -- em. %205
+  A --
+  men,
+  a --
+  men,
+  a -- %210
+  men, a -- men, a --
+  men, a -- men, a --
+  men, a -- men, a --
+  men, a -- men, a --
+  men, %215
+  a -- men, a --
+  men, a -- men. %217 finis
+}

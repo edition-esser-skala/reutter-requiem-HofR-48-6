@@ -475,37 +475,289 @@ RecordareSopranoLyrics = \lyricmode {
   cas -- sus. %96 finis
 }
 
-% Iu -- ste iu -- dex ul -- ti -- o -- nis,
-% do -- num fac re -- mis -- si -- o -- nis,
-% an -- te di -- em ra -- ti -- o -- nis.
-%
-% In -- ge -- mi -- sco, tam -- quam re -- us:
-% Cul -- pa ru -- bet vul -- tus me -- us:
-% Sup -- pli -- can -- ti par -- ce De -- us.
-%
-% Qui Ma -- ri -- am ab -- sol -- vi -- sti,
-% et la -- tro -- nem ex -- au -- di -- sti,
-% mi -- hi quo -- que spem de -- di -- sti.
-%
-% Pre -- ces me -- ae non sunt di -- gnae:
-% Sed tu bo -- nus fac be -- ni -- gne,
-% ne per -- en -- ni cre -- mer i -- gne.
-%
-% In -- ter o -- ves lo -- cum prae -- sta,
-% et ab hae -- dis me se -- que -- stra,
-% sta -- tu -- ens in par -- te dex -- tra.
-%
-% Con -- fu -- ta -- tis ma -- le -- di -- ctis,
-% flam -- mis a -- cri -- bus ad -- di -- ctis,
-% vo -- ca me cum be -- ne -- di -- ctis.
-%
-% O -- ro sup -- plex et ac -- cli -- nis,
-% cor con -- tri -- tum qua -- si ci -- nis:
-% Ge -- re cu -- ram me -- i fi -- nis.
-%
-% La -- cri -- mo -- sa di -- es il -- la,
-% qua re -- sur -- get ex fa -- vil -- la
-% iu -- di -- can -- dus ho -- mo re -- us:
-% Hu -- ic er -- go par -- ce De -- us.
-% Pi -- e Ie -- su Do -- mi -- ne,
-% do -- na e -- is re -- qui -- em. A -- men.
+IusteSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \autoBeamOff \tempoIuste
+      \set Score.currentBarNumber = #99
+    r4 \mvTr d'4.\fE^\tuttiE es16([ d)]
+    c4. a16([ b)] c8 b16([ a)] %100
+    b8.([ a16)] g4 r
+    R2.
+    r4 b b
+    es4. es8 es d16([ c)]
+    d8.([ c16)] b4 r %105
+    R2.
+    r4 f'4. es16([ d)]
+    es4. c16([ d)] es8 d16([ c)]
+    d8[( c16 b] c2)\trill
+    b r4 %110
+    R2.*3
+    r4 d d
+    d4. d16([ es)] f8 es16([ d)] %115
+    es8.([ d16)] c4 r
+    R2.
+    r4 es4. f8
+    d4. es8 f as,
+    as([ g)] g4 b8 b %120
+    c4. c8 d d
+    es4.( d16[ c] b8) as
+    g8. as16 g4( f)
+    es2 r4
+    R2.*3 %127
+    r4 b'4. b8
+    b as c4. c8
+    c b des4. des8 %130
+    des c es4. des16([ c)]
+    c8([ b)] b4 r
+    R2.
+    r4 es es
+    es des2 %135
+    des4 c2
+    c4 b2
+    b4 as2
+    as4 g8([ as)] b4
+    as as( g) %140
+    f2 r4
+    R2.*5 %146
+    r4 c' c
+    des4. des8 c b
+    \appoggiatura b as4 as r
+    r c c %150
+    f4. as,8 b as
+    \appoggiatura as g4 g r
+    r b4. c8
+    des4. des8 es des
+    \appoggiatura des c4 c r %155
+    r c c
+    h4. h8 h h
+    c8.([ h16)] c4 r
+    r c4. c8
+    des4. des8 des c %160
+    c([ h)] h4 r
+    r f'4. f8
+    es4. es8 f es
+    d4 d es8 d
+    c4. c8 d c %165
+    h4 h8 h c4~
+    c8 c c4( h)
+    c2 r4
+    R2.*2 %170
+    R2.\fermata \bar "||" %171 finis
+  }
+}
+
+IusteSopranoLyrics = \lyricmode {
+  Iu -- ste %99
+  iu -- dex ul -- ti -- %100
+  o -- nis,
+
+  do -- num
+  fac re -- mis -- si --
+  o -- nis, %105
+
+  an -- te
+  di -- em ra -- ti --
+  o --
+  nis. %110
+
+  In -- ge -- %114
+  mi -- sco, tam -- quam %115
+  re -- us:
+
+  Cul -- pa
+  ru -- bet vul -- tus
+  me -- us: Sup -- pli -- %120
+  can -- ti par -- ce
+  De -- us,
+  par -- ce De --
+  us.
+
+  Qui Ma -- %128
+  ri -- am ab -- sol --
+  vi -- sti, et la -- %130
+  tro -- nem ex -- au --
+  di -- sti,
+
+  mi -- hi
+  quo -- que %135
+  spem de --
+  di -- sti,
+  mi -- hi
+  quo -- que spem
+  de -- di -- %140
+  sti.
+
+  Pre -- ces %147
+  me -- ae non sunt
+  di -- gnae:
+  Sed tu %150
+  bo -- nus fac be --
+  ni -- gne,
+  sed tu
+  bo -- nus fac be --
+  ni -- gne, %155
+  ne per --
+  en -- ni cre -- mer
+  i -- gne.
+  In -- ter
+  o -- ves lo -- cum %160
+  prae -- sta,
+  et ab
+  hae -- dis me se --
+  que -- stra, sta -- tu --
+  ens in par -- te dex -- %165
+  tra, in par --
+  te dex --
+  tra. %168 finis
+}
+
+ConfutatisSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    \mvTr c'4\fE^\tuttiE c c2
+    c4 r des4. des8
+    c4 c r c8 c
+    h8. h16 h8 h b4 b %175
+    b4. b8 as4 as
+    ges4. ges8 f4 f
+    e4. e8 f4 f
+    f f f( e)
+    f r r2 %180
+    es4. es8 f4 f
+    b4. b8 b4 as
+    c4. c8 c4 c
+    c4. c8 b4 b
+    b4. b8 h4 h %185
+    h4. h8 c4 c
+    es4. c8 as as as g
+    fis4 fis g4. g8
+    fis4 fis g4. g8
+    g g g g g4( fis) %190
+    g r r2\fermata \bar "||" %191 finis
+  }
+}
+
+ConfutatisSopranoLyrics = \lyricmode {
+  Con -- fu -- ta -- %172
+  tis ma -- le --
+  di -- ctis, flam -- mis
+  a -- cri -- bus ad -- di -- ctis, %175
+  vo -- ca me cum
+  be -- ne -- di -- ctis,
+  vo -- ca me cum
+  be -- ne -- di --
+  ctis. %180
+  O -- ro sup -- plex
+  et ac -- cli -- nis,
+  cor con -- tri -- tum
+  qua -- si ci -- nis,
+  cor con -- tri -- tum %185
+  qua -- si ci -- nis:
+  Ge -- re cu -- ram me -- i
+  fi -- nis, ge -- re
+  cu -- ram, ge -- re
+  cu -- ram me -- i fi -- %190
+  nis. %191 finis
+}
+
+LacrymosaSopranoA = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr es'4.\fE es8 es4 d
+    f4. f8 es es es es
+    es4 es es4. es8
+    des des des des des4 des %195
+    c4. c8 c c c c
+    c4 c c c
+    c( h8[ a]) h2\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaSopranoALyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+LacrymosaSopranoB = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr c'4.\fE^\tuttiE c8 c4 h
+    d4. d8 c c c c
+    c4 c c4. c8
+    b b b b b4 b %195
+    as4. as8 b b b b
+    as4 as es' es
+    es( d8[ c]) d2\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaSopranoBLyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+HuicSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHuic
+      \set Score.currentBarNumber = #199
+    \mvTr c'4.\fE^\tuttiE c8 des4. c8
+    h4. h8 c8.([ h16)] c4 %200
+    b4. c16([ b)] as4. g16([ as)]
+    b4~ b16[ as] g([ as)] as4( g)
+    es'4. es8 d4. d8
+    c4. c8 h4 c
+    c( h8.) h16 c4 r %205
+    r2 \tempoAmen r8 g c4~
+    c8[ d16 c] h[ a g f] es4 r
+    r2 r8 g es'4~
+    es8[ f16 es] d[ c b as] g4 r
+    r2 r8 g g'4~ %210
+    g16[ f es d] c8[ es] f4 f~
+    f16[ es d c] b8[ d] es4 es~
+    es16[ d c b] as8[ c] d4 d~
+    d16[ c h a] g8[ h] c4 c8([ h)]
+    c4 r r2 %215
+    r es8 es d4
+    es d c r\fermata \bar "|." %217 finis
+  }
+}
+
+HuicSopranoLyrics = \lyricmode {
+  Hu -- ic er -- go %199
+  par -- ce De -- us. %200
+  Pi -- e __ Ie -- su __
+  Do -- mi -- ne, __
+  do -- na e -- is,
+  do -- na e -- is
+  re -- qui -- em. %205
+  A -- _
+  _ men,
+  a -- _
+  _ men,
+  a -- _ %210
+  _ men, a --
+  _ men, a --
+  _ men, a --
+  _ men, a --
+  men, %215
+  a -- men, a --
+  men, a -- men. %217 finis
+}

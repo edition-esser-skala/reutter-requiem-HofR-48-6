@@ -492,3 +492,290 @@ RecordareTenoreLyrics = \lyricmode {
   cas -- sus, non sit %95
   cas -- sus. %96 finis
 }
+
+IusteTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 3/4 \autoBeamOff \tempoIuste
+      \set Score.currentBarNumber = #99
+    r4 \mvTr b4.\fE^\tuttiE b8
+    a4. a8 a a %100
+    g8.([ a16)] b4 r
+    R2.
+    r4 g g
+    g4. g8 a a
+    b8.([ c16)] d4 r %105
+    R2.
+    r4 d4. b8
+    c4. a8 a4
+    b b( a)
+    b2 r4 %110
+    R2.*3
+    r4 b b
+    h4. h8 h h %115
+    c4 c r
+    R2.
+    r4 c c
+    b4. b8 b b
+    b4 b g8 g %120
+    as4. as8 as as
+    b2 b4
+    b8. as16 b2
+    b r4
+    R2.*3 %127
+    r4 g4. g8
+    g f as4. as8
+    b b b4. b8 %130
+    b as as4. as8
+    as8([ g)] g4 r
+    R2.
+    r4 b b
+    c b2 %135
+    b4 as2
+    as4 g2
+    g4 f2
+    f4 e8([ f)] g4
+    f f( e) %140
+    f2 r4
+    R2.*5 %146
+    r4 c' c
+    g4. g8 c c
+    c4 c r
+    r c c %150
+    b4. b8 f b
+    b4 b r
+    r g4. as8
+    b4. b8 b b
+    as4 as r %155
+    r c c
+    d!4. d8 d d
+    g,4 g r
+    r c4. c8
+    as4. as8 as a %160
+    g4 g r
+    r h4. h8
+    c4. c8 c c
+    b4 b b8 b
+    as4. as8 as as %165
+    g4 g8 g g4~
+    g8 g g2
+    g r4
+    R2.*2 %170
+    R2.\fermata \bar "||" %171 finis
+  }
+}
+
+IusteTenoreLyrics = \lyricmode {
+  Iu -- ste %99
+  iu -- dex ul -- ti -- %100
+  o -- nis,
+
+  do -- num
+  fac re -- mis -- si --
+  o -- nis, %105
+
+  an -- te
+  di -- em ra -- ti --
+  o --
+  nis. %110
+
+  In -- ge -- %114
+  mi -- sco, tam -- quam %115
+  re -- us:
+
+  Cul -- pa
+  ru -- bet vul -- tus
+  me -- us: Sup -- pli -- %120
+  can -- ti par -- ce
+  De -- us,
+  par -- ce De --
+  us.
+
+  Qui Ma -- %128
+  ri -- am ab -- sol --
+  vi -- sti, et la -- %130
+  tro -- nem ex -- au --
+  di -- sti,
+
+  mi -- hi
+  quo -- que %135
+  spem de --
+  di -- sti,
+  mi -- hi
+  quo -- que spem
+  de -- di -- %140
+  sti.
+
+  Pre -- ces %147
+  me -- ae non sunt
+  di -- gnae:
+  Sed tu %150
+  bo -- nus fac be --
+  ni -- gne,
+  sed tu
+  bo -- nus fac be --
+  ni -- gne, %155
+  ne per --
+  en -- ni cre -- mer
+  i -- gne.
+  In -- ter
+  o -- ves lo -- cum %160
+  prae -- sta,
+  et ab
+  hae -- dis me se --
+  que -- stra, sta -- tu --
+  ens in par -- te dex -- %165
+  tra, in par --
+  te dex --
+  tra. %168 finis
+}
+
+ConfutatisTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    \mvTr g4\fE^\tuttiE g as2
+    g4 r g4. g8
+    fis4 fis r fis8 fis
+    f8. f16 f8 f e4 e %175
+    c'!4. c8 c4 c
+    c4. c8 b4 b
+    b4. b8 as4 as
+    as as as( g)
+    f r r2 %180
+    as4. as8 as4 as
+    es'4. es8 es4 es
+    es4. es8 es4 es
+    es4. es8 des4 des
+    d4. d8 d4 d %185
+    d4. d8 g,4 g
+    as4. as8 c c c c
+    a4 a b4. b8
+    a4 a b4. b8
+    b b b b b4( a) %190
+    g r r2\fermata \bar "||" %191 finis
+  }
+}
+
+ConfutatisTenoreLyrics = \lyricmode {
+  Con -- fu -- ta -- %172
+  tis ma -- le --
+  di -- ctis, flam -- mis
+  a -- cri -- bus ad -- di -- ctis, %175
+  vo -- ca me cum
+  be -- ne -- di -- ctis,
+  vo -- ca me cum
+  be -- ne -- di --
+  ctis. %180
+  O -- ro sup -- plex
+  et ac -- cli -- nis,
+  cor con -- tri -- tum
+  qua -- si ci -- nis,
+  cor con -- tri -- tum %185
+  qua -- si ci -- nis:
+  Ge -- re cu -- ram me -- i
+  fi -- nis, ge -- re
+  cu -- ram, ge -- re
+  cu -- ram me -- i fi -- %190
+  nis. %191 finis
+}
+
+LacrymosaTenoreA = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr c4.\fE^\tuttiE es8 g4 g,
+    d'4. d8 es c c c
+    f4 f, c'4. c8
+    des b b b es4 es, %195
+    c'4. c8 b b g g
+    as4 as a c
+    c( d8[ es)] d2\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaTenoreALyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+LacrymosaTenoreB = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr c4.\fE^\tuttiE g8 g4 h
+    h4. h8 c es es g
+    c,4 c c4. a8
+    f des' des f b,4 b %195
+    as4. as8 c c c c
+    c4 c es! c
+    c( g) g2\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaTenoreBLyrics = \lyricmode {
+  La -- cry -- mo -- sa, %192
+  la -- cry -- mo -- sa di -- es
+  il -- la, qua re --
+  sur -- get ex fa -- vil -- la %195
+  iu -- di -- can -- dus ho -- mo
+  re -- us, ho -- mo
+  re -- us: %198 finis
+}
+
+HuicTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHuic
+      \set Score.currentBarNumber = #199
+    \mvTr g4.\fE^\tuttiE g8 as4. c8
+    d4. d8 g,4 g %200
+    c4. c8 c4. c8
+    b4. b8 b2
+    c4. c8 b4. b8
+    as4. as8 g4 a
+    g4. g8 g4 r %205
+    r2 \tempoAmen r4 r8 g
+    as4 g g r
+    r2 r4 r8 es'
+    c4 b b r
+    r2 r4 r8 h %210
+    es4~ es16[ d c b] as[ g f es] d4
+    d'~ d16[ c b as] g[ f es d] c4
+    c'~ c16[ b as g] f[ es d c] h4
+    h'16([ a] g4) g8 g g as([ g)]
+    g4 r r2 %215
+    r c8 c c([ h)]
+    c4 h c r\fermata \bar "|." %217 finis
+  }
+}
+
+HuicTenoreLyrics = \lyricmode {
+  Hu -- ic er -- go %199
+  par -- ce De -- us. %200
+  Pi -- e Ie -- su
+  Do -- mi -- ne,
+  do -- na e -- is,
+  do -- na e -- is
+  re -- qui -- em. %205
+  A --
+  _ _ men,
+  a --
+  _ _ men,
+  a -- %210
+  _ _ men,
+  a -- _ men,
+  a -- _ men,
+  a -- men, a -- men, a --
+  men, %215
+  a -- men, a --
+  men, a -- men. %217 finis
+}

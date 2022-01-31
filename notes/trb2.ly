@@ -246,3 +246,130 @@ RecordareTromboneII = {
     R\fermata \bar "||" %98 finis
   }
 }
+
+IusteTenore = {
+  \relative c' {
+    \clef tenor
+    \key g \minor \time 3/4 \autoBeamOff \tempoIuste
+      \set Score.currentBarNumber = #99
+    r4 b4.\fE b8
+    a4. a8 a a %100
+    g8. a16 b4 r
+    R2.
+    r4 g g
+    g4. g8 a a
+    b8. c16 d4 r %105
+    R2.
+    r4 d4. b8
+    c4. a8 a4
+    b b a
+    b2 r4 %110
+    R2.*3
+    r4 b b
+    h4. h8 h h %115
+    c4 c r
+    R2.
+    r4 c c
+    b4. b8 b b
+    b4 b g8 g %120
+    as4. as8 as as
+    b2 b4
+    b8. as16 b2
+    b r4
+    R2.*3 %127
+    r4 g4. g8
+    g f as4. as8
+    b b b4. b8 %130
+    b as as4. as8
+    as8 g g4 r
+    R2.
+    r4 b b
+    c b2 %135
+    b4 as2
+    as4 g2
+    g4 f2
+    f4 e8 f g4
+    f f e %140
+    f2 r4
+    R2.*5 %146
+    r4 c' c
+    g4. g8 c c
+    c4 c r
+    r c c %150
+    b4. b8 f b
+    b4 b r
+    r g4. as8
+    b4. b8 b b
+    as4 as r %155
+    r c c
+    d!4. d8 d d
+    g,4 g r
+    r c4. c8
+    as4. as8 as a %160
+    g4 g r
+    r h4. h8
+    c4. c8 c c
+    b4 b b8 b
+    as4. as8 as as %165
+    g4 g8 g g4~
+    g8 g g2
+    g r4
+    R2.*2 %170
+    R2.\fermata \bar "||" %171 finis
+  }
+}
+
+ConfutatisTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \dorian \time 4/4 \autoBeamOff \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    g4\fE g as2
+    g4 r g4. g8
+    fis4 fis r fis8 fis
+    f8. f16 f8 f e4 e %175
+    c'!4. c8 c4 c
+    c4. c8 b4 b
+    b4. b8 as4 as
+    as as as g
+    f r r2 %180
+    as4. as8 as4 as
+    es'4. es8 es4 es
+    es4. es8 es4 es
+    es4. es8 des4 des
+    d4. d8 d4 d %185
+    d4. d8 g,4 g
+    as4. as8 c c c c
+    a4 a b4. b8
+    a4 a b4. b8
+    b b b b b4 a %190
+    g r r2\fermata \bar "||" %191 finis
+  }
+}
+
+HuicTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHuic
+      \set Score.currentBarNumber = #199
+    g4.\fE g8 as4. c8
+    d4. d8 g,4 g %200
+    c4. c8 c4. c8
+    b4. b8 b2
+    c4. c8 b4. b8
+    as4. as8 g4 a
+    g4. g8 g4 r %205
+    r2 \tempoAmen r4 r8 g
+    as4 g g r
+    r2 r4 r8 es'
+    c4 b b r
+    r2 r4 r8 h %210
+    es4~ es16 d c b as g f es d4
+    d'~ d16 c b as g f es d c4
+    c'~ c16 b as g f es d c h4
+    h'16 a g4 g8 g g as g
+    g4 r r2 %215
+    r c8 c c h
+    c4 h c r\fermata \bar "|." %217 finis
+  }
+}

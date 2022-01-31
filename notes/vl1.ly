@@ -265,3 +265,139 @@ RecordareViolinoI = {
     c4 r r2\fermata \bar "||" %98 finis
   }
 }
+
+IusteViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \tempoIuste
+      \set Score.currentBarNumber = #99
+    r8 d'\fE d d d es
+    r c c c c d %100
+    r d d16( g) g( b) b( d,) cis( d)
+    r8 c c16( fis) fis( a) a( c,) h( c)
+    b8 b b b b b
+    r es es es es es
+    r f f16( b) b( d) d( f,) e( f) %105
+    r8 es es16( a) a( c) c( es,) d( es)
+    d8 f, f16( b) b( d) f( d) c( d)
+    r8 f, f16( a) a( c) es( c) b( c)
+    d4 r r
+    r8 b b16( d) d( f) f( as,) g( as) %110
+    r8 c c16( es) es( g) g( b,) a( b)
+    r8 f' f16( a) a( c) c( es,) d( es)
+    d( f) g( a) b( c) d( d,) c4\trill
+    b8 f' f16( b) b( d) d( f,) e( f)
+    r8 f f16( h) h( d) d( f,) es( f) %115
+    r8 g g16( c) c( es) es( g,) fis( g)
+    r8 f f16( h) h( d) d( f,) e( f)
+    es8 es es16( g) g( c) c( es,) d( es)
+    r8 d d16( f) f( as) as( d,) c( d)
+    r8 b b16( es) es( g) g( b,) as( b) %120
+    r8 c c16( es) es( as) as( d,) c( d)
+    r8 es es16( g) g( b) b( f,) f( as)
+    g8. as16 g4 f\trill
+    r8 es' es16( g) g( b) b( es,) d( es)
+    r8 f f16( as) as( c) c( f,) e( f) %125
+    r8 b, b16( d) d( f) f( as,) g( as)
+    g( b c d es f g) g, f4\trill
+    es8 b' b16( es) es( g) g( b,) as( b)
+    r8 c c16( f) f( as) as( c,) h( c)
+    r8 des des16( g) g( b) b( des,) c( des) %130
+    r8 es es16( as) as( c) c( es,) des( c)
+    r8 b b16( es) es( g) g( b,) a?( b)
+    r8 as as16( d) d( f) f( as,) g( as)
+    g8 es' es16( g) g( b) b( es,) d( es)
+    r8 f f16( a!) a( b) b( f) es( f) %135
+    r8 es es16( g) g( as) as( es) des( es)
+    r8 des des16( f) f( g) g( des) c( des)
+    r8 c c16( e) e( f) f( c) b( c)
+    r8 c c16( e) e( g) g( b,) as( b)
+    as8 as as as g g %140
+    r f' f16( as) as( c) c( es,!) d( es)
+    r8 es es16( g) g( b) b( des,) c( des)
+    r8 des des16( f) f( as) as( c,) b( c)
+    r8 c c16( e) e( g) g( b,) as( b)
+    as as( b c) des( c) des( e) f( g) as( b) %145
+    c c,( b as) as4 g\trill
+    f8 c' c c c c
+    des des des des c b
+    r c c16( e f as) g des( c b)
+    as8 c c c c c %150
+    f f f as, b as
+    r b b16( d) es( g) f( d) b( as)
+    g8 b b b b c
+    des des des des es des
+    r es es16( g) as( c) b( g) es( des) %155
+    c8 c c c c c
+    h h h h h h
+    r g g16( c) es( g) as( f) d( f,)
+    es8 c' c c c c
+    des des des des des c %160
+    r d h16( d g h) c es,( d es)
+    es8( d) d16( g) h( d) d f,( g f)
+    r8 es c16( es) g( c) c es,( f es)
+    r8 d b16( d) f( b) b d,( es d)
+    r8 c as16( c) es( as) as( f d c) %165
+    r8 h h16( d) d( g) g c,( h c)
+    c8 c c c h h
+    r c c16( es) es( g) g b,( c b)
+    as as'( g f) es4 d\trill
+    es16 g,( f es) es4 d\trill %170
+    c2 r4\fermata \bar "||" %171 finis
+  }
+}
+
+ConfutatisViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    c'16\fE c, es g c g es c c' c, f as c as f c
+    c' c, es g c g es c b' b, e g b g e b
+    a'! a,! c fis a fis c a a' a, c fis a fis c a
+    gis' gis, h d gis d h gis g' g, b e g e b g %175
+    e'' e, g b e b g e f' f, as c f c as f
+    a! a, c es a es c a b' b, des f b f des b
+    c' c, e g c g e c c' c, f as c as f c
+    f8 f f f f f e e
+    f'16 f, as c f c as f g g, b des  g des b g %180
+    as' as, c es as es c as as' as, des f as f des as
+    g' g, b des g des b g as' as, c es as es c as
+    ges'' ges, c es ges es c ges ges' ges, c es ges es c ges
+    f' f, a! c f c a f b b, des f b f des b
+    as' as, d f as f d as as' as, d f as f d as %185
+    g'! g,! h d g d h g c' c, es g c g es c
+    c' c, es as c as es c c' c, es as c as es c
+    c' c, fis a c a fis c cis' cis, e g cis g e cis
+    d' d, fis a d a fis d d' d, g b d b g d
+    g8 g g g g g fis fis %190
+    g-! r fis-! r g4-! r\fermata \bar "||" %191 finis
+  }
+}
+
+HuicViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoHuic
+      \set Score.currentBarNumber = #199
+    c'8\fE c c c des des des c
+    h h h h c c c c %200
+    b b b b as as as as
+    b b b as as as g g
+    es' es es es d d d d
+    c c c c h h c c
+    c c h h c es,\pp es es %205
+    d d d d \tempoAmen c-! g'-!\f c4~
+    c8 d16 c h a g f es8 g'16-!\p f-! es-! d-! c-! b-!
+    as-! g-! f-! es-! d-! c-! h-! g'-! es8-! g\f es'4~
+    es8 f16 es d c b as g8 b'16-!\p as-! g-! f-! es-! d-!
+    c-! b-! as-! g-! f-! es-! d-! b'-! g8-! g\f g'4~ %210
+    g16 f es d c8 es f4 f~
+    f16 es d c b8 d es4 es~
+    es16 d c b as8 c d4 d~
+    d16 c h a g8 h c c c( h)
+    c g'\p c4~ c16 b-! as-! g-! f-! es-! d-! c-! %215
+    h-! as-! g-! f-! g-! f-! es-! d-! es'8\f es d4\trill
+    es d c r\fermata \bar "|." %217 finis
+  }
+}

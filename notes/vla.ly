@@ -264,3 +264,139 @@ RecordareViola = {
     R\fermata \bar "||" %98 finis
   }
 }
+
+IusteViola = {
+  \relative c' {
+    \clef alto
+    \key g \minor \time 3/4 \tempoIuste
+      \set Score.currentBarNumber = #99
+    r8 g'\fE g g g g
+    r es d d d d %100
+    r g g g g g
+    g g fis fis fis fis
+    g d d d d d
+    r g g g f f
+    r b b b b b %105
+    b b a a a a
+    b b b b b b
+    r a a a a a
+    b4 r r
+    r8 d, d d d d %110
+    es es es es e e
+    f f a a a a
+    b b g g es f
+    b, f' f f f f
+    r g g g g g %115
+    r c c c c c
+    c c h h h h
+    c g g g f f
+    r f f f f f
+    r es es es es es %120
+    r es es es f f
+    r g g g f b,
+    b as b4 b
+    r8 g' g g g g
+    as as as as a a %125
+    b d, d d d d
+    es es c c as b
+    es, es' es es c c
+    r c c c c c
+    r g g g g' g %130
+    r es es es es es
+    r es es es es es
+    es es d d d d
+    es b' b b b b
+    r c b b b b %135
+    r b as as as as
+    r as g g g g
+    r g f f f f
+    r f e e e e
+    c c c c c c %140
+    r as' as as a a
+    b g g g g g
+    as f f f f f
+    g e e e e e
+    f f f f f f %145
+    as, b c c c c
+    f, c' c c c c
+    g g g g c c
+    r f f f e e
+    f c c c c c %150
+    b b b b f b
+    r es es es d d
+    es g, g g g as
+    b b b b b b
+    r as' as as g g %155
+    as c, c c c c
+    d d d d d d
+    r c c c h h
+    c c c c c c
+    as as as as as a %160
+    r g' g g fis fis
+    g g g g g g
+    r g g g f f
+    r f f f es es
+    r es es es d d %165
+    r d d d es es
+    es es es es d d
+    r es es es e e
+    f f g g g, g
+    g4 g g %170
+    g2 r4\fermata \bar "||" %171 finis
+  }
+}
+
+ConfutatisViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    c'16\fE c, es g c g es c c' c, f as c as f c
+    c' c, es g c g es c b' b, e g b g e b
+    a'! a,! c fis a fis c a a' a, c fis a fis c a
+    gis' gis, h d gis d h gis g' g, b e g e b g %175
+    e'' e, g b e b g e f f, as c f c as f
+    a'! a, c es a es c a b' b, des f b f des b
+    c' c, e g c g e c c' c, f as c as f c
+    as8 as as as as as g g
+    f'16 f, as c f c as f g' g, b des  g des b g %180
+    as' as, c es as es c as as' as, des f as f des as
+    g' g, b des g des b g as' as, c es as es c as
+    ges' ges, c es ges es c ges ges' ges, c es ges es c ges
+    f' f, a! c f c a f b' b, des f b f des b
+    as' as, d f as f d as as' as, d f as f d as %185
+    g'! g,! h d g d h g c' c, es g c g es c
+    c' c, es as c as es c c' c, es as c as es c
+    c' c, fis a c a fis c cis' cis, e g cis g e cis
+    d' d, fis a d a fis d d' d, g b d b g d
+    b8 b b b b b a a %190
+    b-! r a-! r g4-! r\fermata \bar "||" %191 finis
+  }
+}
+
+HuicViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoHuic
+      \set Score.currentBarNumber = #199
+    g8\fE g g g as as as c
+    d d d d g, g g g %200
+    c c c c c c c c
+    b b b b b b b b
+    g' g g as as as as g
+    g g g f f f es es
+    es es d d es g,\pp as as %205
+    as as g g \tempoAmen g4 r8 es'\f
+    d2 es4 r
+    r2 r4 r8 g
+    f2 g4 r
+    r2 r4 r8 h, %210
+    es4~ es16 d c b as g f es d4
+    d'~ d16 c b as g f es d c4
+    c'~ c16 b as g f8 g g4
+    h16 a g4 g8 g g as( g)
+    g4 r8 c\p f8. es16-! d-! c-! h-! a-! %215
+    g-! f-! es-! d-! es-! d-! c-! h'-! c8\f c c h
+    c4 h c r\fermata \bar "|." %217 finis
+  }
+}

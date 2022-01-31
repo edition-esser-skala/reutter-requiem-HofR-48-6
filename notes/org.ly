@@ -551,3 +551,267 @@ RecordareBassFigures = \figuremode {
   r1
   r %98 finis
 }
+
+IusteOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 3/4 \tempoIuste
+      \set Score.currentBarNumber = #99
+    \mvTr g8\fE-\tuttiE g' g g g g
+    r g fis fis d d %100
+    g4 g, r
+    R2.
+    g8 g' g f! es d
+    r c c c f f,
+    b2 r4 %105
+    R2.
+    b8 b' b b b b
+    r f f f f f
+    b, d es c f f,
+    b2 r4 %110
+    R2.*3
+    b8 b' b b as as
+    r g g g g, g %115
+    c2 r4
+    R2.
+    c8 c' c c as as
+    r b b b b, b
+    r es es es es es %120
+    r as as as f f
+    r es es es d d
+    es c' b b b, b
+    es2 r4
+    R2.*3 %127
+    es,8 es' es es e e
+    r f f f f f
+    r g g g g g %130
+    r as as as as, as
+    es'2 r4
+    R2.
+    es8 g g g g g
+    r as b b b b %135
+    r g as as as as
+    r f g g g g
+    r e f f f f
+    r c c c c c
+    f f, c' c c, c %140
+    f2 r4
+    R2.*5 %146
+    f8 f' f f f f
+    r e e e e e
+    f4 f, r
+    r8 f' f f f f %150
+    r d! d d d d
+    es4 es, r
+    r8 es' es es es as
+    g g g g g g
+    as4 as, r %155
+    r8 as' as as as as
+    as as as as g f
+    es4 es, r
+    r8 es' es es es es
+    r f f f f fis %160
+    g4 g, r
+    r8 g' g g g g
+    r c c c as as
+    r b b b g g
+    r as as as f f %165
+    r g g f es es
+    d c g' g g, g
+    c4 r r
+    R2.
+    es8 f g4 g, %170
+    c2 r4\fermata \bar "||" %171 finis
+  }
+}
+
+IusteBassFigures = \figuremode {
+  r2 r8 <6 4> %99
+  r <4 2> <\t \t>4 <[7] _+> %100
+  r2.
+  r
+  r
+  r2 <7>4
+  r2. %105
+  r
+  r
+  r8 <7> r2
+  r4 <6 5>2
+  r2.*4 %113
+  r2 <4 2>4
+  r8 <_!> r2 %115
+  r2.
+  r
+  r2 <[7]>8 <6>
+  r2 <7->4
+  \bo <[9 4-]>8 \bc <[8 3]> r2 %120
+  r <6 [_-]>4
+  r2 <6 5->4
+  r8 <6-> <6 4>4 <5 3>
+  r2.*4 %127
+  r2 <6 5>4
+  \bo <[9 4]>8 \bc <[8 _-]> r2
+  r8 <6 5-> r2 %130
+  \bo <[9 4-]>8 \bc <[8 3]> r2
+  <6 4->8 <5 3> r2
+  r2.
+  r
+  r8 <6 5> <_->2 %135
+  r8 <6 5-> r2
+  r8 <6- 5> <[5-]>2
+  r8 <6 5> <_->2
+  r8 <6- 4> <5 _!>2
+  <_->4 <6- 4> <5 _!> %140
+  <_->2.
+  r2.*5 %146
+  <_->2.
+  r8 \bo <7- [5]>4. <6 4->8 \bc <5 [3]>
+  \bo <[9 4]>8 \bc <[8 _-]> r2
+  r8 <_-> r2 %150
+  r8 <6 5-> r2
+  \bo <[9 4-]>8 \bc <[8 3]> r2
+  r2.
+  <6 5->
+  \bo <[9 4-]>8 \bc <[8 3]> r2 %155
+  r2.
+  <6 4! 2!>2 \bo <[_! \l]>8 \bc <[4! _-]>
+  <6>2.
+  r8 <6> r2
+  r8 <6- _->2 <7 _!>8 %160
+  <6 4>8 <5 _!> r2
+  r8 <7 _!> r2
+  r <6>8 <5>
+  r2 <6>8 <5>
+  r2 \bo <6 [_-]>8 \bc <5 [\t]> %165
+  r8 <_!>4 <\t>8 <6>4
+  <\t> <6 4>4 <5 _!>
+  r2.
+  r
+  <6>8 <6 [_-]> <6 4>4 <5 _!> %170
+  r2. %171 finis
+}
+
+ConfutatisOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    \mvTr c'16\fE-\tuttiE c, es g c g es c c' c, f as c as f c
+    c' c, es g c g es c b' b, e g b g e b
+    a'! a,! c fis a fis c a a' a, c fis a fis c a
+    gis' gis, h d gis d h gis g' g, b e g e b g %175
+    e'' e, g b e b g e f f, as c f c as f
+    a'! a, c es a es c a b' b, des f b f des b
+    c' c, e g c g e c c' c, f as c as f c
+    des8 des des des c c c c
+    f16 f, as c f c as f g' g, b des  g des b g %180
+    as' as, c es as es c as as' as, des f as f des as
+    g' g, b des g des b g as' as, c es as es c as
+    ges' ges, c es ges es c ges ges' ges, c es ges es c ges
+    f' f, a! c f c a f b' b, des f b f des b
+    as' as, d f as f d as as' as, d f as f d as %185
+    g'! g,! h d g d h g c' c, es g c g es c
+    c' c, es as c as es c c' c, es as c as es c
+    c' c, fis a c a fis c cis' cis, e g cis g e cis
+    d' d, fis a d a fis d d' d, g b d b g d
+    es8 es es es d d d d %190
+    g-! r d-! r g,4-! r\fermata \bar "||" %191 finis
+  }
+}
+
+ConfutatisBassFigures = \figuremode {
+  r2 <6- 4> %172
+  <5 3> <6 4! _->
+  <6\\ 5-> <\t \t>
+  <7! 5 [_!]> <6! 4+ _-> %175
+  <6! 5> <_->
+  <7- [5-]> <_->
+  <7 [_!]> <6- 4>
+  <6!> <6- 4>4 <5 _!>
+  <_->2 <6- 5-> %180
+  r <6 4->
+  <6 5-> <9>4 <8>
+  <6 4 2->2 <6 4 2!>
+  <7 [_!]> <[_-]>
+  <6 4! 2> <6 4 2!> %185
+  <7 [_!]>1
+  <6->2.. <[6 3]>8
+  <6! 4+ [3]>2 <7 _!>
+  <_+> <6 4>
+  <6\\> <6 4>4 <5 _+> %190
+  r <_+>2. %191 finis
+}
+
+LacrymosaOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoLacrymosa
+      \set Score.currentBarNumber = #192
+    \mvTr c2\fE-\tuttiE g
+    g4. g8 c c c c
+    a2 f4. f8
+    b b b b g2 %195
+    as4. as8 e e e e
+    f2 fis8 fis fis fis
+    g1\fermata \bar "||" %198 finis
+  }
+}
+
+LacrymosaBassFigures = \figuremode {
+   r2 <6 4>4 <5 _!> %192
+   <7 _!>1
+   <6 5>2 <7>
+   <_-> <6 5-> %195
+   r <6 5>
+   <_-> <7- _!>
+   <6 4> <5 _!> %198 finis
+}
+
+HuicOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoHuic
+      \set Score.currentBarNumber = #199
+    \mvTr c8\fE-\tuttiE c c c f f f as
+    as as g f es es es es %200
+    e e e e f f f f
+    d d d d es es es d
+    c c' c f, b, b' b es,
+    as, as' as d, g g fis fis
+    g g g, g c \mvTrr c\pp-\senzaOrg as as %205
+    f f g g \tempoAmen c4 r8 \mvTr c\f-\colOrg
+    f4 g16 f es d c4 \mvTr c'16-!\p-\senzaOrg b-! as-! g-!
+    f-! es! d-! c-! h-! a-! g-! h-! c4 r8 \mvTr c'\f-\colOrg
+    as4 b16 as g f es4 \mvTr es'16\p-\senzaOrg-! d-! c-! b-!
+    as-! g-! f-! es-! d-! c-! b-! d-! es4 r8 \mvTr g\f-\colOrg %210
+    c4~ c16 b as g f es d c b8 f'
+    b4~ b16 as g f es d c b as8 es'
+    as4~ as16 g f es d c h a? g8 d'
+    g4~ g16 f es d c b as g f8 g
+    c4 r8 \clef "treble_8" \mvTr c'\p-\senzaOrg f8. es16-! d-! c-! h-! a-! %215
+    \clef bass g-! f-! es-! d-! es-! d-! c-! h-! \mvTr c\f-\colOrg b as g f8 g
+    c es16 f g8 g, c4 r\fermata \bar "|." %217 finis
+  }
+}
+
+HuicBassFigures = \figuremode {
+  r2 <6- [_-]>4. <[6]>8 %199
+  <6 4 2!>4 \bo <[5 _!]>8 \bc <[4! _-]> <6>2 %200
+  <6 5-> <_->
+  <6 5-> <9 4->4 <8 3>8 <\t >
+  r4. <7 _->8 <7->4. <7>8
+  q4. <7 [5-]>8 <[7] _!>4 <7 [_!]>
+  <6 4> <5 _!>2. %205
+  r1
+  <6 5 _->4 <_!>2.
+  r1
+  <6 5>
+  r2.. <_!>8 %210
+  r2 \bo <[_-]>4 \bc <[7-]>
+  r2. <[7]>4
+  r2. <[7] _!>4
+  <_!>2. <6 5 _->8 <_!>
+  r1 %215
+  r2. <6 5 _->8 <_!>
+  r <[6]> <_!>4 q2 %217 finis
+}

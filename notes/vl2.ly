@@ -270,3 +270,139 @@ RecordareViolinoII = {
     c4 r r2\fermata \bar "||" %98 finis
   }
 }
+
+IusteViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 3/4 \tempoIuste
+      \set Score.currentBarNumber = #99
+    r8 b'\fE b b b c
+    r a a a a a %100
+    r b b b b b
+    a a a a a a
+    g g g g g g
+    r c c c c c
+    r d d d d d %105
+    c c c c c c
+    b d d d d d
+    r c c c c c
+    b4 r r
+    r8 f f f f f %110
+    g g g g g g
+    a a c c c c
+    b16( d) es( f) g( a) b( b,) b8 a\trill
+    b d d d d d
+    r h h h h h %115
+    r es es es es es
+    d d d d d d
+    es c c c c c
+    r b b b as as
+    r g g g g g %120
+    r as as as as as
+    r b b b b b
+    b es, es4 d\trill
+    r8 b' b b b b
+    c c c c c c %125
+    d f, f f f f
+    es16( g as b c d es) es, es8 d\trill
+    es g g g g g
+    r as as as as as
+    r b b b b b %130
+    r c c c c as
+    r g g g g g
+    f f f f f f
+    es es' es es es es
+    r es des des des des %135
+    r des c c c c
+    r c b b b b
+    r b as as as as
+    r as g g g g
+    f f f f e e %140
+    r c' c c c c
+    des b b b b b
+    c as as as as as
+    b g g g g g
+    f16 f( g as) b( as) b( g) as e'( f g) %145
+    as as,( g f) f4 e\trill
+    f8 as as as as as
+    b b b b as g
+    r as as as b g
+    f as as as as as %150
+    as as as f f f
+    r g g g as f
+    es es es es es es
+    es es es es es es
+    r c' c c des b %155
+    as-\critnote es es es es es
+    f f f f g as
+    r es es es d d
+    c g' g g g g
+    as as as as as es %160
+    r h' h h a c
+    c([ h)] h h h h
+    r c c c c c
+    r b b b b b
+    r as as as as as %165
+    r g g g g g
+    g g g g g g
+    r g g g g g
+    f16 f'( es d) c4 h\trill
+    c16 es,( d c) c4 h\trill %170
+    c2 r4\fermata \bar "||" %171 finis
+  }
+}
+
+ConfutatisViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoConfutatis
+      \set Score.currentBarNumber = #172
+    c'16\fE c, es g c g es c c' c, f as c as f c
+    c' c, es g c g es c b' b, e g b g e b
+    a'! a,! c fis a fis c a a' a, c fis a fis c a
+    gis' gis, h d gis d h gis g' g, b e g e b g %175
+    e'' e, g b e b g e f' f, as c f c as f
+    a! a, c es a es c a b' b, des f b f des b
+    c' c, e g c g e c c' c, f as c as f c
+    h8 h h h c c c c
+    f'16 f, as c f c as f g g, b des  g des b g %180
+    as' as, c es as es c as as' as, des f as f des as
+    g' g, b des g des b g as' as, c es as es c as
+    ges'' ges, c es ges es c ges ges' ges, c es ges es c ges
+    f' f, a! c f c a f b b, des f b f des b
+    as' as, d f as f d as as' as, d f as f d as %185
+    g'! g,! h d g d h g c' c, es g c g es c
+    c' c, es as c as es c c' c, es as c as es c
+    c' c, fis a c a fis c cis' cis, e g cis g e cis
+    d' d, fis a d a fis d d' d, g b d b g d
+    cis8 cis cis cis d d d d %190
+    d-! r c-! r b4-! r\fermata \bar "||" %191 finis
+  }
+}
+
+HuicViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoHuic
+      \set Score.currentBarNumber = #199
+    es8\fE es es es f f f f
+    f f f as g g g g %200
+    g g g g f f f f
+    f f f f f f es es
+    c' c c c b b b b
+    as as as as g g a a
+    g g g g g c,\pp c c %205
+    c c h h \tempoAmen c-! g'-!\f c4~
+    c8 d16 c h a g f es8 g'16-!\p f-! es-! d-! c-! b-!
+    as-! g-! f-! es-! d-! c-! h-! g'-! es8-! g\f es'4~
+    es8 f16 es d c b as g8 b'16-!\p as-! g-! f-! es-! d-!
+    c-! b-! as-! g-! f-! es-! d-! b'-! g4-\critnote r8 g\f %210
+    g4 g as as8. g16
+    f4 f g g8. f16
+    es4 es f f8. es16
+    d4 d es8 es d4
+    \kneeBeam c8 g''\p c4~ c16 b-! as-! g-! f-! es-! d-! c-! %215
+    h-! as-! g-! f-! g-! f-! es-! d-! g8\f g as g
+    g4 g g r\fermata \bar "|." %217 finis
+  }
+}
