@@ -434,3 +434,75 @@ TubaMirumBassFigures = \figuremode {
   r %50
   r %51 finis
 }
+
+LiberOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoLiber
+      \set Score.currentBarNumber = #52
+    \mvTr g8\fE-\tutti g'16 fis g8 g, d' d, r d'
+    g g16 fis g8 g, d' d, r d
+    g4 r8 h-\solo c a r a
+    b-\tutti b'16 a b8 b, a a' b es, %55
+    f es f f, b4 r8 d-\solo
+    es4 r8 e f4 r8 a,
+    b d es f b,-\tutti b d b
+    f' f, r f b b'16 a b8 b,
+    f' f, r f' b b,16 a b8 c %60
+    d4 r8 fis g g,16 a b8 g
+    c fis, g es' d c d d,
+    g4 r8 h-\solo c a r a
+    b g r g a fis r fis'
+    g b, c d g, g' f b, %65
+    es-\tutti es es es d d d d
+    es g f b, es es es es
+    e e e e f as g e
+    f f16 e f8 f, b b b b
+    c c c, c f4 r8 a!-\solo %70
+    b g r g' as f r e
+    f des b c f16-\tutti f f f f f f f
+    f f f f f f f f f8 as g e
+    f f16 e f8 f b b g g
+    as c b g as as, as as %75
+    es' es e e f f d! d
+    es es es es b b b b
+    es es es c b b b b
+    es4 r8 g-\solo as4 r8 a
+    b4 r8 d, es g, as b %80
+    es g, as b es,4 r\fermata \bar "||" %81 finis
+
+  }
+}
+
+LiberBassFigures = \figuremode {
+  r2 <6 4>8 <5 _+>4 <\t \t>8 %52
+  \bo <9 [4]>8 \bc <8 [3]>4. <6 4>8 <5 _+>4.
+  \bo <9 [4]>8 \bc <8 [3]>4 \bo <[6 5]>2 \bc q8
+  r2 <6 5>4. <6>8 %55
+  <6 4>4 <5 3>2 r8 \bo <[6 5-]>
+  r4. <6 5>8 <_!>4. <6 5>8
+  r <6> \bc <[6 5]>2.
+  <6 4>8 <5 3>4. \bo <9 [4]>8 \bc <8 [3]>4.
+  <6 4>8 <5 3>4. \bo <9 [4]>8 \bc <8 [3]>4 <8 6>16 <7 5> %60
+  <6 4>8 <5 _+>4 <[6 5]>8 r2
+  r8 <6>4 <6>8 <6 4>4 <5 _+>
+  r4. \bo <[6 5]>4 <6>4 <6 5>8
+  r <6>4 <6 5> <6>4 <6 5>8
+  r \bc <[6 \l]> <6 5> <_+>4 <6>8 <_-> <7-> %65
+  r2 <7 5->4. <6 \t>8
+  \bo <[9 4-]> \bc <[6 \l]> <_-> <7-> r2
+  <7->4. <6>8 \bo <[9 4]> <6> <5-> \bc <[6 \l]>
+  <_->2 <7- _->4 \bassFigureExtendersOn <6 _->8 <5 _-> \bassFigureExtendersOff
+  <6- 4>4 <5 _!>2 r8 <[6 5-]> %70
+  <_-> <6>4 <[6 5-]> <6->4 \bo <[6 5]>8
+  <_-> \bc <[5- \l]> <6 5 [_-]> <_!> <_->2
+  <6- 4>4 <7! 4 2> \bo <[8] _->8 <6> <5-> \bc <[6]>
+  <_->2 q4 \bo <[6- \l]>8 <5->
+  <9 4-> \bc <[6 \l]> <_-> <[6]> r2 %75
+  <6 4->8 <5 3> <[6 5]>4 <9 4>8 <8 _-> <[6 5-]>4
+  <9 4->8 <8 3>4. <6 4>8 <5 3> <7->4
+  <9 4-> <8 3>8 <6-> <6 4>4 <5 3>
+  r4. \bo <[6 5-]>2 <6 5>8
+  <_!>4. <6 5->4 <6>8 <6 5>4 %80
+  r8 <6> \bc <[6 5-]>2. %81 finis
+}

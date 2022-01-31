@@ -355,3 +355,70 @@ TubaMirumBassoLyrics = \lyricmode {
   spon -- su --
   ra. %45 finid
 }
+
+LiberBasso = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+      \set Score.currentBarNumber = #52
+    \mvTr g'4.\fE^\tuttiE g8 d d d d
+    g g g, g d' d d d
+    g g, r4 r2
+    b4. b8 a a' b es, %55
+    f2 b,4 r
+    R1
+    r2 b4. b8
+    f' f f, f b b b' b
+    f f f f b b, b c %60
+    d d r4 g,4. g8
+    c fis, g es' d2
+    g,4 r r2
+    R1*2 %65
+    es'4. es8 d d d d
+    es es r4 es4. es8
+    e e e e f f r4
+    f4. f,8 b b b b
+    c2 f,4 r %70
+    R1
+    r2 f'4. f8
+    f f f f f f, r4
+    f'4. f8 b b g g
+    as as, r4 as4. as8 %75
+    es'4 e f d!
+    es es b4. b8
+    es es es c b2
+    es4 r r2
+    R1 %80
+    R\fermata \bar "||" %81 finis
+  }
+}
+
+LiberBassoLyrics = \lyricmode {
+  Li -- ber scri -- ptus pro -- fe -- %52
+  re -- tur, in quo to -- tum con -- ti --
+  ne -- tur,
+  un -- de mun -- dus iu -- di -- %55
+  ce -- tur.
+
+  Iu -- dex
+  er -- go cum se -- de -- bit, quid -- quid
+  la -- tet ap -- pa -- re -- bit, ap -- pa -- %60
+  re -- bit: Nil in --
+  ul -- tum re -- ma -- ne --
+  bit.
+
+  Quid sum mi -- ser tunc di -- %66
+  ctu -- rus? Quem pa --
+  tro -- num ro -- ga -- tu -- rus,
+  cum vix iu -- stus sit se --
+  cu -- rus? %70
+
+  Rex tre --
+  men -- dae ma -- ie -- sta -- tis,
+  qui sal -- van -- dos sal -- vas
+  gra -- tis: Sal -- va %75
+  me, fons pi -- e --
+  ta -- tis, sal -- va
+  me, fons pi -- e -- ta --
+  tis. %79 finis
+}

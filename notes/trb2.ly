@@ -184,3 +184,40 @@ TubaMirumTromboneII = {
     c r r\fermata \bar "||" %51 finis
   }
 }
+
+LiberTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+      \set Score.currentBarNumber = #52
+    b4.\fE b8 b a16 b c8 c
+    c16 b b8 g g g fis16 g a8 a
+    a16 g g8 r4 r2
+    b4. b8 c c b g %55
+    f2 f4 r
+    R1
+    r2 f4. f8
+    f f f f f f f b
+    b a16 b c8 c c16 b b8 b a16 g %60
+    g fis fis8 r4 b4. b8
+    g d' d c d2
+    d4 r r2
+    R1*2 %65
+    b4. b8 f f f b
+    b b r4 b4. b8
+    b b g c c c r4
+    c4. c8 des des16 c b as g as
+    as4 g f r %70
+    R1
+    r2 f'4. f8
+    f f des c16 b c8 c r4
+    as4. as8 b b b b
+    b16 as as8 r4 as4. as8 %75
+    as8 g g4 g8 f4 b8
+    b4 b b b
+    b8 b b as b2
+    g4 r r2
+    R1 %80
+    R\fermata \bar "||" %81 finis
+  }
+}

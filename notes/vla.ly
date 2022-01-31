@@ -201,3 +201,41 @@ TubaMirumViola = {
     R2.\fermata \bar "||" %51 finis
   }
 }
+
+LiberViola = {
+  \relative c' {
+    \clef alto
+    \key g \minor \time 4/4 \tempoLiber
+      \set Score.currentBarNumber = #52
+    d4.\fE d8 d d d d
+    d d d d d d d d
+    d4 r8 g, g4 r8 f
+    f f'4 f8 f f f es %55
+    d4 c\trill d r8 b
+    b4 r8 c c4 r8 c
+    b4 b8 a\trill b d4 d8
+    d c16 d es8 es es16( d) d8 f f
+    f f f f f f d es %60
+    d4 r8 d d g4 g8
+    g a g g g4 fis\trill
+    g r8 g g c, r f
+    f b, r b a a r a
+    g g g fis g b c d %65
+    es g4 g8 as as as f
+    f16( es) es8 f b, b g'4 g8
+    g g g g \once \slurDashed g16( f) f8 g c,
+    c f4 f8 f f des des
+    as as g g f4 r8 f' %70
+    f b, r es es as, r g'
+    f f f e f16 as as as as as as as
+    b b b b g g g g as8 f g c,
+    c f4 f8 f^\critnote f es! es
+    es4 r8 es es es es es %75
+    es es c c c c f f
+    f( es!) es es es( d) f f
+    f es16 d es8 es es es d d
+    es4 r8 es es c r f
+    f d! r b b es es d\trill %80
+    es es es d\trill es4 r\fermata \bar "||" %81 finis
+  }
+}

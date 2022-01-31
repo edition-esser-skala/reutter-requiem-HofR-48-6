@@ -353,78 +353,138 @@ paperDefault = \paper {
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Tuba mirum"
+  %   \addTocEntry
+  %   \paperDefault
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \normalGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TubaMirumTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TubaMirumTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup \with { \normalGroupDistance } <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TubaMirumViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TubaMirumViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \TubaMirumViola
+  %         }
+  %       >>
+  %       \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \TubaMirumSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \TubaMirumSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \TubaMirumAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \TubaMirumAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \TubaMirumTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \TubaMirumTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \TubaMirumBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \TubaMirumBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \TubaMirumOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \TubaMirumBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Tuba mirum"
+    \subsection "Liber scriptus"
     \addTocEntry
-    \paperDefault
     \score {
       <<
         \new StaffGroup <<
-          \new GrandStaff \with { \normalGroupDistance } <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \TubaMirumTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \TubaMirumTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup \with { \normalGroupDistance } <<
-          \new GrandStaff \with { \smallGroupDistance } <<
+          \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \TubaMirumViolinoI
+              \LiberViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \TubaMirumViolinoII
+              \LiberViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \TubaMirumViola
+            \LiberViola
           }
         >>
-        \new ChoirStaff \with { \setGroupDistance #13 #15 } <<
+        \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \TubaMirumSoprano }
+            \new Voice = "Soprano" { \dynamicUp \LiberSoprano }
           }
-          \new Lyrics \lyricsto Soprano \TubaMirumSopranoLyrics
+          \new Lyrics \lyricsto Soprano \LiberSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \TubaMirumAlto }
+            \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
+            \new Voice = "Alto" { \dynamicUp \LiberAlto }
           }
-          \new Lyrics \lyricsto Alto \TubaMirumAltoLyrics
+          \new Lyrics \lyricsto Alto \LiberAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \TubaMirumTenore }
+            \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
+            \new Voice = "Tenore" { \dynamicUp \LiberTenore }
           }
-          \new Lyrics \lyricsto Tenore \TubaMirumTenoreLyrics
+          \new Lyrics \lyricsto Tenore \LiberTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \TubaMirumBasso }
+            \new Voice = "Basso" { \dynamicUp \LiberBasso }
           }
-          \new Lyrics \lyricsto Basso \TubaMirumBassoLyrics
+          \new Lyrics \lyricsto Basso \LiberBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \TubaMirumOrgano
+            \LiberOrgano
           }
         >>
-        \new FiguredBass { \TubaMirumBassFigures }
+        \new FiguredBass { \LiberBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

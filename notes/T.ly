@@ -382,3 +382,70 @@ TubaMirumTenoreLyrics = \lyricmode {
   spon -- su --
   ra. %45 finid
 }
+
+LiberTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+      \set Score.currentBarNumber = #52
+    \mvTr b4.\fE^\tuttiE b8 b a16([ b)] c8 c
+    c16([ b)] b8 g g g fis16([ g)] a8 a
+    a16([ g)] g8 r4 r2
+    b4. b8 c c b g %55
+    f2 f4 r
+    R1
+    r2 f4. f8
+    f f f f f f f b
+    b a16([ b)] c8 c c16([ b)] b8 b a16([ g)] %60
+    g([ fis)] fis8 r4 b4. b8
+    g d' d c d2
+    d4 r r2
+    R1*2 %65
+    b4. b8 f f f b
+    b b r4 b4. b8
+    b b g c c c r4
+    c4. c8 des des16([ c)] b([ as)] g([ as)]
+    as4( g) f r %70
+    R1
+    r2 f'4. f8
+    f f des c16([ b)] c8 c r4
+    as4. as8 b b b b
+    b16([ as)] as8 r4 as4. as8 %75
+    as8([ g)] g4 g8( f4) b8
+    b4 b b b
+    b8 b b as b2
+    g4 r r2
+    R1 %80
+    R\fermata \bar "||" %81 finis
+  }
+}
+
+LiberTenoreLyrics = \lyricmode {
+  Li -- ber scri -- ptus pro -- fe -- %52
+  re -- tur, in quo to -- tum con -- ti --
+  ne -- tur,
+  un -- de mun -- dus iu -- di -- %55
+  ce -- tur.
+
+  Iu -- dex
+  er -- go cum se -- de -- bit, quid -- quid
+  la -- tet ap -- pa -- re -- bit, ap -- pa -- %60
+  re -- bit: Nil in --
+  ul -- tum re -- ma -- ne --
+  bit.
+
+  Quid sum mi -- ser tunc di -- %66
+  ctu -- rus? Quem pa --
+  tro -- num ro -- ga -- tu -- rus,
+  cum vix iu -- stus sit se --
+  cu -- rus? %70
+
+  Rex tre --
+  men -- dae ma -- ie -- sta -- tis,
+  qui sal -- van -- dos sal -- vas
+  gra -- tis: Sal -- va %75
+  me, fons pi -- e --
+  ta -- tis, sal -- va
+  me, fons pi -- e -- ta --
+  tis. %79 finis
+}

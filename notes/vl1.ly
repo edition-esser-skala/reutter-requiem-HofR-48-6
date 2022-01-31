@@ -202,3 +202,41 @@ TubaMirumViolinoI = {
     R2.\fermata \bar "||" %51 finis
   }
 }
+
+LiberViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \tempoLiber
+      \set Score.currentBarNumber = #52
+    g'4.\fE g8 g fis16 g a8 a
+    a16( g) g8 b b b a16 b c8 c
+    r16 g' g, g g32([ f es f)] f( es d f) es16 es' es, es f32( es d es) es([ d c es)]
+    d8 d'4 d8 es d16 c d8 c16 b %55
+    b4 a b16 f' f, f b32([ as g as)] as( g f as)
+    g16 g' c, c c32([ b a b)] b( a g b) a16 c' f, f f32([ es d f)] es( d c es)
+    d( b a g f es d c) c4\trill b8 b'4 b8
+    b a16 b c8 c c16( b) b8 d d
+    d c16 d es8 es es16( d) d8 d c16 b %60
+    r16 a' d, d d32([ c b d)] c( b a c) b8 d4 g8
+    es d16 c b8 c b4 a\trill
+    g16 d'' g, g g32([ f! es g)] f( es d f) es16 c' f, f f32([ es d f)] es( d c es)
+    d16 b' es, es es32([ d c es)] d( c b d) c16 a' d, d d32[( c b d)] c( b a c)
+    b( g f es d c b a) a4\trill g16 es' es b' as32( g f es d c b as) %65
+    g8 b'4 b8 c c c b16 as
+    r16 es' b b b32([ as g b)] as( g f as) g8 b4 b8
+    des des des c16 b b16 f' c c c32([ b as c)] b( as g b)
+    as8 as4 as8 as b16 as g f e f
+    f8 f e e f16 c'' f, f f32([ es des f)] es( des c es) %70
+    des16 b' es, es es32([ des c es)] des( c b des) c16 as' des, des des32([ c b c)] c([ b g b)]
+    as([ f c' as)] f'( c b as) g4\trill f16 c' c c c c c c
+    des des des des e e e e f f c c c32([ b as c)] b( as g b)
+    as8 c4 c8 des des es des
+    des16 as' es es es32([ des c es)] des( c b des) c8 c c c %75
+    \once \slurDashed c( b)^\critnote b b b( as) as as
+    as( g) g g g( f) as as
+    as g16 f g8 as g g f f
+    es16 b'' es, es es32([ des c des)] des( c b des) c16 c' f, f f32([ es d es)] es( d c es)
+    d16 f b, b b32([ as g as)] as( g f as) g es'( d c b as g f) f4\trill %80
+    g32 es( d c b as g) g' f4\trill es r\fermata \bar "||" %81 finis
+  }
+}

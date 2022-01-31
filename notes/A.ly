@@ -376,3 +376,70 @@ TubaMirumAltoLyrics = \lyricmode {
   spon -- su --
   ra. %45 finid
 }
+
+LiberAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+      \set Score.currentBarNumber = #52
+    \mvTr d4.\fE^\tuttiE d8 d d d d
+    d d d d d d d d
+    d d r4 r2
+    f4. f8 f f f es %55
+    d4( c) d r
+    R1
+    r2 d4. d8
+    d c16([ d)] es8 es es16([ d)] d8 f f
+    f f f f f f d es %60
+    d d r4 g4. g8
+    g a g g g4( fis)
+    g r r2
+    R1*2 %65
+    g4. g8 as as as f
+    f16([ es)] es8 r4 g4. g8
+    g g g g g16([ f)] f8 r4
+    f4. f8 f f des des
+    c2 c4 r %70
+    R1
+    r2 as'4. as8
+    b b g g as as r4
+    f4. f8 f f es! es
+    es es r4 es4. es8 %75
+    es4 c c f
+    f8([ es!)] es4 es8([ d)] f4
+    f8 es16([ d)] es8 es es4( d)
+    es r r2
+    R1 %80
+    R\fermata \bar "||" %81 finis
+  }
+}
+
+LiberAltoLyrics = \lyricmode {
+  Li -- ber scri -- ptus pro -- fe -- %52
+  re -- tur, in quo to -- tum con -- ti --
+  ne -- tur,
+  un -- de mun -- dus iu -- di -- %55
+  ce -- tur.
+
+  Iu -- dex
+  er -- go cum se -- de -- bit, quid -- quid
+  la -- tet ap -- pa -- re -- bit, ap -- pa -- %60
+  re -- bit: Nil in --
+  ul -- tum re -- ma -- ne --
+  bit.
+
+  Quid sum mi -- ser tunc di -- %66
+  ctu -- rus? Quem pa --
+  tro -- num ro -- ga -- tu -- rus,
+  cum vix iu -- stus sit se --
+  cu -- rus? %70
+
+  Rex tre --
+  men -- dae ma -- ie -- sta -- tis,
+  qui sal -- van -- dos sal -- vas
+  gra -- tis: Sal -- va %75
+  me, fons pi -- e --
+  ta -- tis, sal -- va
+  me, fons pi -- e -- ta --
+  tis. %79 finis
+}

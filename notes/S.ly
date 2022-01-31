@@ -365,22 +365,73 @@ TubaMirumSopranoLyrics = \lyricmode {
   ra. %45 finid
 }
 
-% Li -- ber scri -- ptus pro -- fe -- re -- tur,
-% in quo to -- tum con -- ti -- ne -- tur,
-% un -- de mun -- dus iu -- di -- ce -- tur.
-%
-% Iu -- dex er -- go cum se -- de -- bit,
-% quid -- quid la -- tet ap -- pa -- re -- bit:
-% Nil in -- ul -- tum re -- ma -- ne -- bit.
-%
-% Quid sum mi -- ser tunc di -- ctu -- rus?
-% Quem pa -- tro -- num ro -- ga -- tu -- rus,
-% cum vix iu -- stus sit se -- cu -- rus?
-%
-% Rex tre -- men -- dae ma -- ie -- sta -- tis,
-% qui sal -- van -- dos sal -- vas gra -- tis:
-% Sal -- va me, fons pi -- e -- ta -- tis.
-%
+LiberSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+      \set Score.currentBarNumber = #52
+    \mvTr g'4.\fE^\tuttiE g8 g fis16([ g)] a8 a
+    a16([ g)] g8 b b b a16([ b)] c8 c
+    c16([ b)] b8 r4 r2
+    d4. d8 es d16([ c)] d8 c16([ b)] %55
+    b4( a) b r
+    R1
+    r2 b4. b8
+    b a16([ b)] c8 c c16[( b)] b8 d d
+    d c16([ d)] es8 es es16([ d)] d8 d c16([ b)] %60
+    b([ a)] a8 r4 d4. g8
+    es d16([ c)] b8 c b4( a)
+    g r r2
+    R1*2 %65
+    b4. b8 c c c b16([ as)]
+    as([ g)] g8 r4 b4. b8
+    des des des c16([ b)] b([ as)] as8 r4
+    as4. as8 as b16([ as)] g([ f)] e([ f)]
+    f4( e) f r %70
+    R1
+    r2 c'4. c8
+    des des e e f16([ c)] c8 r4
+    c4. c8 des des es des
+    des16([ c)] c8 r4 c4. c8 %75
+    c8([ b)] b4 b8([ as)] as4
+    as8([ g)] g4 g8([ f)] as4
+    as8 g16([ f)] g8 as g4( f)
+    es r r2
+    R1 %80
+    R\fermata \bar "||" %81 finis
+  }
+}
+
+LiberSopranoLyrics = \lyricmode {
+  Li -- ber scri -- ptus pro -- fe -- %52
+  re -- tur, in quo to -- tum con -- ti --
+  ne -- tur,
+  un -- de mun -- dus iu -- di -- %55
+  ce -- tur.
+
+  Iu -- dex
+  er -- go cum se -- de -- bit, quid -- quid
+  la -- tet ap -- pa -- re -- bit, ap -- pa -- %60
+  re -- bit: Nil in --
+  ul -- tum re -- ma -- ne --
+  bit.
+
+  Quid sum mi -- ser tunc di -- %66
+  ctu -- rus? Quem pa --
+  tro -- num ro -- ga -- tu -- rus,
+  cum vix iu -- stus sit se --
+  cu -- rus? %70
+
+  Rex tre --
+  men -- dae ma -- ie -- sta -- tis,
+  qui sal -- van -- dos sal -- vas
+  gra -- tis: Sal -- va %75
+  me, fons pi -- e --
+  ta -- tis, sal -- va
+  me, fons pi -- e -- ta --
+  tis. %79 finis
+}
+
 % Re -- cor -- da -- re Ie -- su pi -- e,
 % quod sum cau -- sa tu -- ae vi -- ae:
 % Ne me per -- das il -- la di -- e.
