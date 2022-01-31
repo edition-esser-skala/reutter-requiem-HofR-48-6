@@ -443,3 +443,46 @@ LiberAltoLyrics = \lyricmode {
   me, fons pi -- e -- ta --
   tis. %79 finis
 }
+
+RecordareAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    \mvTr es4.\fE^\tuttiE es8 es g g es
+    f4 f r2
+    g4. g8 g g g g
+    f4 f r2 %85
+    as4. as8 as as as as
+    ges4 ges des des
+    des( c) b r
+    R1
+    f'4. f8 es es es es %90
+    es4 es r2
+    es4. es8 es es es es
+    d4 d r2
+    g4. g8 e e e e
+    es4 es es es %95
+    es( d) c r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}
+
+RecordareAltoLyrics = \lyricmode {
+  Re -- cor -- da -- re Ie -- su %82
+  pi -- e,
+  quod sum cau -- sa tu -- ae
+  vi -- ae: %85
+  Ne me per -- das il -- la
+  di -- e, il -- la
+  di -- e.
+
+  Quae -- rens me, se -- di -- sti %90
+  las -- sus:
+  Re -- de -- mi -- sti cru -- cem
+  pas -- sus:
+  Tan -- tus la -- bor non sit
+  cas -- sus, non sit %95
+  cas -- sus. %96 finis
+}

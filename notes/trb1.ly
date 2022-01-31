@@ -219,3 +219,28 @@ LiberTromboneI = {
     R\fermata \bar "||" %81 finis
   }
 }
+
+RecordareTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    es4.\fE es8 es g g es
+    f4 f r2
+    g4. g8 g g g g
+    f4 f r2 %85
+    as4. as8 as as as as
+    ges4 ges des des
+    des c b r
+    R1
+    f'4. f8 es es es es %90
+    es4 es r2
+    es4. es8 es es es es
+    d4 d r2
+    g4. g8 e e e e
+    es4 es es es %95
+    es d c r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}

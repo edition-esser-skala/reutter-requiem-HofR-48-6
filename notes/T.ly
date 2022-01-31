@@ -449,3 +449,46 @@ LiberTenoreLyrics = \lyricmode {
   me, fons pi -- e -- ta --
   tis. %79 finis
 }
+
+RecordareTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    \mvTr g4.\fE^\tuttiE g8 g g g g
+    f4 f r2
+    g4. c8 b! b b b
+    b4 as r2 %85
+    f'4. f8 d! d d d
+    des4 des b g!
+    f2 f4 r
+    R1
+    b4. b8 b b b b %90
+    b4 as r2
+    as4. as8 a a a a
+    a4 g r2
+    b4. b8 b b b b
+    as4 as c a %95
+    g2 g4 r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}
+
+RecordareTenoreLyrics = \lyricmode {
+  Re -- cor -- da -- re Ie -- su %82
+  pi -- e,
+  quod sum cau -- sa tu -- ae
+  vi -- ae: %85
+  Ne me per -- das il -- la
+  di -- e, il -- la
+  di -- e.
+
+  Quae -- rens me, se -- di -- sti %90
+  las -- sus:
+  Re -- de -- mi -- sti cru -- cem
+  pas -- sus:
+  Tan -- tus la -- bor non sit
+  cas -- sus, non sit %95
+  cas -- sus. %96 finis
+}

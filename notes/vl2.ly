@@ -245,3 +245,28 @@ LiberViolinoII = {
     g32 es( d c b as g) g' f4\trill es r\fermata \bar "||" %81 finis
   }
 }
+
+RecordareViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoRecordare
+      \set Score.currentBarNumber = #82
+    es8\fE es es es es g g es
+    d4 d8 f'\p f16( es d c) h f( es d)
+    c8 g'\f g g b! b b b
+    b4 as8 as'\p as16( g f e) f b,( as g) %85
+    f8 as\f as as as as as as
+    ges ges ges ges des des des des
+    des des c c b des' des16( c a! c)
+    b( a! b es,) es( des a! c) b8 b b a!\trill
+    b b'\f b b b b b b %90
+    b4 as8 es'\p es16( des c b) c f,( es des)
+    c8 as'\f as as a a a a
+    a4 g8 b'\p b16( a g fis) g c,( b a)
+    g8 b\f b b b b b b
+    as as as as c c a a %95
+    g g g g g es'\p es16( d h d)
+    c( h c f,) f( es h d) c8 c c h\trill
+    c4 r r2\fermata \bar "||" %98 finis
+  }
+}

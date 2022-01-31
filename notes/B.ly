@@ -422,3 +422,46 @@ LiberBassoLyrics = \lyricmode {
   me, fons pi -- e -- ta --
   tis. %79 finis
 }
+
+RecordareBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    \mvTr c4.\fE^\tuttiE c8 c c c c
+    d4 d r2
+    es4. es8 e e e e
+    f4 f, r2 %85
+    f'4. f8 f f f f
+    ges4 ges f e
+    f2 b,4 r
+    R1
+    b'4. b8 g! g g g %90
+    as4 as, r2
+    as'4. g8 fis fis fis fis
+    g4 g, r2
+    g'4. g8 g g g g
+    as4 as g fis %95
+    g( g,) c r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}
+
+RecordareBassoLyrics = \lyricmode {
+  Re -- cor -- da -- re Ie -- su %82
+  pi -- e,
+  quod sum cau -- sa tu -- ae
+  vi -- ae: %85
+  Ne me per -- das il -- la
+  di -- e, il -- la
+  di -- e.
+
+  Quae -- rens me, se -- di -- sti %90
+  las -- sus:
+  Re -- de -- mi -- sti cru -- cem
+  pas -- sus:
+  Tan -- tus la -- bor non sit
+  cas -- sus, non sit %95
+  cas -- sus. %96 finis
+}

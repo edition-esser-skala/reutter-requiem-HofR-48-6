@@ -427,8 +427,68 @@ paperDefault = \paper {
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Liber scriptus"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \LiberViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \LiberViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \LiberViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \LiberSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \LiberSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
+  %           \new Voice = "Alto" { \dynamicUp \LiberAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \LiberAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
+  %           \new Voice = "Tenore" { \dynamicUp \LiberTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \LiberTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \LiberBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \LiberBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \LiberOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \LiberBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Liber scriptus"
+    \subsection "Recordare"
     \addTocEntry
     \score {
       <<
@@ -437,51 +497,51 @@ paperDefault = \paper {
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \LiberViolinoI
+              \RecordareViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \LiberViolinoII
+              \RecordareViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \LiberViola
+            \RecordareViola
           }
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \LiberSoprano }
+            \new Voice = "Soprano" { \dynamicUp \RecordareSoprano }
           }
-          \new Lyrics \lyricsto Soprano \LiberSopranoLyrics
+          \new Lyrics \lyricsto Soprano \RecordareSopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "A" "[trb 1]" }
-            \new Voice = "Alto" { \dynamicUp \LiberAlto }
+            \new Voice = "Alto" { \dynamicUp \RecordareAlto }
           }
-          \new Lyrics \lyricsto Alto \LiberAltoLyrics
+          \new Lyrics \lyricsto Alto \RecordareAltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "T" "[trb 2]" }
-            \new Voice = "Tenore" { \dynamicUp \LiberTenore }
+            \new Voice = "Tenore" { \dynamicUp \RecordareTenore }
           }
-          \new Lyrics \lyricsto Tenore \LiberTenoreLyrics
+          \new Lyrics \lyricsto Tenore \RecordareTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \LiberBasso }
+            \new Voice = "Basso" { \dynamicUp \RecordareBasso }
           }
-          \new Lyrics \lyricsto Basso \LiberBassoLyrics
+          \new Lyrics \lyricsto Basso \RecordareBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \LiberOrgano
+            \RecordareOrgano
           }
         >>
-        \new FiguredBass { \LiberBassFigures }
+        \new FiguredBass { \RecordareBassFigures }
       >>
       \layout { }
       \midi { \tempo 4 = 60 }

@@ -221,3 +221,28 @@ LiberTromboneII = {
     R\fermata \bar "||" %81 finis
   }
 }
+
+RecordareTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    g4.\fE g8 g g g g
+    f4 f r2
+    g4. c8 b! b b b
+    b4 as r2 %85
+    f'4. f8 d! d d d
+    des4 des b g!
+    f2 f4 r
+    R1
+    b4. b8 b b b b %90
+    b4 as r2
+    as4. as8 a a a a
+    a4 g r2
+    b4. b8 b b b b
+    as4 as c a %95
+    g2 g4 r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}

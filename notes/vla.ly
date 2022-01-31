@@ -239,3 +239,28 @@ LiberViola = {
     es es es d\trill es4 r\fermata \bar "||" %81 finis
   }
 }
+
+RecordareViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoRecordare
+      \set Score.currentBarNumber = #82
+    g8\fE g g g g g g g
+    f4 f r2
+    g8 g g g g' g g g
+    f4 f r2 %85
+    f8 f f f d! d d d
+    des des des des b b g! g
+    f f f f f4 r
+    R1
+    f'8 f f f es es es es %90
+    es4 es r2
+    es8 es es es es es es es
+    d4 d r2
+    g4. g8 e e e e
+    es es es es es es es es %95
+    es es d d c4 r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}

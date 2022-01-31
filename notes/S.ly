@@ -432,14 +432,49 @@ LiberSopranoLyrics = \lyricmode {
   tis. %79 finis
 }
 
-% Re -- cor -- da -- re Ie -- su pi -- e,
-% quod sum cau -- sa tu -- ae vi -- ae:
-% Ne me per -- das il -- la di -- e.
-%
-% Quae -- rens me, se -- di -- sti las -- sus:
-% Re -- de -- mi -- sti cru -- cem pas -- sus:
-% Tan -- tus la -- bor non sit cas -- sus.
-%
+RecordareSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+      \set Score.currentBarNumber = #82
+    \mvTr c'4.\fE^\tuttiE c8 g' es es c
+    h4 h r2
+    c4. c8 des des des des
+    des4 c r2 %85
+    c4. c8 h h h h
+    ces4^\critnote b b b
+    b( a!) b r
+    R1
+    des4. des8 des des des des %90
+    des4 c r2
+    c4. c8 c c c c
+    c4 b r2
+    d4. d8 des des des des
+    des4 c c c %95
+    c( h) c r
+    R1
+    R\fermata \bar "||" %98 finis
+  }
+}
+
+RecordareSopranoLyrics = \lyricmode {
+  Re -- cor -- da -- re Ie -- su %82
+  pi -- e,
+  quod sum cau -- sa tu -- ae
+  vi -- ae: %85
+  Ne me per -- das il -- la
+  di -- e, il -- la
+  di -- e.
+
+  Quae -- rens me, se -- di -- sti %90
+  las -- sus:
+  Re -- de -- mi -- sti cru -- cem
+  pas -- sus:
+  Tan -- tus la -- bor non sit
+  cas -- sus, non sit %95
+  cas -- sus. %96 finis
+}
+
 % Iu -- ste iu -- dex ul -- ti -- o -- nis,
 % do -- num fac re -- mis -- si -- o -- nis,
 % an -- te di -- em ra -- ti -- o -- nis.

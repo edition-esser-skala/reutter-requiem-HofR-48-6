@@ -506,3 +506,48 @@ LiberBassFigures = \figuremode {
   <_!>4. <6 5->4 <6>8 <6 5>4 %80
   r8 <6> \bc <[6 5-]>2. %81 finis
 }
+
+RecordareOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoRecordare
+      \set Score.currentBarNumber = #82
+    \mvTr c8\fE-\tutti c c c c c c c
+    d2 r
+    es8 es es es e e e e
+    f4 f, r2 %85
+    f'8 f f f f f f f
+    ges ges ges ges f f e e
+    f f f, f b4 r
+    \mvTr b\p-\senzaOrg r b8 es f f,
+    \mvTr b\f-\colOrg b' b b g! g g g %90
+    as4 as, r2
+    as'8 as as g fis fis fis fis
+    g4 g, r2
+    g'8 g g g g g g g
+    as as as as g g fis fis %95
+    g g g, g c4 r
+    \mvTr c\p-\senzaOrg r c8 f g g,
+    c4 r r2\fermata \bar "||" %98 finis
+  }
+}
+
+RecordareBassFigures = \figuremode {
+  r1 %82
+  <6!>
+  <6>2 <7->
+  <6- 4>4 <5 _->2. %85
+  <_->2 <6! 4! _->
+  <5- 4->4 <\t _-> <\t \t> <7- [_!]>
+  <6- 4> <5 _!> <_->2
+  r1
+  <_->2 <6 5-> %90
+  <9 4->4 <8 3>2.
+  <5>4. <\t>8 <7 _!>2
+  <9 4>4 <8 3>2.
+  r2 <6! 5->
+  <5 4->4 <\t 3> <6 4> <7 [_!]> %95
+  \bo <[6] 4> \bc <[5] _!>2.
+  r1
+  r %98 finis
+}
