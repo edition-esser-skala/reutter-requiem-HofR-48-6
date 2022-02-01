@@ -5,7 +5,7 @@ composer:
 title: Requiem
 id: HofR 48/6
 genre: requiem
-scoring: S, A, T, B (solo), 2 S, 2 A, 2 T, 2 B (coro), 2 trb, 2 vl, vla, b, org
+scoring: 2 S, 2 A, 2 T, 2 B (coro), 2 trb, 2 vl, vla, b, org
 license: cc-by-sa-4.0
 sources:
   B1:
