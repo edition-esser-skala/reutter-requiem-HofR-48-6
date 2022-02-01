@@ -1,19 +1,19 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vla")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Introitus"
     \addTocEntry
-    \paper { page-count = #1 indent = 2\cm }
+    \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \IntroitusViolinoI
+          \set Staff.instrumentName = "Viola"
+          \IntroitusViola
         }
       >>
     }
@@ -21,9 +21,10 @@
   \bookpart {
     \subsection "Te decet hymnus"
     \addTocEntry
+    \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \TeDecetViolinoI }
+        \new Staff { \TeDecetViola }
       >>
     }
   }
@@ -32,7 +33,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \KyrieViolinoI }
+        \new Staff { \KyrieViola }
       >>
     }
   }
@@ -42,7 +43,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \DiesIraeViolinoI }
+        \new Staff { \DiesIraeViola }
       >>
     }
   }
@@ -52,27 +53,26 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \TubaMirumViolinoI }
+        \new Staff { \TubaMirumViola }
       >>
     }
   }
   \bookpart {
     \subsection "Liber scriptus"
     \addTocEntry
-    \paper { systems-per-page = #8 }
     \score {
       <<
-        \new Staff { \LiberViolinoI }
+        \new Staff { \LiberViola }
       >>
     }
   }
   \bookpart {
     \subsection "Recordare"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \RecordareViolinoI }
+        \new Staff { \RecordareViola }
       >>
     }
   }
@@ -81,7 +81,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \IusteViolinoI }
+        \new Staff { \IusteViola }
       >>
     }
   }
@@ -90,7 +90,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \ConfutatisViolinoI }
+        \new Staff { \ConfutatisViola }
       >>
     }
   }
@@ -100,7 +100,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \HuicViolinoI }
+        \new Staff { \HuicViola }
       >>
     }
   }
@@ -110,7 +110,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \DomineViolinoI }
+        \new Staff { \DomineViola }
       >>
     }
   }
@@ -120,7 +120,7 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \QuamOlimViolinoI }
+        \new Staff { \QuamOlimViola }
       >>
     }
   }
@@ -130,7 +130,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \HostiasViolinoI }
+        \new Staff { \HostiasViola }
       >>
     }
   }
@@ -140,17 +140,17 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusViola }
       >>
     }
   }
   \bookpart {
     \section "6" "Benedictus"
     \addTocEntry
-    \paper { systems-per-page = #8 page-count = #3 }
+    % \paper { systems-per-page = #8 page-count = #3 }
     \score {
       <<
-        \new Staff { \BenedictusViolinoI }
+        \new Staff { \BenedictusViola }
       >>
     }
   }
@@ -159,7 +159,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AgnusViolinoI }
+        \new Staff { \AgnusViola }
       >>
     }
   }

@@ -668,7 +668,7 @@ LacrymosaSopranoA = {
     \clef treble
     \key c \dorian \time 4/4 \autoBeamOff \tempoLacrymosa
       \set Score.currentBarNumber = #192
-    \mvTr es'4.\fE es8 es4 d
+    \mvTr es'4.\fE^\tuttiE es8 es4 d
     f4. f8 es es es es
     es4 es es4. es8
     des des des des des4 des %195

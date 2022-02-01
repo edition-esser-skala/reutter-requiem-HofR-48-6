@@ -1,19 +1,22 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "trb 2")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Introitus"
     \addTocEntry
-    \paper { page-count = #1 indent = 2\cm }
+    \paper {
+      systems-per-page = #5
+      indent = 2.5\cm
+    }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \IntroitusViolinoI
+          \set Staff.instrumentName = "Trombone II"
+          \IntroitusTromboneII
         }
       >>
     }
@@ -21,9 +24,10 @@
   \bookpart {
     \subsection "Te decet hymnus"
     \addTocEntry
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \TeDecetViolinoI }
+        \new Staff { \TeDecetTromboneII }
       >>
     }
   }
@@ -32,47 +36,47 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \KyrieViolinoI }
+        \new Staff { \KyrieTromboneII }
       >>
     }
   }
   \bookpart {
     \section "3" "Sequentia"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \DiesIraeViolinoI }
+        \new Staff { \DiesIraeTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Tuba mirum"
     \addTocEntry
-    \paper { systems-per-page = #4 }
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \TubaMirumViolinoI }
+        \new Staff { \TubaMirumTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Liber scriptus"
     \addTocEntry
-    \paper { systems-per-page = #8 }
+    \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \LiberViolinoI }
+        \new Staff { \LiberTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Recordare"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \RecordareViolinoI }
+        \new Staff { \RecordareTromboneII }
       >>
     }
   }
@@ -81,26 +85,27 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \IusteViolinoI }
+        \new Staff { \IusteTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Confutatis"
     \addTocEntry
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \ConfutatisViolinoI }
+        \new Staff { \ConfutatisTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Huic ergo"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \HuicViolinoI }
+        \new Staff { \HuicTromboneII }
       >>
     }
   }
@@ -110,7 +115,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \DomineViolinoI }
+        \new Staff { \DomineTromboneII }
       >>
     }
   }
@@ -120,17 +125,17 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \QuamOlimViolinoI }
+        \new Staff { \QuamOlimTromboneII }
       >>
     }
   }
   \bookpart {
     \subsection "Versus"
     \addTocEntry
-    \paper { systems-per-page = #7 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \HostiasViolinoI }
+        \new Staff { \HostiasTromboneII }
       >>
     }
   }
@@ -140,17 +145,17 @@
     \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusTromboneII }
       >>
     }
   }
   \bookpart {
     \section "6" "Benedictus"
     \addTocEntry
-    \paper { systems-per-page = #8 page-count = #3 }
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \BenedictusViolinoI }
+        \new Staff { \BenedictusTromboneII }
       >>
     }
   }
@@ -159,7 +164,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AgnusViolinoI }
+        \new Staff { \AgnusTromboneII }
       >>
     }
   }

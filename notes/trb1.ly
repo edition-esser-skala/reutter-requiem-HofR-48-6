@@ -3,7 +3,7 @@
 IntroitusTromboneI = {
   \relative c' {
     \clef alto
-    \key g \dorian \time 4/4 \autoBeamOff \tempoIntroitus
+    \key g \dorian \time 4/4 \tempoIntroitus
     R1*9 %9
     r2 c8.\fE c16 c'8 c %10
     c b b4 r g~
@@ -33,7 +33,7 @@ IntroitusTromboneI = {
 TeDecetTromboneI = {
   \relative c' {
     \clef alto
-    \key g \dorian \time 3/4 \autoBeamOff \tempoTeDecet
+    \key g \dorian \time 3/4 \tempoTeDecet
       \set Score.currentBarNumber = #39
     g'4\fE g g
     g2 g4 %40
@@ -127,7 +127,7 @@ KyrieTromboneI = {
 DiesIraeTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoDiesIrae
+    \key c \dorian \time 4/4 \tempoDiesIrae
     R1
     c4\fE es g g,
     g' g es c
@@ -186,7 +186,7 @@ TubaMirumTromboneI = {
 LiberTromboneI = {
   \relative c' {
     \clef alto
-    \key g \minor \time 4/4 \autoBeamOff \tempoLiber
+    \key g \minor \time 4/4 \tempoLiber
       \set Score.currentBarNumber = #52
     d4.\fE d8 d d d d
     d d d d d d d d
@@ -223,7 +223,7 @@ LiberTromboneI = {
 RecordareTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoRecordare
+    \key c \dorian \time 4/4 \tempoRecordare
       \set Score.currentBarNumber = #82
     es4.\fE es8 es g g es
     f4 f r2
@@ -248,7 +248,7 @@ RecordareTromboneI = {
 IusteTromboneI = {
   \relative c' {
     \clef alto
-    \key g \minor \time 3/4 \autoBeamOff \tempoIuste
+    \key g \minor \time 3/4 \tempoIuste
       \set Score.currentBarNumber = #99
     r4 g'4.\fE g8
     es4 d d8 d %100
@@ -320,7 +320,7 @@ IusteTromboneI = {
 ConfutatisTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoConfutatis
+    \key c \dorian \time 4/4 \tempoConfutatis
       \set Score.currentBarNumber = #172
     es4\fE es f2
     es4 r e4. e8
@@ -348,7 +348,7 @@ ConfutatisTromboneI = {
 HuicTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoHuic
+    \key c \dorian \time 4/4 \tempoHuic
       \set Score.currentBarNumber = #199
     es4.\fE es8 f4. f8
     f4. as8 g4 g %200
@@ -447,7 +447,7 @@ QuamOlimTromboneI = {
 HostiasTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoHostias
+    \key c \dorian \time 4/4 \tempoHostias
       \set Score.currentBarNumber = #74
     es8.\fE es16 es8 es d d d d
     c8. c16 c4 h h8 h %75
@@ -473,7 +473,7 @@ HostiasTromboneI = {
 SanctusTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    \key c \dorian \time 4/4 \tempoSanctus
     es4\fE es r2
     g8 as g f es8. es16 as8 g
     g4 g g8. g16 g4
@@ -501,7 +501,7 @@ SanctusTromboneI = {
 BenedictusTromboneI = {
   \relative c' {
     \clef alto
-    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+    \key c \dorian \time 4/4 \tempoBenedictus
     R1*5 %5
     g'4\fE g f8 g4 es8
     es es16 es es8 d es4 r
@@ -535,7 +535,7 @@ BenedictusTromboneI = {
 AgnusTromboneI = {
   \relative c' {
     \clef alto
-    \key g \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \key g \dorian \time 4/4 \tempoAgnus
     \mvTr d4.\fE^\tuttiE d8 es4 es8 es
     es8. d16 d8 d f!4 f
     f8. es16 es4 g4. g8
