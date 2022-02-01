@@ -400,3 +400,233 @@ HuicViola = {
     c4 h c r\fermata \bar "|." %217 finis
   }
 }
+
+DomineViola = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 4/4 \tempoDomine
+    es4\fE r g,8. g16 g4
+    as4. as8 as4 g8 g
+    g4 f es r
+    R1
+    r2 b'8. b16 b4 %5
+    b8. b16 b4 c8. c16 c8 c
+    d d16 d b8 b b4 b
+    r2 r4 b
+    b b8 b as4 as8 as
+    g4 g g8 f es4 %10
+    d2 c4 r4
+    R1*3
+    r2 c'8 c c c %15
+    c c c c d d d d
+    g,4 g r2
+    g8 g g g f f f f
+    f f f b b b b b
+    d16 d8 d d d16 b b8 b b b16 %20
+    c c8 c c c16 b b8 b16 ges ges8 ges16
+    ges ges8 ges16 f f8 f16 g4 r
+    R1*2
+    r4 b8 b c c c c %25
+    c c c c c8. c16 c4
+    r2 g8 g g g
+    fis fis fis g a! a a a
+    g g g g g g fis g
+    d'16^\critnote d8 d16 d d8 d16 d d8 d16 d d8 d16 %30
+    g, g8 g16 g g8 g16 fis fis8 fis16 b b8 b16
+    b b8 b16 a a8 a16 g4 r
+    R1*3
+    R1\fermata \bar "||"
+  }
+}
+
+QuamOlimViola = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 2/2 \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    R1*4 %40
+    b1\fE
+    es2 es
+    d4. d8 g2
+    a,4 es' d c
+    d c b c %45
+    b as b g
+    f1
+    es
+    r4 f' es d
+    es2 es4 d %50
+    c b a! f
+    b2 es
+    R1*3 %55
+    r2 r4 es
+    d c d b
+    b2 c
+    f,1
+    R1*2 %61
+    b1
+    es2 es
+    d4. d8 g2
+    es a,! %65
+    b es4 es
+    as g f es
+    d2 es4 es
+    c2 c4 c
+    b as g!2 %70
+    f1~
+    f
+    es\fermata \bar "||" %73 finis
+  }
+}
+
+HostiasViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoHostias
+      \set Score.currentBarNumber = #74
+    g8.\fE g16 g8 es f f f f
+    f8. es16 es4 g g8 g %75
+    c4 r8 c c4 r8 d
+    d4 r8 es es4 r8 c'
+    b4 b,4. b8 b4~
+    b8 b b4. b8 b b
+    b b g g c c b b %80
+    b b b c b4. b8
+    g4 r8 g as4 r8 as
+    g4 r8 g f4 r8 f'
+    es4 r8 c d b16. as32 b8 b
+    b es es es es8. es16 es4 %85
+    es8. es16 es8 es es4 es8 es
+    es4 c8 c c4 b8 b
+    b4 as8 as as4 g8 g
+    g4 g8 g g4 g8 g
+    g2 g4 r8 g' %90
+    f4 r8 f es4 r8 es
+    d4 r8 d c4 r8 c
+    c as g4 g r8 g
+    g4 r r2\fermata \markQuamOlimDaCapoE \bar "||" %94 finis
+  }
+}
+
+SanctusViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoSanctus
+    g2\fE c8 es d c
+    h8. h16 h4 c f8 es
+    d4. d8 c4 c~
+    c d8 d d4 c \noBreak
+    c4. c8 h2\fermata \bar "||" %5
+    \tempoPleni r2 r8 es es c \noBreak
+    h8. a16 g4 r8 es' es16 d c c
+    h8. a16 g8 h es4~ es16 d c h
+    c4~ c16 b as g as g f es f8 f16 f
+    b8 b16 b c8 b b4 r %10
+    r2 r8 b c d
+    es es es4\trill d8 b c b
+    c4 d es es8 d
+    c c f4 b,8 b h4
+    c c8 c f es d4 %15
+    es es es8 d c4
+    d8 g, a h c c c4\trill
+    h8 h c d es es es4\trill
+    d c8 a g2
+    g4 r c c %20
+    c2 c\fermata \bar "|." %21 finis
+  }
+}
+
+BenedictusViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \tempoBenedictus
+    es4\fE r es r
+    es8 es b' b, es' es, f b,
+    es es16 f g8 f es es es es
+    d d d d es es as as
+    b b, b b es g as b %5
+    es, es g es b' g16 f g8 as
+    g es f b, es es f b,
+    es4 r8 es16 d c4 r8 c16 b
+    a!4. a8 b b a b
+    f' es f f, b b16 c d8 b %10
+    es es es es d d d d
+    c c a! a b d es f
+    b, b'16 a b8 as g g16 f g8 as
+    g es f b, es es f b,
+    es4 r8 es b4. h8 %15
+    c4. a!8 b4. g8
+    as4. as8 b4 es8 as,
+    b as b b c c16 b c8 d
+    es g,16 as b8 b es es16 f g8 es
+    as as as as g g g g %20
+    f f f f es es as as
+    b b, b b es g as b
+    es, g as b \tempoOsanna es, r r4
+    r2 r8 b c d
+    es es es4\trill d8 b c b %25
+    c4 d es es8 d
+    c c f4 b,8 b h4
+    c c8 c f es d4
+    es es es8 d c4
+    d8 g, a h c c c4\trill %30
+    h8 h c d es es es4\trill
+    d c8 a g2
+    g4 r c c %20
+    c2 c\fermata \bar "|." %34 finis
+  }
+}
+
+AgnusViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoAgnus
+    r8 g\fE g g r g g g
+    r g g b r b b b
+    r b b b r c c c
+    r c b b r b a a
+    b4 r f8 g f f %5
+    f b b b r b b b
+    r b b b r b b b
+    r as as as r as as f
+    r b b as r b b b
+    b4 r b8 c b b %10
+    b es es es r es es es
+    r es es c^\critnote r c c c
+    r b b b r b b b
+    r c c c r a! a a
+    r g g g r g g g %15
+    r as as g r fis g g
+    r fis b b r a a a
+    g4 r d8 d d d \noBreak
+    d1\fermata \bar "||"
+    \tempoLux r8 g g g r fis fis fis \noBreak %20
+    r fis fis fis r g g g
+    r g g g r a b b \noBreak
+    r b a g a2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection R1 \noBreak
+    r4 d d d %25
+    b g8 a b c d b
+    c4 c b a
+    b1
+    a2 a4 d
+    d b g8 a b g %30
+    a2 d
+    g,1
+    R1*2
+    r4 es' es es %35
+    d h8 c d es f d
+    es4 c c c
+    c2 b
+    b a
+    a g %40
+    c c
+    b b
+    g2. g4
+    a2 b
+    b a4 g %45
+    a2 a
+    g \tempoCumSanctisB g4\p g
+    g2. g4
+    g1\fermata \bar "||" %49 finis
+  }
+}

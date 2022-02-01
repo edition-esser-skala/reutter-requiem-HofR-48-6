@@ -779,3 +779,452 @@ HuicTenoreLyrics = \lyricmode {
   a -- men, a --
   men, a -- men. %217 finis
 }
+
+DomineTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+    r2 \mvTr g8.\fE^\tuttiE g16 g4
+    as4. as8 as4 g8 g
+    g4 f es r
+    R1
+    r2 b'8. b16 b4 %5
+    b8. b16 b4 c8. c16 c8 c
+    d d16 d b8 b b4 b
+    r2 r4 b
+    b b8 b as4 as8 as
+    g4 g g8([ f)] es4 %10
+    d2 c4 r4
+    R1*3
+    r2 c'8. c16 c4 %15
+    c c8 c d4 d8 d
+    g,4 g r2
+    g4. g8 f4 f8 f
+    f4. b8 b8. b16 b8 b
+    b2 b4. b8 %20
+    c2 b4 ges8 ges
+    ges4( f) es r
+    R1*2
+    r4 b' c c8 c %25
+    c4. c8 c8. c16 c4
+    r2 g4. g8
+    fis4. g8 a!4 a8 a
+    g4. g8 g4 fis8 g
+    a2 g %30
+    g4 g8 g fis4 b
+    b( a) g r
+    R1*3 %35
+    R1\fermata \bar "||" %36 finis
+  }
+}
+
+DomineTenoreLyrics = \lyricmode {
+  Do -- mi -- ne
+  Ie -- su Chri -- ste, Rex
+  glo -- ri -- ae,
+
+  li -- be -- ra %5
+  a -- ni -- mas o -- mni -- um fi --
+  de -- li -- um de -- fun -- cto -- rum
+  de
+  poe -- nis in -- fer -- ni, et
+  de pro -- fun -- do %10
+  la -- cu.
+
+  Li -- be -- ra %15
+  e -- as de o -- re le --
+  o -- nis,
+  ne ab -- sor -- be -- at
+  e -- as tar -- ta -- rus, ne
+  ca -- dant, ne %20
+  ca -- dant in ob --
+  scu -- rum.
+
+  Sed si -- gni -- fer %25
+  san -- ctus Mi -- cha -- el
+  re -- prae --
+  sen -- tet e -- as in
+  lu -- cem san -- ctam, in
+  lu -- cem %30
+  san -- ctam, in lu -- cem
+  san -- ctam. %32 finis
+}
+
+QuamOlimTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 2/2 \autoBeamOff \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    R1*4 %40
+    \mvTr b1\fE^\tuttiE
+    es2 es
+    d4. d8 g2
+    a,4( es') d( c)
+    d( c) b c %45
+    b( as) b g
+    f1
+    es
+    r4 f'( es) d
+    es2 es4 d %50
+    c( b) a! f
+    b2 es
+    R1*3 %55
+    r2 r4 es
+    d( c) d b
+    b2( c)
+    f,1
+    R1*2 %61
+    b1
+    es2 es
+    d4. d8 g2
+    es a,! %65
+    b es4 es
+    as( g) f es
+    d2 es4 es
+    c2 c4 c
+    b as g!2 %70
+    f1~
+    f
+    es\fermata \bar "||" %73 finis
+  }
+}
+
+QuamOlimTenoreLyrics = \lyricmode {
+  Quam %41
+  o -- lim
+  A -- bra -- hae
+  pro -- mi --
+  si -- sti, et %45
+  se -- mi -- ni
+  e --
+  ius,
+  pro -- mi --
+  si -- sti, et %50
+  se -- mi -- ni
+  e -- ius,
+
+  et %56
+  se -- mi -- ni
+  e --
+  ius,
+
+  quam %62
+  o -- lim
+  A -- bra -- hae
+  pro -- mi -- %65
+  si -- sti, et
+  se -- mi -- ni
+  e -- ius, et
+  se -- mi -- ni
+  e -- _ _ %70
+  _
+
+  ius. %73 finis
+}
+
+HostiasTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHostias
+      \set Score.currentBarNumber = #74
+    \mvTr g8.\fE^\tuttiE g16 g8  es f f f f
+    f8. es16 es4 g g8 g %75
+    g8. g16 g4 r2
+    R1
+    r8 b b4. b8 b4~
+    b8 b b4. b8 b b
+    b b g g c8. c16 b8 b %80
+    b4 b8 c b4. b8
+    b4 r r2
+    R1*2
+    r8 es es es es8. es16 es4 %85
+    es8. es16 es8 es es4 es8 es
+    es4 c8 c c4 b8 b
+    b4 as8 as as4 g8 g
+    g4 g8 g g4 g8 g
+    g2 g4 r %90
+    R1*3
+    R1\fermata \markQuamOlimDaCapoE \bar "||" %94 finis
+  }
+}
+
+HostiasTenoreLyrics = \lyricmode {
+  Ho -- sti -- as et pre -- ces ti -- bi, %74
+  Do -- mi -- ne, lau -- dis of -- %75
+  fe -- ri -- mus:
+
+  Tu su -- sci -- pe __
+  pro a -- ni -- ma -- bus
+  il -- lis, qua -- rum ho -- di -- e me -- %80
+  mo -- ri -- am fa -- ci --
+  mus.
+
+  Fac e -- as, Do -- mi -- ne, %85
+  Do -- mi -- ne, fac e -- as de
+  mor -- te trans -- i -- re ad
+  vi -- tam, de mor -- te trans --
+  i -- re ad vi -- tam, ad
+  vi -- tam. %90 finis
+}
+
+SanctusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    \mvTr g4\fE^\tuttiE g c8([ es)] d([ c)]
+    h8. h16 h4 c f8([ es)]
+    d4. d8 c4 c~
+    c d8 d d4 c \noBreak
+    c4. c8 h2\fermata \bar "||" %5
+    \tempoPleni r2 r8 es es c \noBreak
+    h8.([ a16)] g4 r8 es' es16([ d)] c c
+    h8.([ a16)] g8 h es4~ es16[ d c h]
+    c4~ c16[ b as g] as[ g f es] f8 f16 f
+    b8 b16 b c8([ b)] b4 r %10
+    r2 r8 b c d
+    es es es4\trill d8 b c b
+    c4 d es es8([ d)]
+    c c f4 b,8 b h4
+    c c8 c f([ es] d4) %15
+    es es es8([ d] c4)
+    d8 g, a h c c c4\trill
+    h8 h c d es es es4\trill
+    d c8 a g2
+    g4 r c c %20
+    c2 c\fermata \bar "|." %21 finis
+  }
+}
+
+SanctusTenoreLyrics = \lyricmode {
+  San -- ctus, san -- ctus
+  Do -- mi -- nus De -- us __
+  Sa -- ba -- oth Do --
+  mi -- nus De -- us
+  Sa -- ba -- oth. %5
+  Ple -- ni sunt
+  coe -- li, sunt coe -- li et
+  ter -- ra glo -- _
+  _ _ _ ri -- a,
+  glo -- ri -- a tu -- a. %10
+  O -- san -- na
+  in ex -- cel -- sis, o -- san -- na
+  in ex -- cel -- sis,
+  in ex -- cel -- sis, o -- san --
+  na in ex -- cel -- %15
+  sis, o -- san --
+  na, o -- san -- na in ex -- cel --
+  sis, o -- san -- na in ex -- cel --
+  sis, in ex -- cel --
+  sis, in ex -- %20
+  cel -- sis. %21 finis
+}
+
+BenedictusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+    R1*5 %5
+    \mvTr b4\fE^\tuttiE b b8 b4 as8
+    b b16 b as8([ b)] b4 r
+    r8 b b4 c8 c c4
+    c8 c c8. c16 b8 b c b16 b
+    b4( a8.) a16 b4 r %10
+    R1*2
+    b4 b b8 b4 as8
+    b b16 b as8([ b)] b4 r
+    r8 b b4 b8 b b([^\critnote g)] %15
+    g8 g g([^\critnote f16)] f f4. es8
+    es4 c'8 c b4 b8 c
+    b4. b8 as4 r8 b
+    b b16 b b8. b16 g4 r
+    R1*3 %22
+    << { \oneVoice R1 } \\ { s2 \tempoOsanna s } >>
+    r2 r8 b c d
+    es es es4\trill d8 b c b %25
+    c4 d es es8([ d)]
+    c c f4 b,8 b h4
+    c c8 c f([ es] d4)
+    es es es8([ d] c4)
+    d8 g, a h c c c4\trill %30
+    h8 h c d es es es4\trill
+    d c8 a g2
+    g4 r c c
+    c2 c\fermata \bar "|." %34 finis
+  }
+}
+
+BenedictusTenoreLyrics = \lyricmode {
+  Be -- ne -- di -- ctus, qui %6
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no --
+  mi -- ne Do -- mi -- ni, in no -- mi -- ne
+  Do -- mi -- ni. %10
+
+  Be -- ne -- di -- ctus, qui %13
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no -- %15
+  mi -- ne Do -- mi -- ni, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, in
+  no -- mi -- ne Do -- mi -- ni.
+
+  O -- san -- na %24
+  in ex -- cel -- sis, o -- san -- na %25
+  in ex -- cel -- sis,
+  in ex -- cel -- sis, o -- san --
+  na in ex -- cel --
+  sis, o -- san --
+  na, o -- san -- na in ex -- cel -- %30
+  sis, o -- san -- na in ex -- cel --
+  sis, in ex -- cel --
+  sis, in ex --
+  cel -- sis. %34 finis
+}
+
+AgnusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \mvTr g4.\fE^\tuttiE g8 g4 g8 g
+    g4 g8 b b4 b
+    b b c4. c8
+    c4 b b( a8.) a16
+    b4 r r2 %5
+    b4. b8 b4 b8 b
+    b4 b8 b b4. b8
+    b8.([ as16)] as4 as4. f8
+    b4. as8 b4. b8
+    g4 r r2 %10
+    es'4. es8 es4 es8 es
+    es4 es8 c c4 c8 c
+    b4. b8 b4 b
+    c4. c8 a!4 a
+    g4. g8 g2 %15
+    as4. g8 fis4 g~
+    g8[ fis] b4 a2
+    g r \noBreak
+    R1\fermata \bar "||"
+    \tempoLux g4. g8 g8.([ fis16)] fis4 \noBreak %20
+    a a8 a a8.([ g16)] g4
+    g g8 g a4 b \noBreak
+    b a8([ g)] a2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection R1 \noBreak
+    r4 d d d %25
+    b g8([ a)] b([ c)] d([ b)]
+    c4 c b a
+    b1
+    a2 a4 d
+    d b g8[ a b g] %30
+    a2 d
+    g,1
+    R1*2
+    r4 es' es es %35
+    d h8([ c)] d([ es)] f([ d)]
+    es4 c c c
+    c2 b
+    b( a)
+    a g %40
+    c c
+    b b
+    g2. g4
+    a2 b
+    b a4 g %45
+    a2 a
+    g \tempoCumSanctisB g4\p g
+    g2. g4
+    g1\fermata \bar "||" %49 finis
+  }
+}
+
+AgnusTenoreLyrics = \lyricmode {
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %5
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %10
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta, pec --
+  ca -- ta mun -- di:
+  Do -- na e -- is
+  re -- qui -- em %15
+  sem -- pi -- ter -- _
+  _ _
+  nam.
+
+  Lux ae -- ter -- na %20
+  lu -- ce -- at e -- is,
+  lu -- ce -- at e -- is,
+  Do -- mi -- ne.
+
+  Cum San -- ctis %25
+  tu -- is in ae --
+  ter -- num, in ae --
+  ter --
+  num, in ae --
+  ter -- _ _ %30
+  _ _
+  num,
+
+  cum San -- ctis %35
+  tu -- is in ae --
+  ter -- num, qui -- a
+  pi -- us
+  es, __
+  qui -- a %40
+  pi -- us,
+  qui -- a
+  pi -- us,
+  qui -- a
+  pi -- _ _ %45
+  _ us
+  es, qui -- a
+  pi -- us
+  es. %49 finis
+}
+
+RequiemTwoTenoreA = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr b8.\fE^\tuttiE b16 b8 b d4 a
+    c8 c c c d8. d,16 d4
+    r8 h' h h g8. g16 g4
+    g a8 a a4 b8 c
+    d2 d\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoTenoreALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}
+
+RequiemTwoTenoreB = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr g8.\fE^\tuttiE g16 g8 g a4 a
+    a8 a a a g8. g16 g4
+    r8 g g g c8. c16 c4
+    c es8 es a,4 d8 g,
+    a2 h\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoTenoreBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}

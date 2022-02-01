@@ -761,3 +761,429 @@ HuicSopranoLyrics = \lyricmode {
   a -- men, a --
   men, a -- men. %217 finis
 }
+
+DomineSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+    \mvTr es'8.\fE^\tuttiE b16 b4 b8. b16 b4
+    c4. c8 c4 b8 b
+    as4. as8 g4 r
+    R1
+    r2 f8. f16 f4 %5
+    g8. g16 g4 a!8. a16 a8 a
+    b b16 b b8 as as4 g
+    r2 r4 g
+    g g8 g g4 f8 f
+    f4 es! d c %10
+    c( h) c r
+    R1*3
+    r2 g'8. g16 g4 %15
+    as as8 as h4 h8 h
+    c4 g r2
+    g4. c8 as4 as8 as
+    b4. as8 g8. g16 g8 g
+    as2 g4. g8 %20
+    ges2~ ges8 f es es
+    es4( d) es r
+    R1*2
+    r4 b' b b8 b %25
+    as4. as8 as8. g16 g4
+    r2 c4. c8
+    c4. c8 c4 c8 c
+    b!4. b8 b4 a8 b
+    c2 b %30
+    b4 b8 b b8([ a)] g4
+    g( fis) g r
+    R1*3 %35
+    R1\fermata \bar "||" %36 finis
+  }
+}
+
+DomineSopranoLyrics = \lyricmode {
+  Do -- mi -- ne, Do -- mi -- ne
+  Ie -- su Chri -- ste, Rex
+  glo -- ri -- ae,
+
+  li -- be -- ra %5
+  a -- ni -- mas o -- mni -- um fi --
+  de -- li -- um de -- fun -- cto -- rum
+  de
+  poe -- nis in -- fer -- ni, et
+  de pro -- fun -- do %10
+  la -- cu.
+
+  Li -- be -- ra %15
+  e -- as de o -- re le --
+  o -- nis,
+  ne ab -- sor -- be -- at
+  e -- as tar -- ta -- rus, ne
+  ca -- dant, ne %20
+  ca -- dant in ob --
+  scu -- rum.
+
+  Sed si -- gni -- fer %25
+  san -- ctus Mi -- cha -- el
+  re -- prae --
+  sen -- tet e -- as in
+  lu -- cem san -- ctam, in
+  lu -- cem %30
+  san -- ctam, in lu -- cem
+  san -- ctam. %32 finis
+}
+
+QuamOlimSoprano = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 2/2 \autoBeamOff \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    R1*13 %49
+    \mvTr b'1\fE^\tuttiE %50
+    es2 es
+    d4. d8 g2
+    a,4( es') d( c)
+    d( c) b b
+    as( g) as f %55
+    g( f) es2
+    r d'4 d
+    es1
+    f2 f
+    es es4 es %60
+    es1
+    d2 r
+    R1
+    b
+    es2 es %65
+    d4. d8 g2
+    f4( es) d( c)
+    b( as) g g
+    ges2 ges4 ges
+    f2 es~ %70
+    es d4 c
+    d1
+    es\fermata \bar "||" %73 finis
+  }
+}
+
+QuamOlimSopranoLyrics = \lyricmode {
+  Quam %50
+  o -- lim
+  A -- bra -- hae
+  pro -- mi --
+  si -- sti, et
+  se -- mi -- ni %55
+  e -- ius,
+  pro -- mi --
+  si --
+  sti, et
+  se -- mi -- ni %60
+  e --
+  ius,
+
+  quam
+  o -- lim %65
+  A -- bra -- hae
+  pro -- mi --
+  si -- sti, et
+  se -- mi -- ni
+  e -- _ %70
+  _ _
+  _
+  ius. %73 finis
+}
+
+HostiasSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHostias
+      \set Score.currentBarNumber = #74
+    \mvTr c'8.\fE^\tuttiE g16 g8 g as as as as
+    as8. g16 g4 f g8 f %75
+    es8. d16 c4 r2
+    R1
+    r8 f f4. g16([ f)] g4~
+    g8 as16([ g)] as4. as8 b as
+    as g b b b as16([ g)] as8 as %80
+    as([ g16 f)] g8 as g4( f8.) f16
+    es4 r r2
+    R1*2
+    r8 b' b b c8. c16 c4 %85
+    des8. des16 des8 des des([ c)] c c
+    c([ b)] b b b([ as)] as as
+    as([ g)] g g g([ f)] f f
+    f([ es)] es es es([ d)] es es
+    es4( d) c r %90
+    R1*3
+    R1\fermata \markQuamOlimDaCapoE \bar "||" %94 finis
+  }
+}
+
+HostiasSopranoLyrics = \lyricmode {
+  Ho -- sti -- as et pre -- ces ti -- bi, %74
+  Do -- mi -- ne, lau -- dis of -- %75
+  fe -- ri -- mus:
+
+  Tu su -- sci -- pe __
+  pro a -- ni -- ma -- bus
+  il -- lis, qua -- rum ho -- di -- e me -- %80
+  mo -- ri -- am fa -- ci --
+  mus.
+
+  Fac e -- as, Do -- mi -- ne, %85
+  Do -- mi -- ne, fac e -- as de
+  mor -- te trans -- i -- re ad
+  vi -- tam, de mor -- te trans --
+  i -- re ad vi -- tam, ad
+  vi -- tam. %90 finis
+}
+
+SanctusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    \mvTr c'4\fE^\tuttiE c r2
+    r c8([ es)] d([ c)]
+    h8. h16 h4 g'8. b,16 b4
+    as as g g \noBreak
+    g f g2\fermata \bar "||" %5
+    \tempoPleni r8 h h c16([ d)] es4 es \noBreak
+    r8 h h c16 d es4 es,
+    r8 d' g4~ g16[ f es d] es4~
+    es16[ d c b] c4~ c16[ b as g] as4~
+    as8 g16 g f4 es r %10
+    R1*2
+    r2 r8 b' c d
+    es es es4\trill d8 d g f
+    es4 es d8([ c] h4) %15
+    c4 c c2
+    h8 h c d es es es4\trill
+    d d4. c8 c4~
+    c8 h c c c4( h)
+    c8 e, f g as4 g %20
+    as2 g\fermata \bar "|." %21 finis
+  }
+}
+
+SanctusSopranoLyrics = \lyricmode {
+  San -- ctus,
+  san -- ctus
+  Do -- mi -- nus, Do -- mi -- nus
+  De -- us, De -- us
+  Sa -- ba -- oth. %5
+  Ple -- ni sunt coe -- li,
+  sunt coe -- li et ter -- ra
+  glo -- _ _
+  _ _
+  ri -- a tu -- a. %10
+
+  O -- san -- na %13
+  in ex -- cel -- sis, o -- san -- na
+  in ex -- cel -- %15
+  sis, o -- san --
+  na, o -- san -- na in ex -- cel --
+  sis, in ex -- cel --
+  sis, in ex -- cel --
+  sis, o -- san -- na in ex -- %20
+  cel -- sis. %21 finis
+}
+
+BenedictusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+    R1*5 %5
+    \mvTr b'4\fE^\tuttiE es d8 es4 c8
+    b as16 g as4 g r
+    r8 b es4. es16 d es4~
+    es8 d16 es f8. es16 d8 d es d16 d
+    d4( c8.) c16 b4 r %10
+    R1*2
+    b4 d es16([ d)] es4 c8
+    b as16 g as4 g r
+    r8 b es4. d16 c d4~ %15
+    d8 c16 h c4. b16([ as)] b4~
+    b8 as as4. g16 f g8 as16 as
+    g4( f8.) g16 as4 r8 as
+    g g16 g f8. f16 es4 r
+    R1*3 %22
+    << { \oneVoice R1 } \\ { s2 \tempoOsanna s } >>
+    R1*2 %25
+    r2 r8 b' c d
+    es es es4\trill d8 d g f
+    es4 es d8([ c] h4) %15
+    c4 c c2
+    h8 h c d es es es4\trill %30
+    d d4. c8 c4~
+    c8 h c c c4( h)
+    c8 e, f g as4 g
+    as2 g\fermata \bar "|." %34 finis
+  }
+}
+
+BenedictusSopranoLyrics = \lyricmode {
+  Be -- ne -- di -- ctus, qui %6
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no --
+  mi -- ne Do -- mi -- ni, in no -- mi -- ne
+  Do -- mi -- ni. %10
+
+  Be -- ne -- di -- ctus, qui %13
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no -- %15
+  mi -- ne Do -- mi -- ni, __
+  qui ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, in
+  no -- mi -- ne Do -- mi -- ni.
+
+  O -- san -- na %26
+  in ex -- cel -- sis, o -- san -- na
+  in ex -- cel --
+  sis, o -- san --
+  na, o -- san -- na in ex -- cel -- %30
+  sis, in ex -- cel --
+  sis, in ex -- cel --
+  sis, o -- san -- na in ex --
+  cel -- sis. %34 finis
+}
+
+AgnusSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \mvTr b'4.\fE^\tuttiE b8 c4 c8 c
+    c8.([ b16)] b8 b b8.([ as16)] as4
+    as8.([ g16)] g4 es'4. es8
+    es4 d d( c8.) c16
+    b4 r r2 %5
+    d4. d8 es4 es8 es
+    es8.([ d16)] d8 d des4. des8
+    des8.([ c16)] c4 b4. as8
+    g4. as8 g4( f8.) f16
+    es4 r r2 %10
+    b'4. b8 c4 c8 c
+    c8.([ b16)] b8 b b8.([ as16)] as8 as
+    as4. as8 as8.([ g16)] g4
+    es'4. es8 d4 d
+    d4. d8 d4( c) %15
+    c4. c8 c4 b!
+    a g2 fis4
+    g2 r \noBreak
+    R1\fermata \bar "||" %19
+    b4. b8 b8.([ a16)] a4 \noBreak %20
+    c c8 c c8.([ b16)] b4
+    es es8 es d4 d \noBreak
+    d( c8.) c16 d2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection R1*5 %28
+    r4 d d d
+    b g8([ a)] b([ c)] d([ b)] %30
+    c4 c b a
+    b1
+    a
+    r4 g' g g
+    es c8([ d)] es([ f)] g([ es)] %35
+    f1
+    es2 es~
+    es d~
+    d c~
+    c b %40
+    b( a)
+    a g
+    g2. g4
+    fis2 g
+    g fis4 e %45
+    fis2. fis4
+    g2 \tempoCumSanctisB d4\p d
+    es2. es4
+    d1\fermata \bar "||" %49 finis
+  }
+}
+
+AgnusSopranoLyrics = \lyricmode {
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %5
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %10
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta, pec --
+  ca -- ta mun -- di:
+  Do -- na e -- is
+  re -- qui -- em __ %15
+  sem -- pi -- ter -- _
+  _ _ _
+  nam.
+
+  Lux ae -- ter -- na %20
+  lu -- ce -- at e -- is,
+  lu -- ce -- at e -- is,
+  Do -- mi -- ne.
+
+  Cum San -- ctis %29
+  tu -- is in ae -- %30
+  ter -- num, in ae --
+  ter --
+  num,
+  cum San -- ctis
+  tu -- is in ae -- %35
+  ter --
+  num, qui --
+  a __
+  pi --
+  us %40
+  es, __
+  qui -- a
+  pi -- us,
+  qui -- a
+  pi -- _ _ %45
+  _ us
+  es, qui -- a
+  pi -- us
+  es. %49 finis
+}
+
+RequiemTwoSopranoA = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr d'8.\fE^\tuttiE d16 d8 d d4 d
+    d8 d d d d8. d16 d4
+    r8 d d d c8. c16 c4
+    es es8 es d4 d8 d
+    d2 h\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoSopranoALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}
+
+RequiemTwoSopranoB = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr b'8.\fE^\tuttiE b16 b8 b a4 a
+    a8 a a a b8. b16 b4
+    r8 g g g' es8. es16 es4
+    c c8 c c4 b8 b
+    a2 d\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoSopranoBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}

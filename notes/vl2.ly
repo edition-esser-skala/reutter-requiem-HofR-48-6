@@ -406,3 +406,252 @@ HuicViolinoII = {
     g4 g g r\fermata \bar "|." %217 finis
   }
 }
+
+DomineViolinoII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 4/4 \tempoDomine
+    es'4\fE r es,8. es16 es4
+    es4. es8 es4 es8 es
+    es4 b b r
+    R1
+    r2 d8. d16 d4 %5
+    es8. es16 es4 es8. es16 es8 es
+    f f16 f f8 f f4 es
+    r2 r4 es
+    des c8 c c4 c8 c
+    d4 c h8 a! g4 %10
+    g2 g4 r
+    R1*3
+    r2 es'8 es es es %15
+    f f f f f f f f
+    es4 es r2
+    es8 es es es c c c c
+    d d d d es es es es
+    f16 f8 f f f16 es es8 es es es16 %20
+    es es8 es es es16 es d8 d16 c c8 c16
+    b b8 b16 b b8 b16 b4 r
+    R1*2
+    r4 g'8 g g g g g %25
+    f f f f f8. e16 e4
+    r2 e8 e e e
+    es es es es d d d d
+    d d d d d d d d
+    a'16 a8 a16 a a8 a16 g g8 g16 g g8 g16 %30
+    e e8 e16 e e8 e16 d d8 d16 cis cis8 cis16
+    d d8 d16 d d8 d16 d4 r
+    R1*3 %35
+    R1\fermata \bar "||" %36 finis
+  }
+}
+
+QuamOlimViolinoII = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 2/2 \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    R1*9 %45
+    es1\fE
+    b'2 b
+    g4. g8 c2
+    d,4 as' g f
+    g f es g %50
+    g2 f4 f
+    f2 es
+    f g4 a
+    b as g g
+    f2 b,4 d %55
+    es f g2
+    f4 es f d
+    g1
+    f2 b
+    b4 as g g %60
+    g2 f
+    f r
+    es1
+    b'2 b
+    g4. g8 c2 %65
+    b2. b4
+    c b as g
+    f2 es4 es
+    es2 es4 es
+    d c b2~ %70
+    b1~
+    b
+    b\fermata \bar "||" %73 finis
+  }
+}
+
+HostiasViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoHostias
+      \set Score.currentBarNumber = #74
+    es8.\fE es16 es8 es d d d d
+    c8. c16 c4 h h8 h
+    c r r4 r8 as'' as32([ f es f)] f( d c d)
+    b4 r r8 c' c32([ as g as)] as( f es f)
+    es8 d d,4. es16 d es4~
+    es8 f16 es f4. f8 f f
+    f es g g g f f f
+    f es16 d es8 es es4 d8. d16
+    es8 r r4 r8 as' as32([ f es f)] f([ d c d)]
+    b4 r r8 f' f32[( d c d)] d([ b as b)]
+    g8 c c32([ as g as)] as([ f es f)] d16. d32 es16. f32 es8 d\trill
+    es g g g as8. as16 as4
+    b8. b16 b8 b b( as) as as
+    as( g) g g g( f) f f
+    f( es) es es es( d) d d
+    d( c) c c c( h) c c
+    c c h h c4 r
+    r8 f' f32([ d c d)] d( b as b) g4 r
+    r8 d' d32([ h a h)] h( g f g) es8 es' es32([ es d es)] es( c h c)
+    f16. f32 es16. d32 c8 h c16. f,32 es16. d32 c8 h\trill
+    c4 r r2\fermata \markQuamOlimDaCapoE \bar "||"
+  }
+}
+
+SanctusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoSanctus
+    es2\fE r
+    g8 as g f es8. es16 as8 g
+    g4 g g8. g16 g4
+    f f f es \noBreak
+    es d8 c d2\fermata \bar "||" %5
+    \tempoPleni r8 g g a16 h c8 g g4 \noBreak
+    r8 g g a16 h c8 g g4
+    r2 g4. g16 g
+    es4. es16 es c4. c16 c
+    d8 es16 es es8 d es4 r %10
+    R1
+    r2 r8 es f g
+    as as as4\trill g8 g g f
+    g4 a b8 g g g
+    g4 g as8 g g4 %15
+    g g fis2
+    g r
+    r8 d es f g g g4\trill
+    f es8 es es4 d
+    c8 c d e f4 e %20
+    f2 e\fermata \bar "|." %21 finis
+  }
+}
+
+BenedictusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoBenedictus
+    r32 \mvTr es(\fE-\markup \remark "con sordino" f g as b c d) es([ b as g)] c( as g f)
+      g( es f g as b c d) es([ b as g)] as( f es d)
+    g([ es b' g)] es'( b g' b,) as( g f es d c b as')
+      g([ es b' g)] es'( b g' g,) as( g f es d c b as')
+    g( f es d) es8 r32 b([ as b)] es( b as b)
+      g'([ es d es)] b'( g f g) es'([ b as b)] g'( es d es)
+    b([ f es f)] d'( b as b) f'([ d c d)] as'( f es f)
+      g([ es d es)] b'( g f g) c( b as g f es d es)
+    d([ b as b)] f'( d c d) as'( g f es d c b as)
+      g([ es b' g)] es'( b as g) f([ c' es c)] f,( b d f,) %5
+    es-! es( f g as b c d) es([ b as g)] es'( g, f es)
+      d'([ c b d]) es( b g es') es([ b as b)] c( b as c)
+    b([ d es f)] g( b, as g) as( g f es d c b as')
+      g( b c d es f g es) as( g f es d c b as')
+    g([ f es d)] es( b as b) g([ es d es)] b'( g f g)
+      es'( f g f es f es d) es([ c b c)] es( c g es')
+    es([ f es d)] es( c b c) c([ a! g f)] f( a c es)
+      d([ b a b)] f( b c d) es([ c f, es')] d( b a b)
+    f([ b c d)] d( b a b) f([ a b c)] c( a f es)
+      d([ b d f)] b( f d f) b,([ d f b)] d( f es f) %10
+    g([ es d es)] es( b a! b) g'([ es d es)] b'( g f g)
+      f([ d c b)] d( b a b) f'([ d c b)] b'( f es d)
+    es([ c h c)] g'( es d es) c'( b a! g f es d c)
+      d([ b f' d)] b'( f es d) g([ es d c)] es( c b a)
+    b([ f es f)] d( b f' d) d'([ b a b)] f'( d c b)
+      es([ b as g)] es'( b as b) b([ g f es)] c'( as es c')
+    b([ g f es)] es'( b as g) as( g f es d c b as')
+      g( b c d es f g b,) as'( g f es d c b as')
+    g([ es d es)] b( g f g) es'([ b as b)] es( g, f es)
+      f([ es' d c)] d( f, es d) d'([ b f d)] d( f h d) %15
+    d([ g, f es)] c( es g c) c([ g f es)] c'( a! f c)
+      c'([ f, es d)] b( d f b) b([ f es f)] b( des, c des)
+    b'([ es, des c)] as( c es as) as([ es des es)] as( es des c)
+      d([ b f' d)] as'( f es f) g([ es d es)] c'( as g f)
+    g([ es d es)] b( es f g) f([ d c d)] b( d f g)
+      as([ es des c)] as( c es as) as([ es des c]) b( d f as)
+    g([ es d es)] b'( g f es) b([ d c b)] f'( d c d)
+      es([ b g' es)] b'( g es' b) es,([ g b es)] es( b as b)
+    c([ as g as)] es'( c b c) as'([ es d es)] c'( as g as)
+      b,([ g f g)] es'( b as b) g'([ es d es)] b'([ g f g)] %20
+    as,([ f es f)] d'( as g as) f'[( d c d)]
+      as'( f es d) g([ es d es)] b'( g f g) c( b as g f es d c)
+    d([ b a b)] f'( d c d) as'( g f es d c b as)
+      g([ es b' g)] es'( b as g) f([ c' es c)] f,( b d f,)
+    g([ es b' g)] es'( b g es) f([ as c es)] b,( f' b d)
+      \tempoOsanna es,4 r
+    R1
+    r2 r8-\markup \remarkE "senza sordino" es f g %25
+    as as as4\trill g8 g g f
+    g4 a b8 g g g
+    g4 g as8 g g4
+    g g fis2
+    g r %30
+    r8 d es f g g g4\trill
+    f es8 es es4 d
+    c8 c d e f4 e
+    f2 e\fermata \bar "|." %34 finis
+  }
+}
+
+AgnusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoAgnus
+    r8 d\fE d d r es es es
+    r es d d r f! f f
+    r es es es r g g g
+    r f f f r f f f
+    d d d d16( f) \slurDashed f( d) c( b) \slurSolid b8 a\trill %5
+    b f' f f r g g g
+    r f f f r es es es
+    r es es es r f f f
+    r es es es r es d d
+    es g g g16( b) b( g) f( es) es8 d\trill %10
+    es g g g r as as as
+    r g g g r f f f
+    r f f f r es es es
+    r g g g r fis fis fis
+    r f f f r es es es %15
+    r es es es r d d d
+    r d d d r d d d
+    d b' b16( g) g( b,) b8 b a a \noBreak
+    g1\fermata \bar "||"
+    \tempoLux r8 d' d d r d d d \noBreak %20
+    r d d d r d d d
+    r g g g r fis g g \noBreak
+    r g g g fis2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection R1*4 %27
+    r4 g g g
+    fis d8 e fis g a fis
+    g4 g g g %30
+    e!2 fis
+    g d4 d
+    d2. c4
+    b b c d
+    g, g' g g %35
+    g1
+    g2 g4 g
+    f1
+    es
+    d %40
+    g2 d
+    d d
+    cis2. cis4
+    d2 e!
+    d1~ %45
+    d2 d
+    d \tempoCumSanctisB h4\p h
+    c2. c4
+    h1\fermata \bar "||" %49 finis
+  }
+}

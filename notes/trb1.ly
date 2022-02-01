@@ -371,3 +371,216 @@ HuicTromboneI = {
     g4 g g r\fermata \bar "|." %217 finis
   }
 }
+
+DomineTromboneI = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 4/4 \tempoDomine
+    R1*2
+    r2 r4 \mvTr g'~\pE-\solo
+    g16 g as g f4~ f16 f g f es8 g
+    g4\trill f r2 %5
+    R1
+    r2 r4 b,
+    c8.(\trill b32 c) d8.(\trill c32 d) es8.(\trill d32 es) b4
+    R1*3 %11
+    as'4~ as16 as g f g4~ g16 g f es
+    f4. es8 es\trill d d8.(\trill c32 d)
+    es8.(\trill d32 es) f8.(\trill es32 f) g8. f16 es4
+    es4 d\trill c r %15
+    R1
+    r4 g' as8.(\trill g32 as) as8.(\trill g32 f)
+    \appoggiatura f8 es4 r r2
+    R1*3 %21
+    r2 r4 b
+    c8.(\trill b32 c) d8.(\trill c32 d) es16( f) f( g) g4~
+    g16 g as( g) f( es) d( es) es4 d\trill
+    es r r2 %25
+    r r4 g
+    as8.(\trill g32 as) as8.(\trill g32 as) \appoggiatura as8 g4 r
+    R1*4 %31
+    r2 r4 d
+    es8.(\trill d32 es) fis8.(\trill e32 fis) g16( a) a( b) b4~
+    b16 b a g a4~ a16 a g fis g4~
+    g4 fis\trill g8 es d16( c) c( b) %35
+    b4 a\trill g r\fermata \bar "||" %36 finis
+  }
+}
+
+QuamOlimTromboneI = {
+  \relative c' {
+    \clef alto
+    \key es \lydian \time 2/2 \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    R1*9 %45
+    es1\fE
+    b'2 b
+    g4. g8 c2
+    d,4 as' g f
+    g f es g %50
+    g2 f4 f
+    f2 es
+    f g4 a
+    b as g g
+    f2 b,4 d %55
+    es f g2
+    f4 es f d
+    g1
+    f2 b
+    b4 as g g %60
+    g2 f
+    f r
+    es1
+    b'2 b
+    g4. g8 c2 %65
+    b2. b4
+    c b as g
+    f2 es4 es
+    es2 es4 es
+    d c b2~ %70
+    b1~
+    b
+    b\fermata \bar "||" %73 finis
+  }
+}
+
+HostiasTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHostias
+      \set Score.currentBarNumber = #74
+    es8.\fE es16 es8 es d d d d
+    c8. c16 c4 h h8 h %75
+    c8. h16 c4 r2
+    R1
+    r8 d d4. es16 d es4~
+    es8 f16 es f4. f8 f f
+    f es g g g f f f %80
+    f es16 d es8 es es4 d8. d16
+    es4 r r2
+    R1*2
+    r8 g g g as8. as16 as4 %85
+    b8. b16 b8 b b as as as
+    as g g g g f f f
+    f es es es es d d d
+    d c c c c h c c
+    c4 h c r %90
+    R1*3
+    R1\fermata \markQuamOlimDaCapoE \bar "||" %94 finis
+  }
+}
+
+SanctusTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    es4\fE es r2
+    g8 as g f es8. es16 as8 g
+    g4 g g8. g16 g4
+    f f f es \noBreak
+    es d8 c d2\fermata \bar "||" %5
+    \tempoPleni r8 g g a16 h c8 g g4 \noBreak
+    r8 g g a16 h c8 g g4
+    r2 g4. g16 g
+    es4. es16 es c4. c16 c
+    d8 es16 es es8 d es4 r %10
+    R1
+    r2 r8 es f g
+    as as as4\trill g8 g g f
+    g4 a b8 g g g
+    g4 g as8 g g4 %15
+    g g fis2
+    g r
+    r8 d es f g g g4\trill
+    f es8 es es4 d
+    c8 c d e f4 e %20
+    f2 e\fermata \bar "|." %21 finis
+  }
+}
+
+BenedictusTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+    R1*5 %5
+    g'4\fE g f8 g4 es8
+    es es16 es es8 d es4 r
+    r8 g g4. g16 f g4
+    f8 f f8. f16 f8 f f f16 f
+    f4. f8 d4 r %10
+    R1*2
+    f4 f g8 g4 es8
+    es es16 es es8 d es4 r
+    r8 g g4 f8 f f4 %15
+    es8 es es8. es16 d4. des8
+    c4 es8 es d4 es8 es
+    es4 d8. d16 es4 r8 f
+    es es16 es d8. d16 es4 r
+    R1*3 %22
+    << { \oneVoice R1 } \\ { s2 \tempoOsanna s } >>
+    R1
+    r2 r8 es f g %25
+    as as as4\trill g8 g g f
+    g4 a b8 g g g
+    g4 g as8 g g4
+    g g fis2
+    g r %30
+    r8 d es f g g g4\trill
+    f es8 es es4 d
+    c8 c d e f4 e
+    f2 e\fermata \bar "|." %34 finis
+  }
+}
+
+AgnusTromboneI = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \mvTr d4.\fE^\tuttiE d8 es4 es8 es
+    es8. d16 d8 d f!4 f
+    f8. es16 es4 g4. g8
+    f4 f f4. f8
+    d4 r r2 %5
+    f4. f8 g4 g8 g
+    g8. f16 f8 f es4. es8
+    es4 es f4. f8
+    es4. es8 es4 d8. d16
+    es4 r r2 %10
+    g4. g8 as4 as8 as
+    as8. g16 g8 g g8. f16 f8 f
+    f4. f8 f8. es16 es4
+    g4. g8 fis4 fis
+    f4. f8 es2 %15
+    es4. es8 d2~
+    d1
+    d2 r \noBreak
+    R1\fermata \bar "||"
+    \tempoLux d4. d8 d4 d \noBreak %20
+    d d8 d d4 d
+    g g8 g fis4 g \noBreak
+    g4. g8 fis2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection R1*4 %27
+    r4 g g g
+    fis d8 e fis g a fis
+    g4 g g g %30
+    e!2 fis
+    g d4 d
+    d2. c4
+    b b c d
+    g, g' g g %35
+    g1
+    g2 g4 g
+    f1
+    es
+    d %40
+    g2 d
+    d d
+    cis2. cis4
+    d2 e!
+    d1~ %45
+    d2 d
+    d \tempoCumSanctisB h4\p h
+    c2. c4
+    h1\fermata \bar "||" %49 finis
+  }
+}

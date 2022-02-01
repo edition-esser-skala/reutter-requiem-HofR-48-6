@@ -752,3 +752,453 @@ HuicBassoLyrics = \lyricmode {
   a -- men, a --
   men, a -- men. %217 finis
 }
+
+DomineBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 4/4 \autoBeamOff \tempoDomine
+    r2 \mvTr es8.\fE^\tuttiE es16 es4
+    es4. es8 es4 es8 es
+    c4 d es r
+    R1
+    r2 b8. b16 b4 %5
+    b8. b16 b4 b8. b16 b8 b
+    b b16 b d8 d es4 es
+    r2 r4 es
+    e e8 e f4 f8 f
+    h,4 c g g %10
+    g2 c4 r
+    R1*3
+    r2 c8. c16 c4 %15
+    c c8 c c4 c8 c
+    c4 c r2
+    c4. c8 f,4 f8 f
+    b4. b8 es8. es16 es8 es
+    b16[ d8 f b b, es g b b,16] %20
+    a![ c8 es ges a,16] b4 a8 a
+    b2 es,4 r
+    R1*2
+    r4 es' e e8 e %25
+    f4. f8 c8. c16 c4
+    r2 c4. c8
+    a!4. g8 fis4 fis8 fis
+    g4. g8 d'2~
+    d16[ fis8 a d d, g b d d,16] %30
+    cis[ e?8 g b cis,16] d4 es
+    d2 g,4 r
+    R1*3 %35
+    R1\fermata \bar "||" %36 finis
+  }
+}
+
+DomineBassoLyrics = \lyricmode {
+  Do -- mi -- ne
+  Ie -- su Chri -- ste, Rex
+  glo -- ri -- ae,
+
+  li -- be -- ra %5
+  a -- ni -- mas o -- mni -- um fi --
+  de -- li -- um de -- fun -- cto -- rum
+  de
+  poe -- nis in -- fer -- ni, et
+  de pro -- fun -- do %10
+  la -- cu.
+
+  Li -- be -- ra %15
+  e -- as de o -- re le --
+  o -- nis,
+  ne ab -- sor -- be -- at
+  e -- as tar -- ta -- rus, ne
+  ca -- %20
+  _ dant in ob --
+  scu -- rum.
+
+  Sed si -- gni -- fer %25
+  san -- ctus Mi -- cha -- el
+  re -- prae --
+  sen -- tet e -- as in
+  lu -- cem san --
+  %30
+  _ _ ctam,
+  san -- ctam. %32 finis
+}
+
+QuamOlimBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 2/2 \autoBeamOff \tempoQuamOlim
+      \set Score.currentBarNumber = #37
+    \mvTr es1\fE^\tuttiE
+    b'2 b
+    g4. g8 c2
+    d,4( as') g( f) %40
+    g( f) es d
+    c4. c8 f2
+    b,( es)
+    f g4 a
+    b( as) g as %45
+    g f g es
+    d c d b
+    es2 as4 as
+    b1
+    es,2 r %50
+    R1*5 %55
+    es1
+    b'2 b
+    g4. g8 c2
+    d,4( as') g( f)
+    g( f) es d %60
+    c( b) a! a
+    b1~
+    b~
+    b~
+    b~ %65
+    b~
+    b
+    b2 b
+    a! a4 a
+    b1~ %70
+    b~
+    b
+    es,\fermata \bar "||" %73 finis
+  }
+}
+
+QuamOlimBassoLyrics = \lyricmode {
+  Quam %37
+  o -- lim
+  A -- bra -- hae
+  pro -- mi -- %40
+  si -- sti, et
+  se -- mi -- ni
+  e --
+  ius, pro -- mi --
+  si -- sti, et %45
+  se -- _ _ _
+  _ _ _ _
+  _ mi -- ni
+  e --
+  ius, %50
+
+  quam %56
+  o -- lim
+  A -- bra -- hae
+  pro -- mi --
+  si -- sti, et %60
+  se -- mi -- ni
+  e --
+
+  ius, et %68
+  se -- mi -- ni
+  e -- %70
+
+  ius. %73 finis
+}
+
+HostiasBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoHostias
+      \set Score.currentBarNumber = #74
+    \mvTr c8.\fE^\tuttiE c16 c8 c h h h h
+    c8. c16 c4 g g8 g %75
+    c8. c16 c4 r2
+    R1
+    r8 b' b4. b8 b4~
+    b8 b b4. b,8 b b
+    es es e e f8. f16 d8 d %80
+    es4 es8 as, b4. b8
+    es4 r r2
+    R1*2
+    r8 es es es as8. as16 as4 %85
+    g8. g16 g8 g as4 as8 as,
+    es'4 e8 e f4 d8 d
+    es4 c8 c d4 h8 h
+    c4 c8 c g4 es'8 d16([ c)]
+    g2 c4 r %90
+    R1*3
+    R1\fermata \markQuamOlimDaCapoE \bar "||" %94 finis
+  }
+}
+
+HostiasBassoLyrics = \lyricmode {
+  Ho -- sti -- as et pre -- ces ti -- bi, %74
+  Do -- mi -- ne, lau -- dis of -- %75
+  fe -- ri -- mus:
+
+  Tu su -- sci -- pe __
+  pro a -- ni -- ma -- bus
+  il -- lis, qua -- rum ho -- di -- e me -- %80
+  mo -- ri -- am fa -- ci --
+  mus.
+
+  Fac e -- as, Do -- mi -- ne, %85
+  Do -- mi -- ne, fac e -- as de
+  mor -- te trans -- i -- re ad
+  vi -- tam, de mor -- te trans --
+  i -- re ad vi -- tam, ad
+  vi -- tam. %90 finis
+}
+
+SanctusBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    \mvTr c4\fE^\tuttiE c r2
+    R1
+    g'8([ as)] g([ f)] es8. es16 e4
+    f8([ es)] d([ c)] h4 c8([ b)] \noBreak
+    as4. as8 g2\fermata \bar "||" %5
+    \tempoPleni r2 r8 c c es16([ f)] \noBreak
+    g4 g r8 c, c es16 f
+    g4 g,8 g' c4~ c16[ b! as g]
+    as4~ as16[ g f es] f4~ f16[ es d c]
+    b8 es16 es as,8([ b)] es es f g %10
+    as as as4\trill g as8 f
+    g4( a) b8 g as g
+    f f b4 es, r
+    R1
+    r8 c d es f f f4\trill %15
+    es8 es f g as as as4\trill
+    g2 g
+    g g
+    g4 g8 fis g2
+    c,4 r f, c' %20
+    f2 c\fermata \bar "|." %21 finis
+  }
+}
+
+SanctusBassoLyrics = \lyricmode {
+  San -- ctus,
+
+  san -- ctus Do -- mi -- nus
+  De -- us, __ De -- us __
+  Sa -- ba -- oth. %5
+  Ple -- ni sunt
+  coe -- li, sunt coe -- li et
+  ter -- ra glo -- _
+  _ _
+  _ ri -- a tu -- a. O -- san -- na %10
+  in ex -- cel -- sis, in ex --
+  cel -- sis, o -- san -- na
+  in ex -- cel -- sis,
+
+  o -- san -- na in ex -- cel -- %15
+  sis, o -- san -- na in ex -- cel --
+  sis, in
+  ex -- cel --
+  sis, in ex -- cel --
+  sis, in ex -- %20
+  cel -- sis. %21 finis
+}
+
+BenedictusBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+    R1*5 %5
+    \mvTr es4\fE^\tuttiE es b'8 g4 as8
+    g f16 es f8([ b,)] es4 r
+    r8 es es8.([ d16)] c8 c c8.([ b16)]
+    a!8 a a8. a16 b8 b a b16 b
+    f'4. f8 b,4 r %10
+    R1*2
+    b'4. as8 g g4 as8
+    g f16 es f8([ b,)] es4 r
+    r8 es es4 b8 b b([^\critnote h)] %15
+    c8 c c([^\critnote a!16)] a b4. g8
+    as4 as8 as b4 es8 as,
+    b4. b8 c4 r8 d
+    es g,16 as b8. b16 es4 r
+    R1*3 %22
+    r2 \tempoOsanna r8 es f g
+    as as as4\trill g as8 f
+    g4( a) b8 g as g %25
+    f f b4 es, r
+    R1
+    r8 c d es f f f4\trill
+    es8 es f g as as as4\trill
+    g2 g %30
+    g g
+    g4 g8 fis g2
+    c,4 r f, c'
+    f2 c\fermata \bar "|." %34 finis
+  }
+}
+
+BenedictusBassoLyrics = \lyricmode {
+  Be -- ne -- di -- ctus, qui %6
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no --
+  mi -- ne Do -- mi -- ni, in no -- mi -- ne
+  Do -- mi -- ni. %10
+
+  Be -- ne -- di -- ctus, qui %13
+  ve -- nit, qui ve -- nit,
+  qui ve -- nit in no -- %15
+  mi -- ne Do -- mi -- ni, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, in
+  no -- mi -- ne Do -- mi -- ni.
+
+  O -- san -- na %23
+  in ex -- cel -- sis, in ex --
+  cel -- sis, o -- san -- na %25
+  in ex -- cel -- sis,
+
+  o -- san -- na in ex -- cel --
+  sis, o -- san -- na in ex -- cel --
+  sis, in %30
+  ex -- cel --
+  sis, in ex -- cel --
+  sis, in ex --
+  cel -- sis. %34 finis
+}
+
+AgnusBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \mvTr g4.\fE^\tuttiE g8 g4 g8 g
+    g4 g8 g d'4 d
+    es es c4. c8
+    a!4 b f4. f8
+    b4 r r2 %5
+    b4. b8 b4 b8 b
+    b4 b8 b g4. g8
+    as4 as d!4. d8
+    es4. c8 b4. b8
+    es4 r r2 %10
+    es4. es8 es4 es8 es
+    es4 es8 e f4 f8 f
+    d4. d8 es4 es
+    c4. c8 c4 c
+    h4. h8 c2 %15
+    c4. c8 d2~
+    d1
+    g,2 r \noBreak
+    R1\fermata \bar "||"
+    \tempoLux g4. g8 d'4 d \noBreak %20
+    d d8 d g4 g,
+    c c8 c c4 b \noBreak
+    es4. es8 d2\fermata \bar "||"
+    \time 2/2 \tempoCumSanctis \newSpacingSection r4 g g g \noBreak
+    fis d8([ e)] fis([ g)] a([ fis)] %25
+    g4 g g g
+    e2 fis
+    g g,
+    d'1
+    R1*2 %31
+    r4 g g g
+    fis d8([ e)] fis([ g)] a([ fis)]
+    g2( a4 h)
+    c c c c %35
+    h g8([ a)] h([ c)] d([ h)]
+    c4 c c c
+    a2 b!
+    g a4 a
+    fis2 g %40
+    e!( fis)
+    g g,
+    es'2. es4
+    d2 cis
+    d1~ %45
+    d2 d
+    g, \tempoCumSanctisB g4\p g
+    g2. g4
+    g1\fermata \bar "||" %49 finis
+  }
+}
+
+AgnusBassoLyrics = \lyricmode {
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %5
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di: Do -- na
+  e -- is re -- qui --
+  em. %10
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta, pec --
+  ca -- ta mun -- di:
+  Do -- na e -- is
+  re -- qui -- em %15
+  sem -- pi -- ter --
+
+  nam.
+
+  Lux ae -- ter -- na %20
+  lu -- ce -- at e -- is,
+  lu -- ce -- at e -- is,
+  Do -- mi -- ne.
+  Cum San -- ctis
+  tu -- is in ae -- %25
+  ter -- num, in ae --
+  ter -- _
+  _ _
+  num,
+
+  cum San -- ctis %32
+  tu -- is in ae --
+  ter --
+  num, cum San -- ctis %35
+  tu -- is in ae --
+  ter -- num, qui -- a
+  pi -- us
+  es, qui -- a
+  pi -- us %40
+  es, __
+  qui -- a
+  pi -- us,
+  qui -- a
+  pi -- %45
+  us
+  es, qui -- a
+  pi -- us
+  es. %49 finis
+}
+
+RequiemTwoBassoA = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr d8.\fE^\tuttiE d16 d8 d fis4 fis
+    fis8 fis fis fis d8. d16 d4
+    r8 d d d g8. g16 g4
+    g g8 c c4 d,8 d
+    a'2 g\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoBassoALyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}
+
+RequiemTwoBassoB = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoRequiemTwo
+      \set Score.currentBarNumber = #50
+    \mvTr g8.\fE^\tuttiE g16 g8 g d'4 d
+    c8 c c c b8. b16 b4
+    r8 h h h c8. c16 c4
+    c c8 c d4 d8 d
+    d2 g,\fermata \markCumSanctisDaCapoE \bar "||" %54 finis
+  }
+}
+
+RequiemTwoBassoBLyrics = \lyricmode {
+  Re -- qui -- em ae -- ter -- nam %50
+  do -- na e -- is, Do -- mi -- ne:
+  Et lux per -- pe -- tu -- a
+  lu -- ce -- at, lu -- ce -- at
+  e -- is. %54 finis
+}
